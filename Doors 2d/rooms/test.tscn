@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://bcwxtfb82xs7b"]
+
+[ext_resource type="Script" path="res://Player.gd" id="1_fs8lp"]
+[ext_resource type="Texture2D" uid="uid://bebhg63t4tyap" path="res://icon.png" id="2_s4l0m"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qdork"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1jtu3"]
+
+[sub_resource type="TileSet" id="TileSet_nc1t1"]
+
+[node name="test" type="Node2D"]
+
+[node name="Player" type="CharacterBody2D" parent="."]
+script = ExtResource("1_fs8lp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+shape = SubResource("CircleShape2D_qdork")
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+
+[node name="Area2D" type="Area2D" parent="Player"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/Area2D"]
+shape = SubResource("CircleShape2D_1jtu3")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+texture = ExtResource("2_s4l0m")
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_nc1t1")
+format = 2
