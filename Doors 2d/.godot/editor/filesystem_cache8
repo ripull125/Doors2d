@@ -1,7 +1,9 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1685553677
-default_env.tres::Environment::-1::1685552319::0::1::::<><>::
+::res://::1685676961
+default_env.tres::Environment::6222481374677130643::1685676961::0::1::::<><>::
 icon.png::CompressedTexture2D::2669677842093264439::1671214678::1685553586::1::::<><>::
+Player.gd::GDScript::-1::1685676961::0::1::::<>CharacterBody2D<>::
+::res://entities/::1685553681
 ::res://godot-engine.github-integration-8d65e569dbf6f278faf0262405e1add1ea37c116/::1685552501
 README.md::TextFile::-1::1685552501::0::1::::<><>::
 VERSION.md::TextFile::-1::1685552501::0::1::::<><>::
@@ -100,4 +102,5 @@ SignIn.gd::GDScript::-1::1685552504::0::1::::<>RefCounted<>::
 UserPanel.gd::GDScript::-1::1685552504::0::1::::<>RefCounted<>::
 user_data.gd::GDScript::-1::1685552504::0::1::::<>RefCounted<>::
 WindowDialog.gd::GDScript::-1::1685552504::0::1::::<>RefCounted<>::
-::res://rooms/::1685553677
+::res://rooms/::1685676961
+test.tscn::PackedScene::2573645368174233681::1685676961::0::1::::<><>::res://Player.gd<>uid://bebhg63t4tyap
