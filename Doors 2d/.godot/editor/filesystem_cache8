@@ -1,5 +1,5 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1685732238
+::res://::1685732304
 default_env.tres::Environment::6222481374677130643::1685676961::0::1::::<><>::
 icon.png::CompressedTexture2D::2669677842093264439::1671214678::1685553586::1::::<><>::
 Player.gd::GDScript::-1::1685676961::0::1::::<>CharacterBody2D<>::
