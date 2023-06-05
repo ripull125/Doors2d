@@ -1,13 +1,12 @@
-fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1685925448
-default_env.tres::Environment::6222481374677130643::1685925448::0::1::::<><>::
-icon.png::CompressedTexture2D::2669677842093264439::1671214678::1685553586::1::::<><>::
-Player.gd::GDScript::-1::1685925448::0::1::::<>CharacterBody2D<>::
-::res://entities/::1685553681
-::res://rooms/::1685925448
-test.tscn::PackedScene::2573645368174233681::1685925448::0::1::::<><>::res://Player.gd<>uid://bj3veylnlw2lo<>uid://dvgd1ae1tbfeb
-::res://sprites/::1685925637
-basic_room_1.png::CompressedTexture2D::1475710820115806015::1685925637::1685925638::1::::<><>::
-closet.png::CompressedTexture2D::1155454830332587764::1685922490::1685922504::1::::<><>::
-main character.png::CompressedTexture2D::3077206331732290096::1685922490::1685922504::1::::<><>::
-tst.png::CompressedTexture2D::8645842623008142869::1685731735::1685731737::1::::<><>::
+2a60927148abd1d33b818b535e306557
+::res://::1685966744
+default_env.tres::Environment::6222481374677130643::1685731916::0::1::::<><>::
+icon.png::CompressedTexture2D::2669677842093264439::1685731917::1685731917::1::::<><>::
+Player.gd::GDScript::-1::1685966712::0::1::::<>CharacterBody2D<>::
+::res://rooms/::1685966712
+test.tscn::PackedScene::2573645368174233681::1685966712::0::1::::<><>::res://Player.gd<>uid://bj3veylnlw2lo<>uid://va30hj8eqhpf
+::res://sprites/::1685966727
+basic_room_1.png::CompressedTexture2D::1475710820115806015::1685966712::1685966712::1::::<><>::
+closet.png::CompressedTexture2D::6539784659501805150::1685734316::1685966745::1::::<><>::
+main character.png::CompressedTexture2D::6161036268573218164::1685734799::1685966745::1::::<><>::
+tst.png::CompressedTexture2D::8645842623008142869::1685731917::1685731917::1::::<><>::
