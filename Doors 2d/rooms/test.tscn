@@ -1,10 +1,11 @@
-[gd_scene load_steps=14 format=3 uid="uid://bcwxtfb82xs7b"]
+[gd_scene load_steps=14 format=3 uid="uid://bqoyv7mefryyd"]
 
 [ext_resource type="Script" path="res://Player.gd" id="1_fs8lp"]
 [ext_resource type="Texture2D" uid="uid://bj3veylnlw2lo" path="res://sprites/main character.png" id="2_1syf5"]
 [ext_resource type="Texture2D" uid="uid://va30hj8eqhpf" path="res://sprites/basic_room_1.png" id="3_ukfps"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_qdork"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bddkj"]
+size = Vector2(86, 83)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1jtu3"]
 
@@ -326,9 +327,8 @@ sources/2 = SubResource("TileSetAtlasSource_enkdp")
 script = ExtResource("1_fs8lp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
-shape = SubResource("CircleShape2D_qdork")
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(-1, -0.5)
+shape = SubResource("RectangleShape2D_bddkj")
 
 [node name="Area2D" type="Area2D" parent="Player"]
 
@@ -336,7 +336,6 @@ shape = SubResource("CircleShape2D_qdork")
 shape = SubResource("CircleShape2D_1jtu3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
-position = Vector2(1, 0)
 sprite_frames = SubResource("SpriteFrames_7l3wm")
 animation = &"forward"
 
