@@ -1,2 +1,3 @@
 res://default_env.tres
 res://rooms/test.tscn
+res://Player.gd
