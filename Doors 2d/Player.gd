@@ -31,7 +31,7 @@ func check_input():
 #		motion.x = 0
 #		moving = false or moving
 	motion = motion.normalized()
-	motion = move_and_slide(motion*200)
+	motion = moved_and_slide(motion*200)
 func _physics_process(delta):
 	# movement
 	check_input()
