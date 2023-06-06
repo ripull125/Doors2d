@@ -1,12 +1,13 @@
 2a60927148abd1d33b818b535e306557
-::res://::1685984877
+::res://::1685990128
+closet1.png::CompressedTexture2D::7450726640168843333::1685990117::1685990129::1::::<><>::
 default_env.tres::Environment::6222481374677130643::1685984663::0::1::::<><>::
 icon.png::CompressedTexture2D::2669677842093264439::1685983859::1685552903::1::::<><>::
 Player.gd::GDScript::-1::1685984663::0::1::::<>CharacterBody2D<>::
 ::res://rooms/::1685984663
 room1.tscn::PackedScene::9124088715245653401::1685984663::0::1::::<><>::
 test.tscn::PackedScene::2573645368174233681::1685984094::0::1::::<><>::res://Player.gd<>uid://ct1pmqqu56a2g<>uid://va30hj8eqhpf
-::res://sprites/::1685984083
+::res://sprites/::1685990128
 basic_room_1.png::CompressedTexture2D::1475710820115806015::1685983859::1685983859::1::::<><>::
 closet.png::CompressedTexture2D::6539784659501805150::1685983859::1685983859::1::::<><>::
 drawer.png::CompressedTexture2D::5160454692108694453::1685983859::1685984083::1::::<><>::
