@@ -1,17 +1,21 @@
-2a60927148abd1d33b818b535e306557
-::res://::1686069816
-closet1.png::CompressedTexture2D::7450726640168843333::1685990117::1685990129::1::::<><>::
-default_env.tres::Environment::6222481374677130643::1686066441::0::1::::<><>::
-icon.png::CompressedTexture2D::2669677842093264439::1685983859::1685552903::1::::<><>::
-Player.gd::GDScript::-1::1686065094::0::1::::<>CharacterBody2D<>::
-::res://rooms/::1686065994
-basic room 1.jpg::CompressedTexture2D::6007987968298281164::1686065804::1686065804::1::::<><>::
-room1.tscn::PackedScene::9124088715245653401::1686065633::0::1::::<><>::
-test.tscn::PackedScene::2573645368174233681::1686065633::0::1::::<><>::res://Player.gd<>uid://ct1pmqqu56a2g<>uid://va30hj8eqhpf
-::res://scenes/::1686065094
-::res://sprites/::1686065094
-basic_room_1.png::CompressedTexture2D::1475710820115806015::1685983859::1685983859::1::::<><>::
-closet.png::CompressedTexture2D::6539784659501805150::1685983859::1685983859::1::::<><>::
-drawer.png::CompressedTexture2D::5160454692108694453::1685983859::1685984083::1::::<><>::
-main character.png::CompressedTexture2D::6161036268573218164::1685983859::1685983859::1::::<><>::
-tst.png::CompressedTexture2D::8645842623008142869::1685983859::1685983859::1::::<><>::
+fc8a56933c4b1c8d796fdb8f7a9f9475
+::res://::1686071654
+closet1.png::CompressedTexture2D::7450726640168843333::1686070273::1686070273::1::::<><>::
+default_env.tres::Environment::6222481374677130643::1686071580::0::1::::<><>::
+icon.png::CompressedTexture2D::2669677842093264439::1671214678::1685553586::1::::<><>::
+Player.gd::GDScript::-1::1686070651::0::1::::<>CharacterBody2D<>::
+::res://entities/::1685553681
+::res://rooms/::1686071654
+room1.tscn::PackedScene::9124088715245653401::1686070273::0::1::::<><>::
+test.tscn::PackedScene::2573645368174233681::1686070651::0::1::::<><>::res://Player.gd<>uid://ct1pmqqu56a2g<>uid://va30hj8eqhpf
+::res://scenes/::1686071580
+player.tscn::PackedScene::7776264253100090321::1686071580::0::1::::<><>::res://scripts/player.gd<>uid://ct1pmqqu56a2g
+::res://scripts/::1686071579
+player.gd::GDScript::-1::1686070868::0::1::::<>CharacterBody2D<>::
+::res://sprites/::1686071654
+basic room 1.jpg::CompressedTexture2D::6007987968298281164::1686070651::1686071654::1::::<><>::
+basic_room_1.png::CompressedTexture2D::1475710820115806015::1685925637::1685925638::1::::<><>::
+closet.png::CompressedTexture2D::1155454830332587764::1685922490::1685985479::1::::<><>::
+drawer.png::CompressedTexture2D::4617041251898762232::1685985479::1685990748::1::::<><>::
+main character.png::CompressedTexture2D::3077206331732290096::1685922490::1685985479::1::::<><>::
+tst.png::CompressedTexture2D::8645842623008142869::1685731735::1685731737::1::::<><>::
