@@ -51,6 +51,3 @@ animation = &"forward"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_u4bv8")
-
-[node name="Camera2D" type="Camera2D" parent="."]
-scale = Vector2(-17.4461, -21.9323)

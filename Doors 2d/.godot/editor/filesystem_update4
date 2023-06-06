@@ -1,3 +1,4 @@
 res://default_env.tres
 res://scenes/player.tscn
 res://rooms/room1.tscn
+res://rooms/test.tscn
