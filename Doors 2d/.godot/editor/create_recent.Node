@@ -1,5 +1,5 @@
-Camera2D
 TextureRect
+Camera2D
 TileMap
 CollisionShape2D
 AnimatedSprite2D
