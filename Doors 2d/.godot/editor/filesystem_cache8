@@ -1,21 +1,23 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1686139446
+::res://::1686140820
 closet1.png::CompressedTexture2D::7450726640168843333::1686070273::1686070273::1::::<><>::
-default_env.tres::Environment::6222481374677130643::1686092870::0::1::::<><>::
+default_env.tres::Environment::6222481374677130643::1686140424::0::1::::<><>::
 icon.png::CompressedTexture2D::2669677842093264439::1671214678::1685553586::1::::<><>::
 Player.gd::GDScript::-1::1686070651::0::1::::<>CharacterBody2D<>::
 ::res://entities/::1685553681
-::res://rooms/::1686092870
-room1.tscn::PackedScene::9124088715245653401::1686092870::0::1::::<><>::uid://di1463flyaf58<>uid://va30hj8eqhpf
-test.tscn::PackedScene::2573645368174233681::1686072443::0::1::::<><>::res://Player.gd<>uid://bj3veylnlw2lo<>uid://va30hj8eqhpf
-::res://scenes/::1686072442
-player.tscn::PackedScene::7776264253100090321::1686072442::0::1::::<><>::res://scripts/player.gd<>uid://bj3veylnlw2lo
+::res://rooms/::1686139578
+room1.tscn::PackedScene::9124088715245653401::1686139578::0::1::::<><>::uid://di1463flyaf58<>uid://va30hj8eqhpf
+test.tscn::PackedScene::2573645368174233681::1686139578::0::1::::<><>::res://Player.gd<>uid://bj3veylnlw2lo<>uid://va30hj8eqhpf
+::res://scenes/::1686140820
+main menu.tscn::PackedScene::2322887257040271231::1686140424::0::1::::<><>::
+player.tscn::PackedScene::7776264253100090321::1686139578::0::1::::<><>::res://scripts/player.gd<>uid://bj3veylnlw2lo
 ::res://scripts/::1686071579
 player.gd::GDScript::-1::1686070868::0::1::::<>CharacterBody2D<>::
-::res://sprites/::1686139435
+::res://sprites/::1686140820
 basic room 1.jpg::CompressedTexture2D::6007987968298281164::1686070651::1686071654::1::::<><>::
 basic_room_1.png::CompressedTexture2D::1475710820115806015::1685925637::1685925638::1::::<><>::
 closet.png::CompressedTexture2D::1155454830332587764::1685922490::1685985479::1::::<><>::
+doorsmainmenu.png::CompressedTexture2D::8878447844061524635::1686140816::1686140820::1::::<><>::
 drawer.png::CompressedTexture2D::4617041251898762232::1685985479::1685990748::1::::<><>::
 main character.png::CompressedTexture2D::3077206331732290096::1685922490::1685985479::1::::<><>::
 table.png::CompressedTexture2D::4955519946628091537::1686139435::1686139447::1::::<><>::
