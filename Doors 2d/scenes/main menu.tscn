@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://8dhu4qwbp07t"]
+[gd_scene load_steps=2 format=3 uid="uid://r8tpubdy8qcp"]
 
-[ext_resource type="Texture2D" uid="uid://dyq10ede1qhex" path="res://sprites/doorsmainmenu.png" id="1_fucj8"]
+[ext_resource type="Texture2D" path="res://sprites/doorsmainmenu.png" id="1_fucj8"]
 
 [node name="main menu" type="Node2D"]
 

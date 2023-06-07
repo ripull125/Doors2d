@@ -3,5 +3,4 @@ res://scenes/player.tscn
 res://rooms/test.tscn
 res://rooms/room1.tscn
 res://scenes/main menu.tscn
-res://scripts/player.gd
-res://scenes/actionable/actionable.tscn
+res://scenes/main menu.gd
