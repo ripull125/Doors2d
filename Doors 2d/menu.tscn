@@ -1,26 +1,29 @@
-[gd_scene load_steps=2 format=3 uid="uid://r8tpubdy8qcp"]
+[gd_scene load_steps=2 format=3 uid="uid://iq8smkh3xpi4"]
 
-<<<<<<< Updated upstream
-[ext_resource type="Texture2D" path="res://sprites/doorsmainmenu.png" id="1_fucj8"]
-=======
-[ext_resource type="Script" path="res://scenes/main menu.gd" id="1_20koq"]
->>>>>>> Stashed changes
+[ext_resource type="Script" path="res://menu.gd" id="1_7107t"]
 
-[node name="main menu" type="Control"]
+[node name="menu" type="Control"]
 layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7107t")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
+offset_left = -35.0
+offset_top = -50.5
+offset_right = 35.0
+offset_bottom = 50.5
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_20koq")
-
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
 
 [node name="Button" type="Button" parent="VBoxContainer"]
 layout_mode = 2
