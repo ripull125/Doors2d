@@ -12,4 +12,18 @@ func _process(delta):
 
 
 func _on_button_pressed():
-	get_tree().change_scene("res://rooms/room1.tscn")
+	get_tree().change_scene_to_file("res://rooms/room1.tscn")
+
+
+
+
+func _on_button_2_pressed():
+	get_tree().change_scene_to_file("res://rooms/test.tscn")
+	#var options = load("res://rooms/test.tscn")
+	#get_tree().current_scene.add_child(options)
+	
+
+
+
+func _on_button_3_pressed():
+	get_tree().quit()

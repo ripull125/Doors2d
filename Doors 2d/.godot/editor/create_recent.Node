@@ -1,11 +1,12 @@
+Sprite2D
+Label
+TextureRect
+Area2D
 Button
 VBoxContainer
 CollisionShape2D
-Area2D
 Marker2D
-TextureRect
 Camera2D
 TileMap
 AnimatedSprite2D
 CharacterBody2D
-Sprite2D
