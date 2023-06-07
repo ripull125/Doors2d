@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://iq8smkh3xpi4"]
+[gd_scene load_steps=7 format=3 uid="uid://iq8smkh3xpi4"]
 
 [ext_resource type="Script" path="res://menu.gd" id="1_7107t"]
 [ext_resource type="Texture2D" uid="uid://dorrlfjx5fmts" path="res://scenes/360_F_509400712_Yv1QEGh7RZXQJJYjthPjrs6Htm69vJ2u.jpg" id="2_4d6fv"]
 [ext_resource type="Texture2D" uid="uid://bjld3x2f11j2h" path="res://rooms/userlmn_5f5dfdf958141254261d1f34509c0455.png" id="3_skobm"]
 [ext_resource type="Texture2D" uid="uid://bw2mrtaksle31" path="res://rooms/24928b927dec83e9a4b1e53a02fce756.png" id="4_q4exg"]
 [ext_resource type="Texture2D" uid="uid://dn1m6rrib1npu" path="res://rooms/386d0138bc279fb435f3905052840811.png" id="5_pklh0"]
+[ext_resource type="Texture2D" uid="uid://b8cg01adunotk" path="res://d18c01498866f87ec8c9e65c64d2a1e0.png" id="6_fb8tw"]
 
 [node name="menu" type="Control"]
 layout_mode = 3
@@ -16,10 +17,17 @@ grow_vertical = 2
 script = ExtResource("1_7107t")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-layout_mode = 2
-offset_top = 1.0
-offset_right = 1163.0
-offset_bottom = 653.0
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -581.5
+offset_top = -652.0
+offset_right = 581.5
+grow_horizontal = 2
+grow_vertical = 0
 texture = ExtResource("2_4d6fv")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
@@ -54,6 +62,10 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 icon = ExtResource("5_pklh0")
 flat = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(577, 589)
+texture = ExtResource("6_fb8tw")
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
