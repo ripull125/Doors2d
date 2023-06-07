@@ -20,8 +20,3 @@ offset_top = -707.0
 offset_right = 789.0
 offset_bottom = 779.0
 texture = ExtResource("2_kj0lp")
-
-[node name="Camera2D" type="Camera2D" parent="TextureRect"]
-position = Vector2(697, 707)
-scale = Vector2(0.948693, 75.6509)
-zoom = Vector2(2, 0.5)
