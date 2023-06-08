@@ -12,11 +12,10 @@ playHover.png::CompressedTexture2D::7339209968755223682::1686242280::1686242280:
 pngtree-pixel-art-character-boy-with-backpack-from-the-side-view-png-image_4408617-PhotoRoom.png-PhotoRoom.png::CompressedTexture2D::8148195068560766143::1686242280::1686242280::1::::<><>::
 quitHover.png::CompressedTexture2D::203204132092255937::1686242280::1686242280::1::::<><>::
 title plate.png::CompressedTexture2D::8402955022886272553::1686242280::1686242280::1::::<><>::
-::res://rooms/::1686244744
+::res://rooms/::1686244747
 AnimatedSprite2D.gd::GDScript::-1::1686243712::0::1::::<>AnimatedSprite2D<>::
 room1.tscn::PackedScene::5331818435673478843::1686244622::0::1::::<><>::uid://di1463flyaf58<>uid://va30hj8eqhpf
 room2.tscn::PackedScene::5331818435673478843::1686243710::0::1::::<><>::uid://di1463flyaf58<>uid://va30hj8eqhpf
-test.tscn::PackedScene::2573645368174233681::1686243712::0::1::::<><>::res://Player.gd<>uid://ct1pmqqu56a2g<>res://rooms/AnimatedSprite2D.gd<>uid://va30hj8eqhpf
 ::res://scenes/::1686244622
 360_F_509400712_Yv1QEGh7RZXQJJYjthPjrs6Htm69vJ2u.jpg::CompressedTexture2D::8178052394046062832::1686172967::1686172967::1::::<><>::
 6345996.jpg::CompressedTexture2D::6565053761129325524::1686172967::1686172967::1::::<><>::
