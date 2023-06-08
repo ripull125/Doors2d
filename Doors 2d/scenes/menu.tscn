@@ -1,7 +1,7 @@
 [gd_scene load_steps=18 format=3 uid="uid://iq8smkh3xpi4"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_ugpcw"]
-[ext_resource type="Texture2D" uid="uid://dorrlfjx5fmts" path="res://scenes/360_F_509400712_Yv1QEGh7RZXQJJYjthPjrs6Htm69vJ2u.jpg" id="2_8ngcq"]
+[ext_resource type="Texture2D" uid="uid://dorrlfjx5fmts" path="res://menu/360_F_509400712_Yv1QEGh7RZXQJJYjthPjrs6Htm69vJ2u.jpg" id="2_kyrxt"]
 [ext_resource type="Texture2D" uid="uid://b4p756o78347j" path="res://menu/044463fac4145765aa89716a0a972bfe.png" id="3_ljo5b"]
 [ext_resource type="Texture2D" uid="uid://dctfylui383cg" path="res://menu/playHover.png" id="4_dy754"]
 [ext_resource type="Script" path="res://scripts/TextureButton.gd" id="5_a5pte"]
@@ -75,7 +75,7 @@ offset_top = -652.0
 offset_right = 581.5
 grow_horizontal = 2
 grow_vertical = 0
-texture = ExtResource("2_8ngcq")
+texture = ExtResource("2_kyrxt")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
