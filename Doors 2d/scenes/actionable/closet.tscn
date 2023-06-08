@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://d5cdn5b3vf3y"]
+
+[ext_resource type="Script" path="res://scenes/actionable/closet.gd" id="1_nv2d2"]
+
+[node name="closet" type="Area2D"]
+script = ExtResource("1_nv2d2")
