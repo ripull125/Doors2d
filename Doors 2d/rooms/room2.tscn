@@ -1,7 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://ch71jg4rqvxrv"]
+[gd_scene load_steps=13 format=3 uid="uid://ch71jg4rqvxrv"]
 
 [ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="1_snowr"]
-[ext_resource type="Texture2D" uid="uid://defgm5mbabtgf" path="res://closet1.png" id="2_5pa0h"]
+[ext_resource type="Texture2D" uid="uid://defgm5mbabtgf" path="res://sprites/closet1.png" id="2_5pa0h"]
 [ext_resource type="Texture2D" uid="uid://va30hj8eqhpf" path="res://sprites/basic_room_1.png" id="2_6w85w"]
 [ext_resource type="FontFile" uid="uid://bxkfrtjpl7108" path="res://Temp1_daydream_3.zip/Daydream.ttf" id="3_liyh8"]
 

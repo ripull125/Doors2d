@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://ch71jg4rqvxrv"]
+[gd_scene load_steps=5 format=3 uid="uid://ch71jg4rqvxrv"]
 
 [ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="1_52hjc"]
 [ext_resource type="Texture2D" uid="uid://va30hj8eqhpf" path="res://sprites/basic_room_1.png" id="2_kj0lp"]
@@ -1609,7 +1609,7 @@ texture = ExtResource("2_kj0lp")
 [sub_resource type="TileSet" id="TileSet_svga3"]
 sources/0 = SubResource("TileSetAtlasSource_o4dnj")
 
-[node name="room1" type="Node2D"]
+[node name="room2" type="Node2D"]
 
 [node name="player" parent="." instance=ExtResource("1_52hjc")]
 
