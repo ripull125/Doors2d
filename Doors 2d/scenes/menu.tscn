@@ -139,4 +139,3 @@ shape = SubResource("RectangleShape2D_6avg7")
 [connection signal="pressed" from="VBoxContainer/options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="VBoxContainer/quit" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="VBoxContainer/quit" to="." method="_on_texture_button_pressed"]
-[connection signal="ready" from="movingplayer" to="." method="_on_moving_player_ready"]
