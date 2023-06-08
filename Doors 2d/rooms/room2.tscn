@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://ch71jg4rqvxrv"]
+[gd_scene load_steps=10 format=3 uid="uid://ch71jg4rqvxrv"]
 
 [ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="1_snowr"]
 [ext_resource type="Texture2D" uid="uid://va30hj8eqhpf" path="res://sprites/basic_room_1.png" id="2_6w85w"]
+[ext_resource type="FontFile" uid="uid://bxkfrtjpl7108" path="res://Temp1_daydream_3.zip/Daydream.ttf" id="3_liyh8"]
 
 [sub_resource type="TileSet" id="TileSet_svga3"]
 
@@ -69,3 +70,16 @@ offset_top = -802.0
 offset_right = 1314.0
 offset_bottom = 684.0
 texture = ExtResource("2_6w85w")
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 128.0
+offset_top = 486.0
+offset_right = 1034.0
+offset_bottom = 654.0
+theme_override_fonts/font = ExtResource("3_liyh8")
+theme_override_font_sizes/font_size = 40
+text = "Huh? Where am I?
+
+Objective: Find a way out."
+horizontal_alignment = 1
+vertical_alignment = 1

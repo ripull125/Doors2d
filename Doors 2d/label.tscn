@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2tejw5ku7t0c"]
+
+[ext_resource type="FontFile" uid="uid://bxkfrtjpl7108" path="res://Temp1_daydream_3.zip/Daydream.ttf" id="1_usldh"]
+
+[node name="Label" type="Label"]
+top_level = true
+z_index = 1
+offset_left = 95.0
+offset_top = 198.0
+offset_right = 720.0
+offset_bottom = 321.0
+theme_override_fonts/font = ExtResource("1_usldh")
+theme_override_font_sizes/font_size = 10
+text = "Huh? Where am I?
+
+Objective: Find a way out"
+horizontal_alignment = 1
+vertical_alignment = 1
+max_lines_visible = 12
+visible_characters = 0
+visible_ratio = 0.0

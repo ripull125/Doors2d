@@ -1,3 +1,4 @@
+Label
 CollisionShape2D
 StaticBody2D
 Camera2D
@@ -6,7 +7,6 @@ AnimationPlayer
 AnimatedSprite2D
 CharacterBody2D
 TextureButton
-Label
 TextureRect
 Area2D
 Button
