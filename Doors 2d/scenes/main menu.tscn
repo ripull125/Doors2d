@@ -1,10 +1,37 @@
 [gd_scene load_steps=2 format=3 uid="uid://r8tpubdy8qcp"]
 
+<<<<<<< Updated upstream
 [ext_resource type="Texture2D" path="res://sprites/doorsmainmenu.png" id="1_fucj8"]
+=======
+[ext_resource type="Script" path="res://scenes/main menu.gd" id="1_20koq"]
+>>>>>>> Stashed changes
 
-[node name="main menu" type="Node2D"]
+[node name="main menu" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_20koq")
 
-[node name="backdrop" type="TextureRect" parent="."]
-offset_right = 503.0
-offset_bottom = 294.0
-texture = ExtResource("1_fucj8")
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Start"
+
+[node name="Button2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Options"
+
+[node name="Button3" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Quit"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]

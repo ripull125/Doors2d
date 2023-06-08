@@ -1,5 +1,7 @@
 res://default_env.tres
-res://rooms/test.tscn
+res://scenes/player.tscn
+res://scenes/actionable/actionable.tscn
 res://rooms/room1.tscn
-res://Player.gd
-res://rooms/AnimatedSprite2D.gd
+res://menu.tscn
+res://rooms/room2.tscn
+res://menu.gd
