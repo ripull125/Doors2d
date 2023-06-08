@@ -2,57 +2,81 @@
 
 [ext_resource type="Script" path="res://Player.gd" id="1_fs8lp"]
 [ext_resource type="Texture2D" uid="uid://ct1pmqqu56a2g" path="res://sprites/main character.png" id="2_1syf5"]
+[ext_resource type="Script" path="res://rooms/AnimatedSprite2D.gd" id="3_o41fm"]
 [ext_resource type="Texture2D" uid="uid://va30hj8eqhpf" path="res://sprites/basic_room_1.png" id="3_ukfps"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qdork"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1jtu3"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ilj6g"]
-atlas = ExtResource("2_1syf5")
-region = Rect2(0, 0, 168, 112)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_ai3l4"]
 atlas = ExtResource("2_1syf5")
 region = Rect2(0, 0, 168, 112)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_8uphh"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_xwswb"]
 atlas = ExtResource("2_1syf5")
 region = Rect2(168, 0, 168, 112)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_mm7jq"]
-atlas = ExtResource("2_1syf5")
-region = Rect2(0, 112, 168, 112)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_nqa3k"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_ip5yd"]
 atlas = ExtResource("2_1syf5")
 region = Rect2(168, 112, 168, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ilj6g"]
+atlas = ExtResource("2_1syf5")
+region = Rect2(0, 0, 168, 112)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_7l3wm"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ilj6g")
+"texture": SubResource("AtlasTexture_ai3l4")
 }],
 "loop": true,
-"name": &"default",
+"name": &"down",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"idle down",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"idle left",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"idle right",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"idle up",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ai3l4")
+"texture": SubResource("AtlasTexture_xwswb")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_8uphh")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_mm7jq")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_nqa3k")
+"texture": SubResource("AtlasTexture_ip5yd")
 }],
 "loop": true,
-"name": &"forward",
+"name": &"left",
+"speed": 3.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ilj6g")
+}],
+"loop": true,
+"name": &"up",
 "speed": 5.0
 }]
 
@@ -338,7 +362,9 @@ shape = SubResource("CircleShape2D_1jtu3")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
 position = Vector2(1, 0)
 sprite_frames = SubResource("SpriteFrames_7l3wm")
-animation = &"forward"
+animation = &"left"
+autoplay = "left"
+script = ExtResource("3_o41fm")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_xwu3b")
