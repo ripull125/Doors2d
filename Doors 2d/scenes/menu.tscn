@@ -1,18 +1,18 @@
 [gd_scene load_steps=18 format=3 uid="uid://iq8smkh3xpi4"]
 
-[ext_resource type="Script" path="res://menu.gd" id="1_7107t"]
-[ext_resource type="Texture2D" uid="uid://dorrlfjx5fmts" path="res://scenes/360_F_509400712_Yv1QEGh7RZXQJJYjthPjrs6Htm69vJ2u.jpg" id="2_4d6fv"]
-[ext_resource type="Texture2D" uid="uid://b8cg01adunotk" path="res://d18c01498866f87ec8c9e65c64d2a1e0.png" id="6_fb8tw"]
-[ext_resource type="Texture2D" uid="uid://cdrvi3uryvjhs" path="res://menu/a6233982b32f8de763d7be47304e02dd.png" id="6_gw1n6"]
-[ext_resource type="Texture2D" uid="uid://b4p756o78347j" path="res://menu/044463fac4145765aa89716a0a972bfe.png" id="6_h4k50"]
-[ext_resource type="Texture2D" uid="uid://b7okmvcpe8ln3" path="res://menu/optionHover.png" id="7_1hymm"]
-[ext_resource type="Texture2D" uid="uid://dctfylui383cg" path="res://menu/playHover.png" id="7_4kcpf"]
-[ext_resource type="Script" path="res://TextureButton.gd" id="8_3hyp7"]
-[ext_resource type="Texture2D" uid="uid://doxuwvrqpv4q" path="res://menu/7163b43dac861f9363f900497f41b355.png" id="8_5tekf"]
-[ext_resource type="Texture2D" uid="uid://c5o0if83lcu0" path="res://menu/quitHover.png" id="9_y2pyl"]
-[ext_resource type="Texture2D" uid="uid://dodbt2fh27g7x" path="res://menu/pngtree-pixel-art-character-boy-with-backpack-from-the-side-view-png-image_4408617-PhotoRoom.png-PhotoRoom.png" id="11_eixqf"]
-[ext_resource type="Script" path="res://movingPlayer.gd" id="11_ykpsn"]
-[ext_resource type="Script" path="res://AnimationPlayer.gd" id="13_tuq70"]
+[ext_resource type="Script" path="res://scripts/menu.gd" id="1_ugpcw"]
+[ext_resource type="Texture2D" uid="uid://dorrlfjx5fmts" path="res://scenes/360_F_509400712_Yv1QEGh7RZXQJJYjthPjrs6Htm69vJ2u.jpg" id="2_8ngcq"]
+[ext_resource type="Texture2D" uid="uid://b4p756o78347j" path="res://menu/044463fac4145765aa89716a0a972bfe.png" id="3_ljo5b"]
+[ext_resource type="Texture2D" uid="uid://dctfylui383cg" path="res://menu/playHover.png" id="4_dy754"]
+[ext_resource type="Script" path="res://scripts/TextureButton.gd" id="5_a5pte"]
+[ext_resource type="Texture2D" uid="uid://cdrvi3uryvjhs" path="res://menu/a6233982b32f8de763d7be47304e02dd.png" id="6_fvc6v"]
+[ext_resource type="Texture2D" uid="uid://b7okmvcpe8ln3" path="res://menu/optionHover.png" id="7_o10an"]
+[ext_resource type="Texture2D" uid="uid://doxuwvrqpv4q" path="res://menu/7163b43dac861f9363f900497f41b355.png" id="8_tsb2e"]
+[ext_resource type="Texture2D" uid="uid://c5o0if83lcu0" path="res://menu/quitHover.png" id="9_so1mk"]
+[ext_resource type="Texture2D" uid="uid://b8cg01adunotk" path="res://sprites/d18c01498866f87ec8c9e65c64d2a1e0.png" id="10_v2715"]
+[ext_resource type="Script" path="res://scripts/movingPlayer.gd" id="11_o0p7h"]
+[ext_resource type="Texture2D" uid="uid://dodbt2fh27g7x" path="res://menu/pngtree-pixel-art-character-boy-with-backpack-from-the-side-view-png-image_4408617-PhotoRoom.png-PhotoRoom.png" id="12_u3iqi"]
+[ext_resource type="Script" path="res://scripts/AnimationPlayer.gd" id="13_n5ugq"]
 
 [sub_resource type="Animation" id="Animation_copt3"]
 length = 0.001
@@ -61,7 +61,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_7107t")
+script = ExtResource("1_ugpcw")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
@@ -75,7 +75,7 @@ offset_top = -652.0
 offset_right = 581.5
 grow_horizontal = 2
 grow_vertical = 0
-texture = ExtResource("2_4d6fv")
+texture = ExtResource("2_8ngcq")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -90,53 +90,54 @@ grow_horizontal = 2
 [node name="play" type="TextureButton" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
-texture_normal = ExtResource("6_h4k50")
-texture_pressed = ExtResource("7_4kcpf")
-texture_hover = ExtResource("7_4kcpf")
-script = ExtResource("8_3hyp7")
+texture_normal = ExtResource("3_ljo5b")
+texture_pressed = ExtResource("4_dy754")
+texture_hover = ExtResource("4_dy754")
+script = ExtResource("5_a5pte")
 
 [node name="options" type="TextureButton" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
-texture_normal = ExtResource("6_gw1n6")
-texture_pressed = ExtResource("7_1hymm")
-texture_hover = ExtResource("7_1hymm")
-script = ExtResource("8_3hyp7")
+texture_normal = ExtResource("6_fvc6v")
+texture_pressed = ExtResource("7_o10an")
+texture_hover = ExtResource("7_o10an")
+script = ExtResource("5_a5pte")
 
 [node name="quit" type="TextureButton" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
-texture_normal = ExtResource("8_5tekf")
-texture_pressed = ExtResource("9_y2pyl")
-texture_hover = ExtResource("9_y2pyl")
-script = ExtResource("8_3hyp7")
+texture_normal = ExtResource("8_tsb2e")
+texture_pressed = ExtResource("9_so1mk")
+texture_hover = ExtResource("9_so1mk")
+script = ExtResource("5_a5pte")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(577, 589)
-texture = ExtResource("6_fb8tw")
+texture = ExtResource("10_v2715")
 
 [node name="movingplayer" type="CharacterBody2D" parent="."]
-script = ExtResource("11_ykpsn")
+script = ExtResource("11_o0p7h")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="movingplayer"]
 position = Vector2(-65, 491)
 scale = Vector2(0.588889, 0.580556)
-texture = ExtResource("11_eixqf")
+texture = ExtResource("12_u3iqi")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="movingplayer"]
 libraries = {
 "": SubResource("AnimationLibrary_1apal")
 }
-script = ExtResource("13_tuq70")
+script = ExtResource("13_n5ugq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="movingplayer"]
 position = Vector2(-69, 475)
 shape = SubResource("RectangleShape2D_6avg7")
 
 [connection signal="pressed" from="VBoxContainer/play" to="." method="_on_texture_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="VBoxContainer/options" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="VBoxContainer/quit" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="VBoxContainer/quit" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/quit" to="." method="_on_quit_pressed"]
 [connection signal="ready" from="movingplayer" to="." method="_on_moving_player_ready"]

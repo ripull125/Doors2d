@@ -1,14 +1,13 @@
-Label
+AnimatedSprite2D
+Area2D
 CollisionShape2D
+Sprite2D
 StaticBody2D
 Camera2D
-Sprite2D
 AnimationPlayer
-AnimatedSprite2D
 CharacterBody2D
 TextureButton
 TextureRect
-Area2D
 Button
 VBoxContainer
 Marker2D
