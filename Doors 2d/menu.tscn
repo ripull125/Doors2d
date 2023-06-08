@@ -1,11 +1,15 @@
-[gd_scene load_steps=7 format=3 uid="uid://iq8smkh3xpi4"]
+[gd_scene load_steps=11 format=3 uid="uid://iq8smkh3xpi4"]
 
 [ext_resource type="Script" path="res://menu.gd" id="1_7107t"]
 [ext_resource type="Texture2D" uid="uid://dorrlfjx5fmts" path="res://scenes/360_F_509400712_Yv1QEGh7RZXQJJYjthPjrs6Htm69vJ2u.jpg" id="2_4d6fv"]
-[ext_resource type="Texture2D" uid="uid://bjld3x2f11j2h" path="res://rooms/userlmn_5f5dfdf958141254261d1f34509c0455.png" id="3_skobm"]
-[ext_resource type="Texture2D" uid="uid://bw2mrtaksle31" path="res://rooms/24928b927dec83e9a4b1e53a02fce756.png" id="4_q4exg"]
-[ext_resource type="Texture2D" uid="uid://dn1m6rrib1npu" path="res://rooms/386d0138bc279fb435f3905052840811.png" id="5_pklh0"]
 [ext_resource type="Texture2D" uid="uid://b8cg01adunotk" path="res://d18c01498866f87ec8c9e65c64d2a1e0.png" id="6_fb8tw"]
+[ext_resource type="Texture2D" uid="uid://cdrvi3uryvjhs" path="res://menu/a6233982b32f8de763d7be47304e02dd.png" id="6_gw1n6"]
+[ext_resource type="Texture2D" uid="uid://b4p756o78347j" path="res://menu/044463fac4145765aa89716a0a972bfe.png" id="6_h4k50"]
+[ext_resource type="Texture2D" uid="uid://b7okmvcpe8ln3" path="res://menu/optionHover.png" id="7_1hymm"]
+[ext_resource type="Texture2D" uid="uid://dctfylui383cg" path="res://menu/playHover.png" id="7_4kcpf"]
+[ext_resource type="Script" path="res://TextureButton.gd" id="8_3hyp7"]
+[ext_resource type="Texture2D" uid="uid://doxuwvrqpv4q" path="res://menu/7163b43dac861f9363f900497f41b355.png" id="8_5tekf"]
+[ext_resource type="Texture2D" uid="uid://c5o0if83lcu0" path="res://menu/quitHover.png" id="9_y2pyl"]
 
 [node name="menu" type="Control"]
 layout_mode = 3
@@ -40,33 +44,36 @@ offset_right = 179.0
 offset_bottom = 468.0
 grow_horizontal = 2
 
-[node name="Button" type="Button" parent="VBoxContainer"]
-modulate = Color(0.12549, 1, 1, 1)
+[node name="play" type="TextureButton" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
-icon = ExtResource("3_skobm")
-flat = true
+texture_normal = ExtResource("6_h4k50")
+texture_pressed = ExtResource("7_4kcpf")
+texture_hover = ExtResource("7_4kcpf")
+script = ExtResource("8_3hyp7")
 
-[node name="Button2" type="Button" parent="VBoxContainer"]
-modulate = Color(0.0431373, 1, 1, 1)
+[node name="options" type="TextureButton" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
-size_flags_vertical = 4
-icon = ExtResource("4_q4exg")
-flat = true
+texture_normal = ExtResource("6_gw1n6")
+texture_pressed = ExtResource("7_1hymm")
+texture_hover = ExtResource("7_1hymm")
+script = ExtResource("8_3hyp7")
 
-[node name="Button3" type="Button" parent="VBoxContainer"]
-modulate = Color(0.0901961, 1, 1, 1)
+[node name="quit" type="TextureButton" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
-size_flags_vertical = 4
-icon = ExtResource("5_pklh0")
-flat = true
+texture_normal = ExtResource("8_5tekf")
+texture_pressed = ExtResource("9_y2pyl")
+texture_hover = ExtResource("9_y2pyl")
+script = ExtResource("8_3hyp7")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(577, 589)
 texture = ExtResource("6_fb8tw")
 
-[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
-[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="VBoxContainer/play" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/options" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="VBoxContainer/quit" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/quit" to="." method="_on_quit_pressed"]
