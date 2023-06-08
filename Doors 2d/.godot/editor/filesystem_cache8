@@ -1,52 +1,50 @@
-2a60927148abd1d33b818b535e306557
-::res://::1686243931
-AnimationPlayer.gd::GDScript::-1::1686242642::0::1::::<>AnimationPlayer<>::
-closet1.png::CompressedTexture2D::7450726640168843333::1685990117::1685990129::1::::<><>::
-d18c01498866f87ec8c9e65c64d2a1e0.png::CompressedTexture2D::4707191591831174992::1686242642::1686242642::1::::<><>::
-default_env.tres::Environment::6222481374677130643::1686243870::0::1::::<><>::
-icon.png::CompressedTexture2D::2669677842093264439::1685983859::1685552903::1::::<><>::
-menu.gd::GDScript::-1::1686242642::0::1::::<>Control<>::
-menu.tscn::PackedScene::596577244305429825::1686243870::0::1::::<><>::res://menu.gd<>uid://dorrlfjx5fmts<>uid://b8cg01adunotk<>uid://cdrvi3uryvjhs<>uid://b4p756o78347j<>uid://b7okmvcpe8ln3<>uid://dctfylui383cg<>res://TextureButton.gd<>uid://doxuwvrqpv4q<>uid://c5o0if83lcu0<>uid://dodbt2fh27g7x<>res://movingPlayer.gd<>res://AnimationPlayer.gd
-moving player.gd::GDScript::-1::1686242642::0::1::::<>CharacterBody2D<>::
-movingPlayer.gd::GDScript::-1::1686242642::0::1::::<>CharacterBody2D<>::
-Player.gd::GDScript::-1::1686158004::0::1::::<>CharacterBody2D<>::
-TextureButton.gd::GDScript::-1::1686242642::0::1::::<>TextureButton<>::
-::res://menu/::1686242642
-7163b43dac861f9363f900497f41b355.png::CompressedTexture2D::240901214931654934::1686242642::1686242642::1::::<><>::
-044463fac4145765aa89716a0a972bfe.png::CompressedTexture2D::4454860984442894637::1686242642::1686242642::1::::<><>::
-a6233982b32f8de763d7be47304e02dd.png::CompressedTexture2D::5019793165673853036::1686242642::1686242642::1::::<><>::
-optionHover.png::CompressedTexture2D::4661994674889646378::1686242642::1686242642::1::::<><>::
-playHover.png::CompressedTexture2D::7339209968755223682::1686242642::1686242642::1::::<><>::
-pngtree-pixel-art-character-boy-with-backpack-from-the-side-view-png-image_4408617-PhotoRoom.png-PhotoRoom.png::CompressedTexture2D::8148195068560766143::1686242642::1686242642::1::::<><>::
-quitHover.png::CompressedTexture2D::203204132092255937::1686242642::1686242642::1::::<><>::
-title plate.png::CompressedTexture2D::8402955022886272553::1686242642::1686242642::1::::<><>::
-::res://rooms/::1686243870
-386d0138bc279fb435f3905052840811.png::CompressedTexture2D::8126175723028012390::1686242642::1686242642::1::::<><>::
-24928b927dec83e9a4b1e53a02fce756.png::CompressedTexture2D::3987073403921507226::1686242642::1686242642::1::::<><>::
-AnimatedSprite2D.gd::GDScript::-1::1686175131::0::1::::<>AnimatedSprite2D<>::
-room1.tscn::PackedScene::9124088715245653401::1686243870::0::1::::<><>::uid://di1463flyaf58<>uid://va30hj8eqhpf
-room2.tscn::PackedScene::5331818435673478843::1686243870::0::1::::<><>::uid://di1463flyaf58<>uid://va30hj8eqhpf
-test.tscn::PackedScene::2573645368174233681::1686175131::0::1::::<><>::res://Player.gd<>uid://ct1pmqqu56a2g<>res://rooms/AnimatedSprite2D.gd<>uid://va30hj8eqhpf
-userlmn_5f5dfdf958141254261d1f34509c0455.png::CompressedTexture2D::3041061834947414161::1686242642::1686242642::1::::<><>::
-::res://scenes/::1686243870
-360_F_509400712_Yv1QEGh7RZXQJJYjthPjrs6Htm69vJ2u.jpg::CompressedTexture2D::8178052394046062832::1686242642::1686242642::1::::<><>::
-6345996.jpg::CompressedTexture2D::6565053761129325524::1686242642::1686242642::1::::<><>::
-main menu.gd::GDScript::-1::1686242642::0::1::::<>Control<>::
-main menu.tscn::PackedScene::1262516269683160635::1686242936::0::1::::<><>::
-player.tscn::PackedScene::7776264253100090321::1686243870::0::1::::<><>::res://scripts/player.gd<>uid://ct1pmqqu56a2g
-::res://scenes/actionable/::1686243870
-actionable.tscn::PackedScene::4499729527553746620::1686243870::0::1::::<><>::
-closet.tscn::PackedScene::272625384134507372::1686242642::0::1::::<><>::res://scenes/actionable/closet.gd
-::res://scripts/::1686157593
-player.gd::GDScript::-1::1686157593::0::1::::<>CharacterBody2D<>::
-::res://sprites/::1686242642
-basic room 1.jpg::CompressedTexture2D::6007987968298281164::1686072223::1686072223::1::::<><>::
-basic_room_1.png::CompressedTexture2D::1475710820115806015::1685983859::1685983859::1::::<><>::
-closet.png::CompressedTexture2D::6539784659501805150::1685983859::1685983859::1::::<><>::
-doorsmainmenu.png::CompressedTexture2D::8878447844061524635::1686157593::1686157593::1::::<><>::
-drawer.png::CompressedTexture2D::5160454692108694453::1685983859::1685984083::1::::<><>::
-main character.png::CompressedTexture2D::6161036268573218164::1685983859::1685983859::1::::<><>::
-New Piskel (3).png::CompressedTexture2D::7439355782715871056::1686242642::1686242642::1::::<><>::
-New Piskel-1.png.png::CompressedTexture2D::8662723912914416481::1686242642::1686242642::1::::<><>::
-table.png::CompressedTexture2D::4955519946628091537::1686157593::1686157593::1::::<><>::
-tst.png::CompressedTexture2D::8645842623008142869::1685983859::1685983859::1::::<><>::
+fc8a56933c4b1c8d796fdb8f7a9f9475
+::res://::1686244744
+default_env.tres::Environment::6222481374677130643::1686244622::0::1::::<><>::
+icon.png::CompressedTexture2D::2669677842093264439::1671214678::1685553586::1::::<><>::
+::res://entities/::1685553681
+::res://menu/::1686242280
+7163b43dac861f9363f900497f41b355.png::CompressedTexture2D::240901214931654934::1686242280::1686242280::1::::<><>::
+044463fac4145765aa89716a0a972bfe.png::CompressedTexture2D::4454860984442894637::1686242280::1686242280::1::::<><>::
+a6233982b32f8de763d7be47304e02dd.png::CompressedTexture2D::5019793165673853036::1686242280::1686242280::1::::<><>::
+optionHover.png::CompressedTexture2D::4661994674889646378::1686242280::1686242280::1::::<><>::
+playHover.png::CompressedTexture2D::7339209968755223682::1686242280::1686242280::1::::<><>::
+pngtree-pixel-art-character-boy-with-backpack-from-the-side-view-png-image_4408617-PhotoRoom.png-PhotoRoom.png::CompressedTexture2D::8148195068560766143::1686242280::1686242280::1::::<><>::
+quitHover.png::CompressedTexture2D::203204132092255937::1686242280::1686242280::1::::<><>::
+title plate.png::CompressedTexture2D::8402955022886272553::1686242280::1686242280::1::::<><>::
+::res://rooms/::1686244747
+AnimatedSprite2D.gd::GDScript::-1::1686243712::0::1::::<>AnimatedSprite2D<>::
+room1.tscn::PackedScene::5331818435673478843::1686244622::0::1::::<><>::uid://di1463flyaf58<>uid://va30hj8eqhpf
+room2.tscn::PackedScene::5331818435673478843::1686243710::0::1::::<><>::uid://di1463flyaf58<>uid://va30hj8eqhpf
+::res://scenes/::1686244622
+360_F_509400712_Yv1QEGh7RZXQJJYjthPjrs6Htm69vJ2u.jpg::CompressedTexture2D::8178052394046062832::1686172967::1686172967::1::::<><>::
+6345996.jpg::CompressedTexture2D::6565053761129325524::1686172967::1686172967::1::::<><>::
+main menu.gd::GDScript::-1::1686172967::0::1::::<>Control<>::
+menu.tscn::PackedScene::596577244305429825::1686244622::0::1::::<><>::res://scripts/menu.gd<>uid://dorrlfjx5fmts<>uid://b4p756o78347j<>uid://dctfylui383cg<>res://scripts/TextureButton.gd<>uid://cdrvi3uryvjhs<>uid://b7okmvcpe8ln3<>uid://doxuwvrqpv4q<>uid://c5o0if83lcu0<>uid://b8cg01adunotk<>res://scripts/movingPlayer.gd<>uid://dodbt2fh27g7x<>res://scripts/AnimationPlayer.gd
+player.tscn::PackedScene::7776264253100090321::1686244622::0::1::::<><>::res://scripts/player.gd<>uid://dd8xdq466hvm3
+::res://scenes/actionable/::1686244622
+actionable.tscn::PackedScene::4499729527553746620::1686244622::0::1::::<><>::
+closet.tscn::PackedScene::272625384134507372::1686217463::0::1::::<><>::res://scenes/actionable/closet.gd
+::res://scripts/::1686244622
+AnimationPlayer.gd::GDScript::-1::1686242280::0::1::::<>AnimationPlayer<>::
+menu.gd::GDScript::-1::1686242280::0::1::::<>Control<>::
+moving player.gd::GDScript::-1::1686242280::0::1::::<>CharacterBody2D<>::
+movingPlayer.gd::GDScript::-1::1686242280::0::1::::<>CharacterBody2D<>::
+player.gd::GDScript::-1::1686244622::0::1::::<>CharacterBody2D<>::
+TextureButton.gd::GDScript::-1::1686242280::0::1::::<>TextureButton<>::
+::res://sprites/::1686244744
+386d0138bc279fb435f3905052840811.png::CompressedTexture2D::8126175723028012390::1686172967::1686244739::1::::<><>::
+24928b927dec83e9a4b1e53a02fce756.png::CompressedTexture2D::3987073403921507226::1686172967::1686244731::1::::<><>::
+basic room 1.jpg::CompressedTexture2D::6007987968298281164::1686070651::1686071654::1::::<><>::
+basic_room_1.png::CompressedTexture2D::1475710820115806015::1685925637::1685925638::1::::<><>::
+closet1.png::CompressedTexture2D::7450726640168843333::1686070273::1686243895::1::::<><>::
+closet.png::CompressedTexture2D::6539784659501805150::1685922490::1685985479::1::::<><>::
+d18c01498866f87ec8c9e65c64d2a1e0.png::CompressedTexture2D::4707191591831174992::1686172967::1686243898::1::::<><>::
+doorsmainmenu.png::CompressedTexture2D::8878447844061524635::1686140816::1686140820::1::::<><>::
+drawer.png::CompressedTexture2D::5160454692108694453::1685985479::1685990748::1::::<><>::
+main character.png::CompressedTexture2D::6161036268573218164::1685922490::1685985479::1::::<><>::
+New Piskel (3).png::CompressedTexture2D::7439355782715871056::1686217069::1686217111::1::::<><>::
+New Piskel-1.png.png::CompressedTexture2D::8662723912914416481::1686217401::1686217460::1::::<><>::
+table.png::CompressedTexture2D::4955519946628091537::1686139435::1686139447::1::::<><>::
+tst.png::CompressedTexture2D::8645842623008142869::1685731735::1685731737::1::::<><>::
+userlmn_5f5dfdf958141254261d1f34509c0455.png::CompressedTexture2D::3041061834947414161::1686172967::1686244744::1::::<><>::

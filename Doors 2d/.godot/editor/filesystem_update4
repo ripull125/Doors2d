@@ -1,3 +1,5 @@
 res://default_env.tres
 res://rooms/room2.tscn
+res://scenes/main menu.tscn
+res://scenes/menu.tscn
 res://scripts/player.gd
