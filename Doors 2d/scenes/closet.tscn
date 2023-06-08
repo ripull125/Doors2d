@@ -1,0 +1,74 @@
+[gd_scene load_steps=11 format=3 uid="uid://cin0jtwuxkv7t"]
+
+[ext_resource type="Texture2D" uid="uid://defgm5mbabtgf" path="res://sprites/closet1.png" id="1_fl8qn"]
+[ext_resource type="Script" path="res://scenes/closet.gd" id="1_fvho8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o7fq8"]
+atlas = ExtResource("1_fl8qn")
+region = Rect2(0, 0, 168, 168)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a6wyt"]
+atlas = ExtResource("1_fl8qn")
+region = Rect2(0, 0, 168, 168)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wi7cp"]
+atlas = ExtResource("1_fl8qn")
+region = Rect2(168, 0, 168, 168)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_35o18"]
+atlas = ExtResource("1_fl8qn")
+region = Rect2(0, 168, 168, 168)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e0ta1"]
+atlas = ExtResource("1_fl8qn")
+region = Rect2(168, 168, 168, 168)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dwjtq"]
+atlas = ExtResource("1_fl8qn")
+region = Rect2(0, 336, 168, 168)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_01aes"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o7fq8")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a6wyt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wi7cp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_35o18")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e0ta1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dwjtq")
+}],
+"loop": true,
+"name": &"open and close",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4fv02"]
+
+[node name="closet" type="Area2D"]
+collision_mask = 0
+monitoring = false
+script = ExtResource("1_fvho8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_01aes")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(2.78531, 6.95247)
+shape = SubResource("RectangleShape2D_4fv02")
