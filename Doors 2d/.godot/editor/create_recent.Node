@@ -1,4 +1,6 @@
 CollisionShape2D
+StaticBody2D
+Camera2D
 Sprite2D
 AnimationPlayer
 AnimatedSprite2D
@@ -10,5 +12,4 @@ Area2D
 Button
 VBoxContainer
 Marker2D
-Camera2D
 TileMap

@@ -1,8 +1,7 @@
 res://default_env.tres
-res://menu.tscn
 res://scenes/player.tscn
 res://scenes/actionable/actionable.tscn
 res://rooms/room1.tscn
+res://menu.tscn
+res://rooms/room2.tscn
 res://menu.gd
-res://movingPlayer.gd
-res://AnimationPlayer.gd

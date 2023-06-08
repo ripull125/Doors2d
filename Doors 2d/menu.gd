@@ -15,7 +15,7 @@ func _process(delta):
 
 
 func _on_texture_button_pressed():
-	get_tree().change_scene_to_file("res://rooms/room1.tscn")
+	get_tree().change_scene_to_file("res://rooms/room2.tscn")
 	
 
 
