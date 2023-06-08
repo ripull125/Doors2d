@@ -39,15 +39,15 @@ format = 2
 [node name="StaticBody2D" type="StaticBody2D" parent="TileMap"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
-position = Vector2(612, -834.75)
+position = Vector2(600, -851)
 shape = SubResource("RectangleShape2D_8erou")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
-position = Vector2(584, 629)
+position = Vector2(586, 616)
 shape = SubResource("RectangleShape2D_8erou")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
-position = Vector2(-166.5, -61)
+position = Vector2(-154, -59)
 shape = SubResource("RectangleShape2D_rbid5")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
@@ -55,17 +55,17 @@ position = Vector2(1220.5, -56.5)
 shape = SubResource("RectangleShape2D_i34fo")
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
-position = Vector2(780, 483)
+position = Vector2(780, 407)
 shape = SubResource("RectangleShape2D_iej4d")
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
-position = Vector2(364, 483.125)
+position = Vector2(366, 406)
 shape = SubResource("RectangleShape2D_es671")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 show_behind_parent = true
-offset_left = -172.0
-offset_top = -802.0
-offset_right = 1314.0
-offset_bottom = 684.0
+offset_left = -168.0
+offset_top = -819.0
+offset_right = 1318.0
+offset_bottom = 667.0
 texture = ExtResource("2_6w85w")
