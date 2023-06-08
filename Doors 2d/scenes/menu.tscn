@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://iq8smkh3xpi4"]
+[gd_scene load_steps=17 format=3 uid="uid://iq8smkh3xpi4"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_ugpcw"]
 [ext_resource type="Texture2D" uid="uid://dorrlfjx5fmts" path="res://menu/360_F_509400712_Yv1QEGh7RZXQJJYjthPjrs6Htm69vJ2u.jpg" id="2_kyrxt"]
@@ -10,11 +10,26 @@
 [ext_resource type="Texture2D" uid="uid://doxuwvrqpv4q" path="res://menu/7163b43dac861f9363f900497f41b355.png" id="8_tsb2e"]
 [ext_resource type="Texture2D" uid="uid://c5o0if83lcu0" path="res://menu/quitHover.png" id="9_so1mk"]
 [ext_resource type="Texture2D" uid="uid://b8cg01adunotk" path="res://sprites/d18c01498866f87ec8c9e65c64d2a1e0.png" id="10_v2715"]
-[ext_resource type="Script" path="res://scripts/movingPlayer.gd" id="11_o0p7h"]
-[ext_resource type="Texture2D" uid="uid://dodbt2fh27g7x" path="res://menu/pngtree-pixel-art-character-boy-with-backpack-from-the-side-view-png-image_4408617-PhotoRoom.png-PhotoRoom.png" id="12_u3iqi"]
-[ext_resource type="Script" path="res://scripts/AnimationPlayer.gd" id="13_n5ugq"]
+[ext_resource type="Texture2D" uid="uid://bebhg63t4tyap" path="res://icon.png" id="11_jldo2"]
+[ext_resource type="Script" path="res://scenes/CharacterBody2D.gd" id="11_kgp6r"]
 
-[sub_resource type="Animation" id="Animation_copt3"]
+[sub_resource type="Animation" id="Animation_f4p5s"]
+resource_name = "movingplayer"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(104, 168), Vector2(1703, 179)]
+}
+
+[sub_resource type="Animation" id="Animation_pd204"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -26,33 +41,17 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(0, 0)]
+"values": [Vector2(104, 168)]
 }
 
-[sub_resource type="Animation" id="Animation_essqt"]
-resource_name = "new_animation"
-length = 4.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 2.1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(0, 0), Vector2(1300, 0)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_1apal"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8otxy"]
 _data = {
-"RESET": SubResource("Animation_copt3"),
-"new_animation": SubResource("Animation_essqt")
+"RESET": SubResource("Animation_pd204"),
+"movingplayer": SubResource("Animation_f4p5s")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6avg7"]
-size = Vector2(55, 191)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3efi1"]
+size = Vector2(152, 168)
 
 [node name="menu" type="Control"]
 layout_mode = 3
@@ -115,24 +114,22 @@ script = ExtResource("5_a5pte")
 position = Vector2(577, 589)
 texture = ExtResource("10_v2715")
 
-[node name="movingplayer" type="CharacterBody2D" parent="."]
-script = ExtResource("11_o0p7h")
-metadata/_edit_group_ = true
+[node name="moving" type="CharacterBody2D" parent="."]
+position = Vector2(104, 168)
+script = ExtResource("11_kgp6r")
 
-[node name="Sprite2D" type="Sprite2D" parent="movingplayer"]
-position = Vector2(-65, 491)
-scale = Vector2(0.588889, 0.580556)
-texture = ExtResource("12_u3iqi")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="movingplayer"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="moving"]
 libraries = {
-"": SubResource("AnimationLibrary_1apal")
+"": SubResource("AnimationLibrary_8otxy")
 }
-script = ExtResource("13_n5ugq")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="movingplayer"]
-position = Vector2(-69, 475)
-shape = SubResource("RectangleShape2D_6avg7")
+[node name="Sprite2D" type="Sprite2D" parent="moving"]
+position = Vector2(-325, 304)
+texture = ExtResource("11_jldo2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="moving"]
+position = Vector2(-284, -9)
+shape = SubResource("RectangleShape2D_3efi1")
 
 [connection signal="pressed" from="VBoxContainer/play" to="." method="_on_texture_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/options" to="." method="_on_texture_button_pressed"]
