@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://ch71jg4rqvxrv"]
+[gd_scene load_steps=10 format=3 uid="uid://ch71jg4rqvxrv"]
 
 [ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="1_snowr"]
 [ext_resource type="Texture2D" uid="uid://va30hj8eqhpf" path="res://sprites/basic_room_1.png" id="2_6w85w"]
+[ext_resource type="Script" path="res://rooms/Inventory.gd" id="3_d3plg"]
 
 [sub_resource type="TileSet" id="TileSet_svga3"]
 
@@ -69,3 +70,8 @@ offset_top = -802.0
 offset_right = 1314.0
 offset_bottom = 684.0
 texture = ExtResource("2_6w85w")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Inventory" type="Node2D" parent="CanvasLayer"]
+script = ExtResource("3_d3plg")
