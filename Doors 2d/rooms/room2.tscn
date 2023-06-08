@@ -1,18 +1,34 @@
-[gd_scene load_steps=9 format=3 uid="uid://ch71jg4rqvxrv"]
+[gd_scene load_steps=12 format=3 uid="uid://ch71jg4rqvxrv"]
 
 [ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="1_snowr"]
+[ext_resource type="Texture2D" uid="uid://defgm5mbabtgf" path="res://closet1.png" id="2_5pa0h"]
 [ext_resource type="Texture2D" uid="uid://va30hj8eqhpf" path="res://sprites/basic_room_1.png" id="2_6w85w"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uq3sw"]
+atlas = ExtResource("2_5pa0h")
+region = Rect2(0, 0, 168, 168)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nkvcs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uq3sw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="TileSet" id="TileSet_svga3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8erou"]
-size = Vector2(1380, 339.5)
+size = Vector2(1367.36, 285.75)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rbid5"]
-size = Vector2(319, 1220)
+size = Vector2(245, 1406)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i34fo"]
-size = Vector2(143, 1211)
+size = Vector2(276, 1359)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iej4d"]
 size = Vector2(100, 138.5)
@@ -32,6 +48,15 @@ limit_right = 1310
 limit_bottom = 670
 limit_smoothed = true
 
+[node name="Area2D" type="Area2D" parent="player"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player/Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player/Area2D"]
+position = Vector2(-572, -440)
+scale = Vector2(2.2381, 2.2381)
+sprite_frames = SubResource("SpriteFrames_nkvcs")
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_svga3")
 format = 2
@@ -40,18 +65,20 @@ format = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
 position = Vector2(612, -834.75)
+scale = Vector2(1.22588, 0.641975)
 shape = SubResource("RectangleShape2D_8erou")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
-position = Vector2(580, 717)
+position = Vector2(572.486, 743.875)
+scale = Vector2(1.18845, 1)
 shape = SubResource("RectangleShape2D_8erou")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
-position = Vector2(-166.5, -61)
+position = Vector2(-203.5, -81)
 shape = SubResource("RectangleShape2D_rbid5")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
-position = Vector2(1220.5, -56.5)
+position = Vector2(1375, -57.5)
 shape = SubResource("RectangleShape2D_i34fo")
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
@@ -64,8 +91,8 @@ shape = SubResource("RectangleShape2D_es671")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 show_behind_parent = true
-offset_left = -172.0
-offset_top = -802.0
-offset_right = 1314.0
-offset_bottom = 684.0
+offset_left = -205.0
+offset_top = -777.0
+offset_right = 1281.0
+offset_bottom = 709.0
 texture = ExtResource("2_6w85w")
