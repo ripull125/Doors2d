@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://b51bymp4ubd06"]
+[gd_scene load_steps=11 format=3 uid="uid://cin0jtwuxkv7t"]
 
 [ext_resource type="Texture2D" uid="uid://defgm5mbabtgf" path="res://sprites/closet1.png" id="1_fl8qn"]
 [ext_resource type="Script" path="res://scenes/closet.gd" id="1_fvho8"]
