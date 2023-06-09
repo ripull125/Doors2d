@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 func _ready():
-	$AnimationPlayer.play("movingplayer")
+	$AnimationPlayer.play("Label")
 
 
 const SPEED = 300.0
