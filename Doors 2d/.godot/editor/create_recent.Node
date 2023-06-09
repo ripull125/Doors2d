@@ -1,10 +1,6 @@
-<<<<<<< Updated upstream
 Panel
 GridContainer
 TextureRect
-=======
-AnimationPlayer
->>>>>>> Stashed changes
 Label
 CollisionShape2D
 Area2D
@@ -13,6 +9,7 @@ AnimatedSprite2D
 Sprite2D
 StaticBody2D
 Camera2D
+AnimationPlayer
 CharacterBody2D
 TextureButton
 Button
