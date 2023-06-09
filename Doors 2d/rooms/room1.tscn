@@ -1,8 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://ch71jg4rqvxrv"]
+[gd_scene load_steps=13 format=3 uid="uid://ch71jg4rqvxrv"]
 
 [ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="1_snowr"]
 [ext_resource type="Texture2D" uid="uid://va30hj8eqhpf" path="res://sprites/basic_room_1.png" id="2_6w85w"]
 [ext_resource type="Script" path="res://rooms/Inventory.gd" id="3_d3plg"]
+[ext_resource type="Texture2D" uid="uid://cef4cc7pf3irf" path="res://sprites/inventory_background.png" id="4_d2t8v"]
+[ext_resource type="Texture2D" uid="uid://devh28rg8k24b" path="res://sprites/item_slot_default_background.png" id="5_xyhbv"]
 
 [sub_resource type="TileSet" id="TileSet_svga3"]
 
@@ -20,6 +22,9 @@ size = Vector2(100, 138.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_es671"]
 size = Vector2(95.5, 142.25)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tbn1w"]
+texture = ExtResource("5_xyhbv")
 
 [node name="room1" type="Node2D"]
 
@@ -75,3 +80,20 @@ texture = ExtResource("2_6w85w")
 
 [node name="Inventory" type="Node2D" parent="CanvasLayer"]
 script = ExtResource("3_d3plg")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_left = 350.0
+offset_top = 47.0
+offset_right = 557.0
+offset_bottom = 159.0
+texture = ExtResource("4_d2t8v")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+offset_left = 446.0
+offset_top = 70.0
+offset_right = 551.0
+offset_bottom = 154.0
+
+[node name="Slot1" type="Panel" parent="GridContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_tbn1w")

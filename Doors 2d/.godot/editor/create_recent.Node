@@ -1,3 +1,6 @@
+Panel
+GridContainer
+TextureRect
 Label
 CollisionShape2D
 Area2D
@@ -9,7 +12,6 @@ Camera2D
 AnimationPlayer
 CharacterBody2D
 TextureButton
-TextureRect
 Button
 VBoxContainer
 Marker2D
