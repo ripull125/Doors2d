@@ -3,8 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="1_snowr"]
 [ext_resource type="Texture2D" uid="uid://va30hj8eqhpf" path="res://sprites/basic_room_1.png" id="2_6w85w"]
 [ext_resource type="Script" path="res://rooms/Inventory.gd" id="3_d3plg"]
-[ext_resource type="Texture2D" uid="uid://cef4cc7pf3irf" path="res://sprites/inventory_background.png" id="4_d2t8v"]
-[ext_resource type="Texture2D" uid="uid://devh28rg8k24b" path="res://sprites/item_slot_default_background.png" id="5_xyhbv"]
+[ext_resource type="Texture2D" path="res://sprites/inventory_background.png" id="4_d2t8v"]
+[ext_resource type="Texture2D" path="res://sprites/item_slot_default_background.png" id="5_xyhbv"]
 
 [sub_resource type="TileSet" id="TileSet_svga3"]
 
