@@ -1,7 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://di1463flyaf58"]
+[gd_scene load_steps=16 format=3 uid="uid://di1463flyaf58"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_38ddx"]
 [ext_resource type="Texture2D" uid="uid://dd8xdq466hvm3" path="res://sprites/New Piskel (3).png" id="2_gk77s"]
+[ext_resource type="Texture2D" uid="uid://coc746jvjweyq" path="res://sprites/up_walk.png" id="3_o3sjc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nlvyb"]
 atlas = ExtResource("2_gk77s")
@@ -22,6 +23,22 @@ region = Rect2(256, 256, 256, 256)
 [sub_resource type="AtlasTexture" id="AtlasTexture_h5v1u"]
 atlas = ExtResource("2_gk77s")
 region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_78fb6"]
+atlas = ExtResource("3_o3sjc")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hf1aq"]
+atlas = ExtResource("3_o3sjc")
+region = Rect2(256, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nd3ks"]
+atlas = ExtResource("3_o3sjc")
+region = Rect2(0, 256, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o0qmc"]
+atlas = ExtResource("3_o3sjc")
+region = Rect2(256, 256, 256, 256)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_wvell"]
 animations = [{
@@ -49,14 +66,27 @@ animations = [{
 "loop": true,
 "name": &"idle",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_78fb6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hf1aq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nd3ks")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o0qmc")
+}],
+"loop": true,
+"name": &"up",
+"speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u4bv8"]
 size = Vector2(86, 86)
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_d4l15"]
-radius = 32.999
-height = 118.012
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_feow3"]
 
@@ -65,20 +95,10 @@ script = ExtResource("1_38ddx")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_wvell")
-animation = &"idle"
+animation = &"up"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_u4bv8")
-
-[node name="Direction" type="Marker2D" parent="."]
-
-[node name="ActionableFinder" type="Area2D" parent="Direction"]
-collision_layer = 0
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Direction/ActionableFinder"]
-position = Vector2(-1, -76)
-rotation = -1.56292
-shape = SubResource("CapsuleShape2D_d4l15")
 
 [node name="Interaction_Components" type="Node2D" parent="."]
 z_index = 1

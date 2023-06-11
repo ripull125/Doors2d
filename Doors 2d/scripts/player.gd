@@ -23,8 +23,10 @@ func _physics_process(_delta):
 
 	if(not inCloset):
 		var direction = Input.get_vector("left", "right", "up", "down")
-		if direction.y > 0:
+		if direction.y > 0 and direction.x == 0:
 			$AnimatedSprite2D.play("down")
+		elif direction.y < 0 and direction.x == 0:
+			$AnimatedSprite2D.play("up")
 		else:
 			$AnimatedSprite2D.play("idle")
 		velocity = direction * speed
