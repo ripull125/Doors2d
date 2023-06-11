@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://di1463flyaf58"]
+[gd_scene load_steps=12 format=3 uid="uid://di1463flyaf58"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_38ddx"]
 [ext_resource type="Texture2D" uid="uid://dd8xdq466hvm3" path="res://sprites/New Piskel (3).png" id="2_gk77s"]
@@ -58,6 +58,8 @@ size = Vector2(86, 86)
 radius = 32.999
 height = 118.012
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_feow3"]
+
 [node name="player" type="CharacterBody2D"]
 script = ExtResource("1_38ddx")
 
@@ -77,3 +79,24 @@ collision_layer = 0
 position = Vector2(-1, -76)
 rotation = -1.56292
 shape = SubResource("CapsuleShape2D_d4l15")
+
+[node name="Interaction_Components" type="Node2D" parent="."]
+z_index = 1
+
+[node name="Interaction_Area" type="Area2D" parent="Interaction_Components"]
+collision_layer = 0
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interaction_Components/Interaction_Area"]
+position = Vector2(0, 46)
+scale = Vector2(18.1798, 18.1798)
+shape = SubResource("CircleShape2D_feow3")
+
+[node name="Interact_Label" type="Label" parent="Interaction_Components"]
+offset_left = 56.0
+offset_top = -105.0
+offset_right = 249.0
+offset_bottom = -79.0
+
+[connection signal="area_entered" from="Interaction_Components/Interaction_Area" to="." method="_on_interaction_area_area_entered"]
+[connection signal="area_exited" from="Interaction_Components/Interaction_Area" to="." method="_on_interaction_area_area_exited"]

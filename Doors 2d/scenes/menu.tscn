@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://c5o0if83lcu0" path="res://menu/quitHover.png" id="9_so1mk"]
 [ext_resource type="Texture2D" uid="uid://b8cg01adunotk" path="res://sprites/d18c01498866f87ec8c9e65c64d2a1e0.png" id="10_v2715"]
 [ext_resource type="Texture2D" uid="uid://bebhg63t4tyap" path="res://icon.png" id="11_jldo2"]
-[ext_resource type="Script" path="res://scenes/CharacterBody2D.gd" id="11_kgp6r"]
+[ext_resource type="Script" path="res://scripts/CharacterBody2D.gd" id="11_kgp6r"]
 
 [sub_resource type="Animation" id="Animation_pd204"]
 length = 0.001
@@ -125,7 +125,7 @@ position = Vector2(-284, -9)
 shape = SubResource("RectangleShape2D_3efi1")
 
 [connection signal="pressed" from="VBoxContainer/play" to="." method="_on_texture_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="VBoxContainer/options" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="VBoxContainer/quit" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="VBoxContainer/quit" to="." method="_on_texture_button_pressed"]

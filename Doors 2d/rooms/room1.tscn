@@ -1,10 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://ch71jg4rqvxrv"]
+[gd_scene load_steps=14 format=3 uid="uid://ch71jg4rqvxrv"]
 
 [ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="1_snowr"]
 [ext_resource type="Texture2D" uid="uid://va30hj8eqhpf" path="res://sprites/basic_room_1.png" id="2_6w85w"]
-[ext_resource type="Script" path="res://rooms/Inventory.gd" id="3_d3plg"]
+[ext_resource type="Script" path="res://scripts/Inventory.gd" id="3_msdcg"]
 [ext_resource type="Texture2D" uid="uid://cef4cc7pf3irf" path="res://sprites/inventory_background.png" id="4_d2t8v"]
 [ext_resource type="Texture2D" uid="uid://devh28rg8k24b" path="res://sprites/item_slot_default_background.png" id="5_xyhbv"]
+[ext_resource type="PackedScene" uid="uid://cin0jtwuxkv7t" path="res://scenes/closet.tscn" id="6_51yv7"]
 
 [sub_resource type="TileSet" id="TileSet_svga3"]
 
@@ -79,7 +80,7 @@ texture = ExtResource("2_6w85w")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Inventory" type="Node2D" parent="CanvasLayer"]
-script = ExtResource("3_d3plg")
+script = ExtResource("3_msdcg")
 
 [node name="TextureRect2" type="TextureRect" parent="."]
 offset_left = 350.0
@@ -97,3 +98,7 @@ offset_bottom = 154.0
 [node name="Slot1" type="Panel" parent="GridContainer"]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_tbn1w")
+
+[node name="closet" parent="." instance=ExtResource("6_51yv7")]
+position = Vector2(61, -136)
+scale = Vector2(1.91683, 1.67152)
