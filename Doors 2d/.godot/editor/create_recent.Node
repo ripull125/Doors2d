@@ -1,8 +1,8 @@
-Label
 CollisionShape2D
-Area2D
-Node2D
 StaticBody2D
+Node2D
+Label
+Area2D
 TextureRect
 TileMap
 HSlider

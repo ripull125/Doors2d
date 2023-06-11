@@ -100,5 +100,3 @@ layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_tbn1w")
 
 [node name="closet" parent="." instance=ExtResource("6_51yv7")]
-position = Vector2(61, -136)
-scale = Vector2(1.91683, 1.67152)

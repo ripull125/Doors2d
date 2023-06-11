@@ -108,7 +108,7 @@ position = Vector2(577, 589)
 texture = ExtResource("10_v2715")
 
 [node name="moving" type="CharacterBody2D" parent="."]
-position = Vector2(1800, 168)
+position = Vector2(104, 168)
 script = ExtResource("11_kgp6r")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="moving"]
@@ -125,7 +125,7 @@ position = Vector2(-284, -9)
 shape = SubResource("RectangleShape2D_3efi1")
 
 [connection signal="pressed" from="VBoxContainer/play" to="." method="_on_texture_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="VBoxContainer/options" to="." method="_on_texture_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/quit" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="VBoxContainer/quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="VBoxContainer/quit" to="." method="_on_texture_button_pressed"]

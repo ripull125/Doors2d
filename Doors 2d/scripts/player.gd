@@ -5,7 +5,7 @@ var speed = 400  # speed in pixels/sec
 var coins = 0
 var key = 0
 var flashlight = 0
-var canHide = false
+@export var canHide = false
 var inCloset = false
 
 @onready var all_interactions = []

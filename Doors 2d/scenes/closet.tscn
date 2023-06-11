@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://cin0jtwuxkv7t"]
+[gd_scene load_steps=13 format=3 uid="uid://cin0jtwuxkv7t"]
 
 [ext_resource type="Texture2D" uid="uid://defgm5mbabtgf" path="res://sprites/closet1.png" id="1_fl8qn"]
 [ext_resource type="Script" path="res://scripts/closet.gd" id="1_noa8s"]
@@ -60,6 +60,12 @@ animations = [{
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4fv02"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sixot"]
+size = Vector2(16.799, 17.8234)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7gkhl"]
+size = Vector2(13.4392, 21.9609)
+
 [node name="closet" type="Area2D"]
 collision_mask = 0
 monitoring = false
@@ -72,3 +78,17 @@ animation = &"idle"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2(2.78531, 6.95247)
 shape = SubResource("RectangleShape2D_4fv02")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(7, 0)
+scale = Vector2(4.16692, 6.28388)
+shape = SubResource("RectangleShape2D_sixot")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(7.15256e-07, 3.06964e-06)
+scale = Vector2(4.16692, 6.28388)
+shape = SubResource("RectangleShape2D_7gkhl")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
