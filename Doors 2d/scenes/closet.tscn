@@ -90,5 +90,3 @@ shape = SubResource("RectangleShape2D_sixot")
 position = Vector2(7.15256e-07, 3.06964e-06)
 scale = Vector2(4.16692, 6.28388)
 shape = SubResource("RectangleShape2D_7gkhl")
-
-[connection signal="area_entered" from="." to="." method="_on_area_entered"]
