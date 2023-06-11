@@ -14,6 +14,9 @@ var inCloset = false
 #func hide_cooldown():
 #	var hide_cd = SceneTree.create_timer(1.0).timeout
 
+func _ready():
+	update_interactions()
+
 func _physics_process(_delta):
 
 	if(not inCloset):
