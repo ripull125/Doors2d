@@ -12,7 +12,9 @@ var inCloset = false
 @onready var interact_label = $Interaction_Components/Interact_Label
 
 #func hide_cooldown():
-#	var hide_cd = SceneTree.create_timer(1.0).timeout
+#	var hide_cd = get_tree().create_timer(1.0)
+#	hide_cd.timeout.connect()
+	
 
 func _ready():
 	update_interactions()
@@ -27,16 +29,20 @@ func _physics_process(_delta):
 			$AnimatedSprite2D.play("idle")
 		velocity = direction * speed
 	
-#	print(velocity)
-
-	move_and_slide()
+#		print(velocity)
+		move_and_slide()
+	
+	
+	
+# Closet hide and exit 
 	if(canHide and Input.is_action_pressed("use")):
 		inCloset = true
 		canHide = false
 		print("hidden")
 		hide()
-#		player.visible = !player.visible
-		
+		print("start timer")
+		await get_tree().create_timer(100.0)
+		print("end timer")
 #		hide_cooldown()
 		
 	elif(inCloset and Input.is_action_pressed("use")):
@@ -44,7 +50,9 @@ func _physics_process(_delta):
 		canHide = true
 		print("exit")
 		show()
-#		player.visible
+		print("start timer")
+		await get_tree().create_timer(1.0)
+		print("end timer")
 #
 #		hide_cooldown()
 
