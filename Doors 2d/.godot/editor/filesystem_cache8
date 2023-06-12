@@ -1,10 +1,10 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1686589228
+::res://::1686592641
 AnimatedSprite2D.gd::GDScript::-1::1686243712::0::1::::<>AnimatedSprite2D<>::
-default_env.tres::Environment::6222481374677130643::1686586009::0::1::::<><>::
+default_env.tres::Environment::6222481374677130643::1686590877::0::1::::<><>::
 icon.png::CompressedTexture2D::2669677842093264439::1671214678::1685553586::1::::<><>::
 label.tscn::PackedScene::4321002781703518240::1686253203::0::1::::<><>::uid://bxkfrtjpl7108
-room2.tscn::PackedScene::5331818435673478843::1686249317::0::1::::<><>::uid://di1463flyaf58<>uid://va30hj8eqhpf
+room2.tscn::PackedScene::7316326774895000691::1686583869::0::1::::<><>::uid://di1463flyaf58<>uid://va30hj8eqhpf
 ::res://entities/::1685553681
 ::res://Font/::1686253203
 ::res://menu/::1686250893
@@ -18,22 +18,22 @@ playHover.png::CompressedTexture2D::7339209968755223682::1686242280::1686242280:
 pngtree-pixel-art-character-boy-with-backpack-from-the-side-view-png-image_4408617-PhotoRoom.png-PhotoRoom.png::CompressedTexture2D::8148195068560766143::1686242280::1686242280::1::::<><>::
 quitHover.png::CompressedTexture2D::203204132092255937::1686242280::1686242280::1::::<><>::
 title plate.png::CompressedTexture2D::8402955022886272553::1686242280::1686242280::1::::<><>::
-::res://rooms/::1686586008
+::res://rooms/::1686590877
 REALroom_2.tscn::PackedScene::-1::1686583869::0::1::::<><>::
-room1.tscn::PackedScene::5331818435673478843::1686586008::0::1::::<><>::uid://di1463flyaf58<>uid://va30hj8eqhpf<>res://scripts/Inventory.gd<>uid://cef4cc7pf3irf<>uid://devh28rg8k24b<>uid://cin0jtwuxkv7t
+room1.tscn::PackedScene::5331818435673478843::1686590877::0::1::::<><>::uid://di1463flyaf58<>uid://va30hj8eqhpf<>res://scripts/Inventory.gd<>uid://cef4cc7pf3irf<>uid://devh28rg8k24b<>uid://cin0jtwuxkv7t
 room_2.tscn::PackedScene::-1::1686583869::0::1::::<><>::
-::res://scenes/::1686588825
-closet.tscn::PackedScene::5362724057126756455::1686586008::0::1::::<><>::uid://defgm5mbabtgf<>res://scripts/closet.gd
-menu.tscn::PackedScene::596577244305429825::1686586008::0::1::::<><>::res://scripts/menu.gd<>uid://dorrlfjx5fmts<>uid://b4p756o78347j<>uid://dctfylui383cg<>res://scripts/TextureButton.gd<>uid://cdrvi3uryvjhs<>uid://b7okmvcpe8ln3<>uid://doxuwvrqpv4q<>uid://c5o0if83lcu0<>uid://b8cg01adunotk<>uid://bebhg63t4tyap
-player.tscn::PackedScene::7776264253100090321::1686586008::0::1::::<><>::res://scripts/player.gd<>uid://dd8xdq466hvm3<>uid://coc746jvjweyq
-::res://scripts/::1686589223
+::res://scenes/::1686590877
+closet.tscn::PackedScene::5362724057126756455::1686590877::0::1::::<><>::uid://defgm5mbabtgf<>res://scripts/closet.gd
+menu.tscn::PackedScene::596577244305429825::1686590877::0::1::::<><>::res://scripts/menu.gd<>uid://dorrlfjx5fmts<>uid://b4p756o78347j<>uid://dctfylui383cg<>res://scripts/TextureButton.gd<>uid://cdrvi3uryvjhs<>uid://b7okmvcpe8ln3<>uid://doxuwvrqpv4q<>uid://c5o0if83lcu0<>uid://b8cg01adunotk<>uid://bebhg63t4tyap
+player.tscn::PackedScene::7776264253100090321::1686590876::0::1::::<><>::res://scripts/player.gd<>uid://dd8xdq466hvm3<>uid://b5t5t6xr3xk6w<>uid://coc746jvjweyq
+::res://scripts/::1686590807
 closet.gd::GDScript::-1::1686511139::0::1::::Interactable<>Area2D<>::
 interactArea.gd::GDScript::-1::1686459720::0::1::::interactable<>Area2D<>::
 Inventory.gd::GDScript::-1::1686280878::0::1::::<>Node2D<>::
 menu.gd::GDScript::-1::1686583945::0::1::::<>Control<>::
-player.gd::GDScript::-1::1686585903::0::1::::<>CharacterBody2D<>::
+player.gd::GDScript::-1::1686590807::0::1::::<>CharacterBody2D<>::
 TextureButton.gd::GDScript::-1::1686242280::0::1::::<>TextureButton<>::
-::res://sprites/::1686589228
+::res://sprites/::1686589229
 386d0138bc279fb435f3905052840811.png::CompressedTexture2D::8126175723028012390::1686172967::1686244739::1::::<><>::
 24928b927dec83e9a4b1e53a02fce756.png::CompressedTexture2D::3987073403921507226::1686172967::1686244731::1::::<><>::
 basic room 1.jpg::CompressedTexture2D::6007987968298281164::1686070651::1686071654::1::::<><>::
