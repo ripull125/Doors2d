@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_38ddx"]
 [ext_resource type="Texture2D" uid="uid://dd8xdq466hvm3" path="res://sprites/New Piskel (3).png" id="2_gk77s"]
 [ext_resource type="Texture2D" uid="uid://coc746jvjweyq" path="res://sprites/up_walk.png" id="3_o3sjc"]
-[ext_resource type="Texture2D" path="res://sprites/side_movement.png" id="3_xch0p"]
+[ext_resource type="Texture2D" uid="uid://b5t5t6xr3xk6w" path="res://sprites/side_movement.png" id="3_xch0p"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nlvyb"]
 atlas = ExtResource("2_gk77s")
