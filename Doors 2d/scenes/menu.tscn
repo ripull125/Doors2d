@@ -11,7 +11,8 @@
 [ext_resource type="Texture2D" uid="uid://c5o0if83lcu0" path="res://menu/quitHover.png" id="9_so1mk"]
 [ext_resource type="Texture2D" uid="uid://b8cg01adunotk" path="res://sprites/d18c01498866f87ec8c9e65c64d2a1e0.png" id="10_v2715"]
 [ext_resource type="Texture2D" uid="uid://bebhg63t4tyap" path="res://icon.png" id="11_jldo2"]
-[ext_resource type="Script" path="res://scripts/CharacterBody2D.gd" id="11_kgp6r"]
+
+[sub_resource type="GDScript" id="GDScript_c7hsw"]
 
 [sub_resource type="Animation" id="Animation_pd204"]
 length = 3.0
@@ -109,7 +110,7 @@ texture = ExtResource("10_v2715")
 
 [node name="moving" type="CharacterBody2D" parent="."]
 position = Vector2(104, 168)
-script = ExtResource("11_kgp6r")
+script = SubResource("GDScript_c7hsw")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="moving"]
 libraries = {
