@@ -1,16 +1,8 @@
 res://default_env.tres
 res://scenes/player.tscn
-res://scenes/actionable/actionable.tscn
 res://rooms/room1.tscn
-res://menu.tscn
-res://rooms/room2.tscn
-res://scenes/main menu.tscn
 res://scenes/menu.tscn
-res://scripts/player.gd
 res://scenes/closet.tscn
-res://scenes/closet.gd
-res://scripts/closet.gd
-res://scenes/closet_interact.tscn
-res://scripts/closet_interact.gd
-res://scenes/closet_physical.tscn
-res://scripts/menu.gd
+res://room2.tscn
+res://rooms/REALroom_2.tscn
+res://rooms/room_2.tscn
