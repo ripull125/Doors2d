@@ -52,8 +52,14 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_dwjtq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wi7cp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a6wyt")
 }],
-"loop": true,
+"loop": false,
 "name": &"open and close",
 "speed": 5.0
 }]
@@ -73,7 +79,7 @@ script = ExtResource("1_noa8s")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_01aes")
-animation = &"idle"
+animation = &"open and close"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2(2.78531, 6.95247)

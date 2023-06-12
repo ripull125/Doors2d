@@ -8,6 +8,7 @@ var flashlight = 0
 @export var canHide = false
 var inCloset = false
 var cd_over = true
+var interact_anim
 
 @onready var all_interactions = []
 @onready var interact_label = $Interaction_Components/Interact_Label
@@ -24,10 +25,16 @@ func _physics_process(_delta):
 
 	if(not inCloset):
 		var direction = Input.get_vector("left", "right", "up", "down")
-		if direction.y > 0 and direction.x == 0:
+		if direction.y > 0:
 			$AnimatedSprite2D.play("down")
-		elif direction.y < 0 and direction.x == 0:
+		elif direction.y < 0:
 			$AnimatedSprite2D.play("up")
+		elif direction.x > 0:
+			$AnimatedSprite2D.flip_h = false
+			$AnimatedSprite2D.play("side")
+		elif direction.x < 0:
+			$AnimatedSprite2D.flip_h = true
+			$AnimatedSprite2D.play("side")
 		else:
 			$AnimatedSprite2D.play("idle")
 		velocity = direction * speed
@@ -43,19 +50,28 @@ func _physics_process(_delta):
 		canHide = false
 		print("hidden")
 		hide()
+		interact_anim.play("open and close")
 		cd_over = false
 		await get_tree().create_timer(1.0).timeout
 		cd_over = true
-#		hide_cooldown()
+#		var closet = get_tree().current_scene.get_node("closet")
+		
+		await get_tree().create_timer(1.0).timeout
+		
+		
+
+		
 		
 	elif(inCloset and Input.is_action_pressed("use") and cd_over):
 		inCloset = false
 		canHide = true
 		print("exit")
 		show()
+		interact_anim.play("open and close")
 		cd_over = false
 		await get_tree().create_timer(1.0).timeout
 		cd_over = true
+
 #
 #		hide_cooldown()
 
@@ -66,6 +82,7 @@ func _physics_process(_delta):
 func _on_interaction_area_area_entered(area):
 	all_interactions.insert(0, area)
 	canHide = true
+	interact_anim = all_interactions[0].get_node("AnimatedSprite2D")
 	update_interactions()
 
 

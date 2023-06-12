@@ -1,8 +1,9 @@
-[gd_scene load_steps=16 format=3 uid="uid://di1463flyaf58"]
+[gd_scene load_steps=23 format=3 uid="uid://di1463flyaf58"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_38ddx"]
 [ext_resource type="Texture2D" uid="uid://dd8xdq466hvm3" path="res://sprites/New Piskel (3).png" id="2_gk77s"]
 [ext_resource type="Texture2D" uid="uid://coc746jvjweyq" path="res://sprites/up_walk.png" id="3_o3sjc"]
+[ext_resource type="Texture2D" path="res://sprites/side_movement.png" id="3_xch0p"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nlvyb"]
 atlas = ExtResource("2_gk77s")
@@ -23,6 +24,30 @@ region = Rect2(256, 256, 256, 256)
 [sub_resource type="AtlasTexture" id="AtlasTexture_h5v1u"]
 atlas = ExtResource("2_gk77s")
 region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ep55x"]
+atlas = ExtResource("3_xch0p")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p1m31"]
+atlas = ExtResource("3_xch0p")
+region = Rect2(256, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_23apw"]
+atlas = ExtResource("3_xch0p")
+region = Rect2(0, 256, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gj0ky"]
+atlas = ExtResource("3_xch0p")
+region = Rect2(256, 256, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6yq6e"]
+atlas = ExtResource("3_xch0p")
+region = Rect2(0, 512, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_10mw4"]
+atlas = ExtResource("3_xch0p")
+region = Rect2(256, 512, 256, 256)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_78fb6"]
 atlas = ExtResource("3_o3sjc")
@@ -69,6 +94,29 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_ep55x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p1m31")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_23apw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gj0ky")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6yq6e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_10mw4")
+}],
+"loop": true,
+"name": &"side",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_78fb6")
 }, {
 "duration": 1.0,
@@ -95,12 +143,14 @@ script = ExtResource("1_38ddx")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_wvell")
-animation = &"up"
+animation = &"side"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 shape = SubResource("RectangleShape2D_u4bv8")
 
 [node name="Interaction_Components" type="Node2D" parent="."]
+visible = false
 z_index = 1
 
 [node name="Interaction_Area" type="Area2D" parent="Interaction_Components"]
