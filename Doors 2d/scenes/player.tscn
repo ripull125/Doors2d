@@ -146,11 +146,9 @@ sprite_frames = SubResource("SpriteFrames_wvell")
 animation = &"side"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 shape = SubResource("RectangleShape2D_u4bv8")
 
 [node name="Interaction_Components" type="Node2D" parent="."]
-visible = false
 z_index = 1
 
 [node name="Interaction_Area" type="Area2D" parent="Interaction_Components"]

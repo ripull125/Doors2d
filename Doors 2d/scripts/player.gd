@@ -81,14 +81,17 @@ func _physics_process(_delta):
 
 func _on_interaction_area_area_entered(area):
 	all_interactions.insert(0, area)
-	canHide = true
+	if(area.interact_type == "closet"):
+		canHide = true
 	interact_anim = all_interactions[0].get_node("AnimatedSprite2D")
 	update_interactions()
 
 
+
 func _on_interaction_area_area_exited(area):
 	all_interactions.erase(area)
-	canHide = false
+	if(area.interact_type == "closet"):
+		canHide = false
 	update_interactions() 
 	
 func update_interactions():
