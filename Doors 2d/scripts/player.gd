@@ -24,10 +24,16 @@ func _physics_process(_delta):
 
 	if(not inCloset):
 		var direction = Input.get_vector("left", "right", "up", "down")
-		if direction.y > 0 and direction.x == 0:
+		if direction.y > 0:
 			$AnimatedSprite2D.play("down")
-		elif direction.y < 0 and direction.x == 0:
+		elif direction.y < 0:
 			$AnimatedSprite2D.play("up")
+		elif direction.x > 0:
+			$AnimatedSprite2D.flip_h = false
+			$AnimatedSprite2D.play("side")
+		elif direction.x < 0:
+			$AnimatedSprite2D.flip_h = true
+			$AnimatedSprite2D.play("side")
 		else:
 			$AnimatedSprite2D.play("idle")
 		velocity = direction * speed
@@ -46,7 +52,8 @@ func _physics_process(_delta):
 		cd_over = false
 		await get_tree().create_timer(1.0).timeout
 		cd_over = true
-#		hide_cooldown()
+
+		
 		
 	elif(inCloset and Input.is_action_pressed("use") and cd_over):
 		inCloset = false
