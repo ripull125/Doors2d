@@ -5,5 +5,14 @@ res://scenes/menu.tscn
 res://scenes/closet.tscn
 res://rooms/REALroom_2.tscn
 res://rooms/room_2.tscn
+<<<<<<< Updated upstream
 res://scripts/closet.gd
 res://scripts/player.gd
+=======
+res://room2.tscn
+res://rooms/door.tscn
+res://scripts/Slot1.gd
+res://scenes/door.tscn
+res://scenes/door.gd
+res://Area2D.gd
+>>>>>>> Stashed changes
