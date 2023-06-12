@@ -1,9 +1,11 @@
+Panel
+GridContainer
+TextureRect
+Node2D
 CollisionShape2D
 StaticBody2D
-Node2D
 Label
 Area2D
-TextureRect
 TileMap
 HSlider
 VBoxContainer
@@ -12,8 +14,6 @@ Control
 CheckBox
 Button
 Node
-Panel
-GridContainer
 AnimatedSprite2D
 Sprite2D
 Camera2D
