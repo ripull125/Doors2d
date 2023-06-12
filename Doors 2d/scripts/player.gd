@@ -7,6 +7,7 @@ var key = 0
 var flashlight = 0
 @export var canHide = false
 var inCloset = false
+var cd_over = true
 
 @onready var all_interactions = []
 @onready var interact_label = $Interaction_Components/Interact_Label
@@ -37,24 +38,24 @@ func _physics_process(_delta):
 	
 	
 # Closet hide and exit 
-	if(canHide and Input.is_action_pressed("use")):
+	if(canHide and Input.is_action_pressed("use") and cd_over):
 		inCloset = true
 		canHide = false
 		print("hidden")
 		hide()
-		print("start timer")
-		await get_tree().create_timer(100.0)
-		print("end timer")
+		cd_over = false
+		await get_tree().create_timer(1.0).timeout
+		cd_over = true
 #		hide_cooldown()
 		
-	elif(inCloset and Input.is_action_pressed("use")):
+	elif(inCloset and Input.is_action_pressed("use") and cd_over):
 		inCloset = false
 		canHide = true
 		print("exit")
 		show()
-		print("start timer")
-		await get_tree().create_timer(1.0)
-		print("end timer")
+		cd_over = false
+		await get_tree().create_timer(1.0).timeout
+		cd_over = true
 #
 #		hide_cooldown()
 
