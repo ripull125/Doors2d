@@ -1,7 +1,7 @@
-[gd_scene load_steps=20 format=3 uid="uid://cp0nmhqyiaw4i"]
+[gd_scene load_steps=20 format=3 uid="uid://77oqvj0o0hua"]
 
-[ext_resource type="Texture2D" uid="uid://bkaqshqrsxrin" path="res://sprites/room2.png" id="1_h60b1"]
-[ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="2_oa2yq"]
+[ext_resource type="Texture2D" uid="uid://bkaqshqrsxrin" path="res://sprites/room2.png" id="1_7l4ga"]
+[ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="2_nbd2b"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o8uwe"]
 size = Vector2(220.666, 874.667)
@@ -62,7 +62,7 @@ offset_top = -3204.0
 offset_right = -338.813
 offset_bottom = -1412.0
 scale = Vector2(3, 3)
-texture = ExtResource("1_h60b1")
+texture = ExtResource("1_7l4ga")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TextureRect"]
 
@@ -135,7 +135,7 @@ shape = SubResource("RectangleShape2D_vfmfj")
 position = Vector2(702.833, 1250.58)
 shape = SubResource("RectangleShape2D_lwsun")
 
-[node name="player" parent="." instance=ExtResource("2_oa2yq")]
+[node name="player" parent="." instance=ExtResource("2_nbd2b")]
 position = Vector2(577, 486)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
