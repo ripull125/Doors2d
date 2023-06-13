@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://yhef2ao1fbox"]
+
+[ext_resource type="Script" path="res://rooms/Inventory.gd" id="1_0rx41"]
+[ext_resource type="Script" path="res://rooms/TextureRect.gd" id="2_c4ya2"]
+
+[node name="Inventory" type="Node2D"]
+script = ExtResource("1_0rx41")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_c4ya2")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="GridContainer"]
+layout_mode = 2
