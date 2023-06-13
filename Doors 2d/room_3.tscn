@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvl6ubkngtomr"]
+
+[ext_resource type="Texture2D" uid="uid://b0o46pmw5w88l" path="res://sprites/room3.png" id="1_llssm"]
+[ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="2_amq21"]
+
+[node name="room3" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -623.0
+offset_top = -1488.0
+offset_right = 4377.16
+offset_bottom = 3512.0
+size_flags_vertical = 8
+texture = ExtResource("1_llssm")
+
+[node name="player" parent="." instance=ExtResource("2_amq21")]
+position = Vector2(505, 521)
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+limit_left = -590
+limit_top = -1366
+limit_right = 2090
+limit_bottom = 645
+limit_smoothed = true

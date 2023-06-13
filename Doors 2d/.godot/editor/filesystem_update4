@@ -9,3 +9,4 @@ res://rooms/door.gd
 res://rooms/Area2D.gd
 res://scripts/player.gd
 res://scripts/menu.gd
+res://room_3.tscn
