@@ -15,6 +15,6 @@ func _on_body_entered(body: PhysicsBody2D):
 
 func _process(delta):
 	if entered == true:
-		if input.is_action_just_pressed("use")
-		
+		if Input.is_action_just_pressed("use"):
+			get_tree().change_scene("res://rooms/REALroom_2.tscn")	
 		
