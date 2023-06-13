@@ -1,5 +1,5 @@
 res://default_env.tres
-res://scenes/drawer.tscn
+res://scenes/menu.tscn
 res://scenes/Slot.gd
 res://scripts/drawer.gd
 res://scripts/player.gd

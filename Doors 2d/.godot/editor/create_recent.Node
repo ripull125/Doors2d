@@ -1,3 +1,4 @@
+TextureRect
 CollisionShape2D
 StaticBody2D
 AnimatedSprite2D
@@ -6,7 +7,6 @@ Area2D
 Panel
 GridContainer
 Label
-TextureRect
 TileMap
 HSlider
 VBoxContainer
