@@ -1,5 +1,6 @@
-[gd_scene load_steps=10 format=3 uid="uid://d15b0hg5y0ipx"]
+[gd_scene load_steps=11 format=3 uid="uid://d15b0hg5y0ipx"]
 
+[ext_resource type="Script" path="res://scripts/drawer.gd" id="1_sf5xo"]
 [ext_resource type="Texture2D" uid="uid://cfr061wpgtdj6" path="res://sprites/drawer.png" id="1_x2eol"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_10p0r"]
@@ -40,7 +41,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_2wsk7")
 }],
-"loop": true,
+"loop": false,
 "name": &"default",
 "speed": 5.0
 }]
@@ -52,7 +53,9 @@ size = Vector2(84, 126)
 size = Vector2(85, 126)
 
 [node name="drawer" type="Area2D"]
+collision_mask = 0
 monitoring = false
+script = ExtResource("1_sf5xo")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_q3sbl")

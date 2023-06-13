@@ -8,7 +8,9 @@ var flashlight = 0
 @export var canHide = false
 var inCloset = false
 var cd_over = true
+var can_loot = false
 var interact_anim
+
 
 @onready var all_interactions = []
 @onready var interact_label = $Interaction_Components/Interact_Label
@@ -73,7 +75,9 @@ func _physics_process(_delta):
 		cd_over = true
 
 
-#		hide_cooldown()
+	if(can_loot and Input.is_action_just_pressed("use")):
+		can_loot = false
+		interact_anim.play("default")
 
 
 
@@ -83,6 +87,8 @@ func _on_interaction_area_area_entered(area):
 	all_interactions.insert(0, area)
 	if(area.interact_type == "closet"):
 		canHide = true
+	if(area.interact_type == "drawer"):
+		can_loot = true
 	interact_anim = all_interactions[0].get_node("AnimatedSprite2D")
 	update_interactions()
 
@@ -92,6 +98,8 @@ func _on_interaction_area_area_exited(area):
 	all_interactions.erase(area)
 	if(area.interact_type == "closet"):
 		canHide = false
+	if(area.interact_type == "drawer"):
+		can_loot = false
 	update_interactions() 
 	
 func update_interactions():

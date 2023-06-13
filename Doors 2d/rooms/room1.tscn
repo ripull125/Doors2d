@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://ch71jg4rqvxrv"]
+[gd_scene load_steps=19 format=3 uid="uid://ch71jg4rqvxrv"]
 
 [ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="1_snowr"]
 [ext_resource type="Texture2D" uid="uid://va30hj8eqhpf" path="res://sprites/basic_room_1.png" id="2_6w85w"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://cin0jtwuxkv7t" path="res://scenes/closet.tscn" id="6_51yv7"]
 [ext_resource type="Script" path="res://rooms/Area2D.gd" id="8_ccljl"]
 [ext_resource type="Texture2D" uid="uid://d4jghv2fhbucf" path="res://sprites/door.png" id="9_m3efj"]
+[ext_resource type="PackedScene" uid="uid://d15b0hg5y0ipx" path="res://scenes/drawer.tscn" id="10_lk7ep"]
 
 [sub_resource type="TileSet" id="TileSet_svga3"]
 
@@ -120,6 +121,10 @@ shape = SubResource("RectangleShape2D_d5jf6")
 [node name="Sprite2D" type="Sprite2D" parent="door"]
 position = Vector2(535, -280)
 texture = ExtResource("9_m3efj")
+
+[node name="drawer" parent="." instance=ExtResource("10_lk7ep")]
+position = Vector2(1029, -127)
+rotation = 3.13605
 
 [connection signal="body_entered" from="door" to="door" method="_on_body_entered"]
 [connection signal="body_exited" from="door" to="door" method="_on_body_exited"]
