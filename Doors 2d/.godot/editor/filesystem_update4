@@ -1,7 +1,6 @@
 res://default_env.tres
-res://scenes/player.tscn
-res://rooms/room1.tscn
 res://scenes/menu.tscn
+<<<<<<< Updated upstream
 res://scenes/closet.tscn
 res://REALroom_2.tscn
 res://rooms/Item.gd
@@ -18,3 +17,8 @@ res://scenes/Inventory.tscn
 res://scenes/door.tscn
 res://scenes/Slot.gd
 res://scenes/Inventory.gd
+=======
+res://rooms/room_2.tscn
+res://rooms/REALroom_2.tscn
+res://rooms/room1.tscn
+>>>>>>> Stashed changes
