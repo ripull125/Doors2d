@@ -1,11 +1,9 @@
-res://scripts/player.gd
-res://rooms/Area2D.gd
 res://default_env.tres
-res://rooms/room1.tscn
-res://scenes/Slot.gd
-res://rooms/door.gd
 res://scenes/menu.tscn
+res://scenes/Slot.gd
 res://scenes/Inventory.tscn
 res://rooms/REALroom_2.tscn
 res://rooms/room_2.tscn
-res://scenes/door.tscn
+res://rooms/room1.tscn
+res://rooms/door.gd
+res://rooms/Area2D.gd
