@@ -1,24 +1,11 @@
+res://scripts/player.gd
+res://rooms/Area2D.gd
 res://default_env.tres
-res://scenes/menu.tscn
-<<<<<<< Updated upstream
-res://scenes/closet.tscn
-res://REALroom_2.tscn
-res://rooms/Item.gd
-res://rooms/Slot1.gd
-res://scenes/Item.tscn
-res://rooms/room_2.tscn
-res://rooms/REALroom_2.tscn
-res://scenes/Item.gd
-res://rooms/Inventory.tscn
-res://rooms/Inventory.gd
-res://rooms/TextureRect.gd
-res://rooms/Item.tscn
-res://scenes/Inventory.tscn
-res://scenes/door.tscn
-res://scenes/Slot.gd
-res://scenes/Inventory.gd
-=======
-res://rooms/room_2.tscn
-res://rooms/REALroom_2.tscn
 res://rooms/room1.tscn
->>>>>>> Stashed changes
+res://scenes/Slot.gd
+res://rooms/door.gd
+res://scenes/menu.tscn
+res://scenes/Inventory.tscn
+res://rooms/REALroom_2.tscn
+res://rooms/room_2.tscn
+res://scenes/door.tscn

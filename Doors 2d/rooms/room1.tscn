@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://ch71jg4rqvxrv"]
+[gd_scene load_steps=18 format=3 uid="uid://ch71jg4rqvxrv"]
 
 [ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="1_snowr"]
 [ext_resource type="Texture2D" uid="uid://va30hj8eqhpf" path="res://sprites/basic_room_1.png" id="2_6w85w"]
@@ -7,7 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://devh28rg8k24b" path="res://sprites/item_slot_default_background.png" id="5_xyhbv"]
 [ext_resource type="Script" path="res://rooms/Slot1.gd" id="6_1ryj3"]
 [ext_resource type="PackedScene" uid="uid://cin0jtwuxkv7t" path="res://scenes/closet.tscn" id="6_51yv7"]
-[ext_resource type="PackedScene" uid="uid://chaoacrh1h7v3" path="res://door.tscn" id="8_73ayy"]
+[ext_resource type="Script" path="res://rooms/Area2D.gd" id="8_ccljl"]
+[ext_resource type="Texture2D" uid="uid://d4jghv2fhbucf" path="res://sprites/door.png" id="9_m3efj"]
 
 [sub_resource type="TileSet" id="TileSet_svga3"]
 
@@ -28,6 +29,9 @@ size = Vector2(95.5, 142.25)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tbn1w"]
 texture = ExtResource("5_xyhbv")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d5jf6"]
+size = Vector2(108, 240)
 
 [node name="room1" type="Node2D"]
 
@@ -104,5 +108,17 @@ script = ExtResource("6_1ryj3")
 
 [node name="closet" parent="." instance=ExtResource("6_51yv7")]
 
-[node name="door" parent="." instance=ExtResource("8_73ayy")]
-position = Vector2(424, -127)
+[node name="door" type="Area2D" parent="."]
+monitoring = false
+script = ExtResource("8_ccljl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="door"]
+position = Vector2(550, -278)
+shape = SubResource("RectangleShape2D_d5jf6")
+
+[node name="Sprite2D" type="Sprite2D" parent="door"]
+position = Vector2(535, -280)
+texture = ExtResource("9_m3efj")
+
+[connection signal="body_entered" from="door" to="door" method="_on_body_entered"]
+[connection signal="body_exited" from="door" to="door" method="_on_body_exited"]
