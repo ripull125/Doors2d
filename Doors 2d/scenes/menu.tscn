@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://iq8smkh3xpi4"]
+[gd_scene load_steps=24 format=3 uid="uid://iq8smkh3xpi4"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_ugpcw"]
 [ext_resource type="Texture2D" uid="uid://dorrlfjx5fmts" path="res://menu/360_F_509400712_Yv1QEGh7RZXQJJYjthPjrs6Htm69vJ2u.jpg" id="2_kyrxt"]
@@ -53,6 +53,56 @@ _data = {
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3efi1"]
 size = Vector2(152, 168)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_71k4f"]
+atlas = ExtResource("11_o078v")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jfig1"]
+atlas = ExtResource("11_o078v")
+region = Rect2(256, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ndbx"]
+atlas = ExtResource("11_o078v")
+region = Rect2(0, 256, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ieq06"]
+atlas = ExtResource("11_o078v")
+region = Rect2(256, 256, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dl23u"]
+atlas = ExtResource("11_o078v")
+region = Rect2(0, 512, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_as2h7"]
+atlas = ExtResource("11_o078v")
+region = Rect2(256, 512, 256, 256)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nxnjc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_71k4f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jfig1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8ndbx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ieq06")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dl23u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_as2h7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="menu" type="Control"]
 layout_mode = 3
@@ -117,13 +167,14 @@ libraries = {
 "": SubResource("AnimationLibrary_8otxy")
 }
 
-[node name="Sprite2D" type="Sprite2D" parent="moving"]
-position = Vector2(-300, 304)
-texture = ExtResource("11_o078v")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="moving"]
 position = Vector2(-284, -9)
 shape = SubResource("RectangleShape2D_3efi1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="moving"]
+position = Vector2(-209, 259)
+scale = Vector2(0.8, 0.8)
+sprite_frames = SubResource("SpriteFrames_nxnjc")
 
 [connection signal="pressed" from="VBoxContainer/play" to="." method="_on_texture_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/options" to="." method="_on_texture_button_pressed"]

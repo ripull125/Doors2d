@@ -7,3 +7,5 @@ res://rooms/room_2.tscn
 res://rooms/room1.tscn
 res://rooms/door.gd
 res://rooms/Area2D.gd
+res://scripts/player.gd
+res://scripts/menu.gd

@@ -109,11 +109,12 @@ script = ExtResource("6_1ryj3")
 [node name="closet" parent="." instance=ExtResource("6_51yv7")]
 
 [node name="door" type="Area2D" parent="."]
-monitoring = false
+position = Vector2(359, -388)
+monitorable = false
 script = ExtResource("8_ccljl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="door"]
-position = Vector2(542, -272)
+position = Vector2(556, -269)
 shape = SubResource("RectangleShape2D_d5jf6")
 
 [node name="Sprite2D" type="Sprite2D" parent="door"]
