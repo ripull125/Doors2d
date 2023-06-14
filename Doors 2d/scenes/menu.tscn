@@ -5,8 +5,8 @@
 [ext_resource type="Texture2D" uid="uid://b4p756o78347j" path="res://menu/044463fac4145765aa89716a0a972bfe.png" id="3_ljo5b"]
 [ext_resource type="Texture2D" uid="uid://dctfylui383cg" path="res://menu/playHover.png" id="4_dy754"]
 [ext_resource type="Script" path="res://scripts/TextureButton.gd" id="5_a5pte"]
-[ext_resource type="Texture2D" uid="uid://bm60kw44g0mr1" path="res://27a8b74d57441974889a52dfe84c5340.png" id="6_kqo64"]
-[ext_resource type="Texture2D" uid="uid://bah33j7in6whf" path="res://c19ef0bff943436857a942628b7cc5f5.png" id="7_tmpdu"]
+[ext_resource type="Texture2D" path="res://27a8b74d57441974889a52dfe84c5340.png" id="6_kqo64"]
+[ext_resource type="Texture2D" path="res://c19ef0bff943436857a942628b7cc5f5.png" id="7_tmpdu"]
 [ext_resource type="Texture2D" uid="uid://doxuwvrqpv4q" path="res://menu/7163b43dac861f9363f900497f41b355.png" id="8_tsb2e"]
 [ext_resource type="Texture2D" uid="uid://c5o0if83lcu0" path="res://menu/quitHover.png" id="9_so1mk"]
 [ext_resource type="Texture2D" uid="uid://b8cg01adunotk" path="res://sprites/d18c01498866f87ec8c9e65c64d2a1e0.png" id="10_v2715"]
@@ -177,7 +177,7 @@ scale = Vector2(0.8, 0.8)
 sprite_frames = SubResource("SpriteFrames_nxnjc")
 
 [connection signal="pressed" from="VBoxContainer/play" to="." method="_on_texture_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="VBoxContainer/options" to="." method="_on_texture_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="VBoxContainer/options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="VBoxContainer/quit" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/quit" to="." method="_on_quit_pressed"]

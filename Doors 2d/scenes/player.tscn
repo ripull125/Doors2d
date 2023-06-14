@@ -1,9 +1,10 @@
-[gd_scene load_steps=23 format=3 uid="uid://di1463flyaf58"]
+[gd_scene load_steps=24 format=3 uid="uid://di1463flyaf58"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_38ddx"]
 [ext_resource type="Texture2D" uid="uid://dd8xdq466hvm3" path="res://sprites/New Piskel (3).png" id="2_gk77s"]
 [ext_resource type="Texture2D" uid="uid://coc746jvjweyq" path="res://sprites/up_walk.png" id="3_o3sjc"]
 [ext_resource type="Texture2D" uid="uid://b5t5t6xr3xk6w" path="res://sprites/side_movement.png" id="3_xch0p"]
+[ext_resource type="Script" path="res://health.gd" id="5_lbw7l"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nlvyb"]
 atlas = ExtResource("2_gk77s")
@@ -140,6 +141,7 @@ size = Vector2(86, 86)
 
 [node name="player" type="CharacterBody2D"]
 script = ExtResource("1_38ddx")
+canHide = null
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_wvell")
@@ -165,6 +167,22 @@ offset_left = 56.0
 offset_top = -105.0
 offset_right = 249.0
 offset_bottom = -79.0
+
+[node name="health" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -1.0
+offset_top = -109.0
+offset_right = 39.0
+offset_bottom = -69.0
+script = ExtResource("5_lbw7l")
+
+[node name="HealthBar" type="ProgressBar" parent="health"]
+offset_top = -63.0
+offset_right = 4.0
+offset_bottom = -36.0
+scale = Vector2(3.63465, 4.29468)
+value = 50.0
 
 [connection signal="area_entered" from="Interaction_Components/Interaction_Area" to="." method="_on_interaction_area_area_entered"]
 [connection signal="area_exited" from="Interaction_Components/Interaction_Area" to="." method="_on_interaction_area_area_exited"]

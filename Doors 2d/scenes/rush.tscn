@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://dt5f4slux37iw"]
+
+[ext_resource type="Texture2D" uid="uid://nesevv40sij8" path="res://sprites/rush.png" id="1_clwhe"]
+[ext_resource type="Texture2D" uid="uid://buyy150arehpc" path="res://sprites/rush_background.png" id="2_u40xa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_31404"]
+size = Vector2(25.3539, 26.991)
+
+[node name="rush" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 10
+position = Vector2(-11, 0)
+texture = ExtResource("1_clwhe")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+z_index = 9
+position = Vector2(249, 4672)
+scale = Vector2(203.637, 782.459)
+texture = ExtResource("2_u40xa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(26.4999, 4874.5)
+scale = Vector2(534.396, 360.676)
+shape = SubResource("RectangleShape2D_31404")

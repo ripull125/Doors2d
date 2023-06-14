@@ -10,6 +10,7 @@ var inCloset = false
 var cd_over = true
 var can_loot = false
 var interact_anim
+var health = 100
 
 
 @onready var all_interactions = []
@@ -24,7 +25,7 @@ func _ready():
 	update_interactions()
 
 func _physics_process(_delta):
-
+	check_dead()
 	if(not inCloset):
 		var direction = Input.get_vector("left", "right", "up", "down")
 		if direction.y > 0:
@@ -44,8 +45,6 @@ func _physics_process(_delta):
 #		print(velocity)
 		move_and_slide()
 	
-	
-	
 # Closet hide and exit 
 	if(canHide and Input.is_action_pressed("use") and cd_over):
 		inCloset = true
@@ -59,10 +58,6 @@ func _physics_process(_delta):
 #		var closet = get_tree().current_scene.get_node("closet")
 		
 		await get_tree().create_timer(1.0).timeout
-		
-		
-
-		
 		
 	elif(inCloset and Input.is_action_pressed("use") and cd_over):
 		inCloset = false
@@ -79,7 +74,9 @@ func _physics_process(_delta):
 		can_loot = false
 		interact_anim.play("default")
 
-
+func check_dead():
+	if(health == 0):
+		print("dead")
 
 # Interaction methods
 
@@ -107,3 +104,10 @@ func update_interactions():
 		interact_label.text = all_interactions[0].interact_label
 	else:
 		interact_label.text = ""
+
+# monster stuff
+
+
+func _on_rush_area_entered(area):
+	if(not hidden):
+		health = 0
