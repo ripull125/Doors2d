@@ -1,12 +1,20 @@
 res://default_env.tres
+<<<<<<< Updated upstream
 res://scenes/drawer.tscn
 res://scenes/Slot.gd
 res://scripts/drawer.gd
 res://scripts/player.gd
 res://scenes/player.tscn
-res://rooms/room1.tscn
+=======
 res://scenes/menu.tscn
-res://scenes/closet.tscn
+res://scenes/Item.gd
+>>>>>>> Stashed changes
+res://rooms/room1.tscn
 res://rooms/REALroom_2.tscn
+<<<<<<< Updated upstream
 res://rooms/room_2.tscn
 res://scripts/closet.gd
+=======
+res://room_3.tscn
+res://controls.tscn
+>>>>>>> Stashed changes

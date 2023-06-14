@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://bs5g6h2kk5vln"]
+
+[ext_resource type="Texture2D" uid="uid://dorrlfjx5fmts" path="res://menu/360_F_509400712_Yv1QEGh7RZXQJJYjthPjrs6Htm69vJ2u.jpg" id="1_qxfvx"]
+
+[node name="controls" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -3.0
+offset_top = -9.0
+offset_right = 1157.0
+offset_bottom = 653.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_qxfvx")
