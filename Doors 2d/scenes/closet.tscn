@@ -76,9 +76,6 @@ size = Vector2(13.4392, 21.9609)
 collision_mask = 0
 monitoring = false
 script = ExtResource("1_noa8s")
-interact_label = null
-interact_type = null
-interact_value = null
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_01aes")

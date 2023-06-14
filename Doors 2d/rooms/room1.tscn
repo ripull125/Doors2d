@@ -1,5 +1,6 @@
-[gd_scene load_steps=19 format=3 uid="uid://ch71jg4rqvxrv"]
+[gd_scene load_steps=20 format=3 uid="uid://ch71jg4rqvxrv"]
 
+[ext_resource type="Texture2D" uid="uid://62rbc58ebp56" path="res://New Piskel (6).png" id="1_37thx"]
 [ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="1_snowr"]
 [ext_resource type="Texture2D" uid="uid://va30hj8eqhpf" path="res://sprites/basic_room_1.png" id="2_6w85w"]
 [ext_resource type="Script" path="res://scripts/Inventory.gd" id="3_msdcg"]
@@ -35,6 +36,14 @@ texture = ExtResource("5_xyhbv")
 size = Vector2(316, 302)
 
 [node name="room1" type="Node2D"]
+
+[node name="NewPiskel(5)" type="Sprite2D" parent="."]
+light_mask = 4
+visibility_layer = 4
+z_index = -2
+position = Vector2(618, 228)
+scale = Vector2(8.94531, 8.4043)
+texture = ExtResource("1_37thx")
 
 [node name="player" parent="." instance=ExtResource("1_snowr")]
 position = Vector2(562, 382)
@@ -119,6 +128,9 @@ position = Vector2(556, -269)
 shape = SubResource("RectangleShape2D_d5jf6")
 
 [node name="Sprite2D" type="Sprite2D" parent="door"]
+light_mask = 4
+visibility_layer = 4
+z_index = 2
 position = Vector2(535, -280)
 texture = ExtResource("9_m3efj")
 

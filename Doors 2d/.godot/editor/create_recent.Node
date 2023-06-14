@@ -1,7 +1,7 @@
+TextureRect
 TextureButton
 VBoxContainer
 TextEdit
-TextureRect
 CollisionShape2D
 StaticBody2D
 AnimatedSprite2D

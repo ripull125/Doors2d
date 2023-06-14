@@ -1,7 +1,8 @@
-[gd_scene load_steps=18 format=3 uid="uid://b132xlfodb64y"]
+[gd_scene load_steps=19 format=3 uid="uid://b132xlfodb64y"]
 
 [ext_resource type="Texture2D" uid="uid://bkaqshqrsxrin" path="res://sprites/room2.png" id="1_h60b1"]
 [ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="2_oa2yq"]
+[ext_resource type="Texture2D" uid="uid://62rbc58ebp56" path="res://New Piskel (6).png" id="3_1qiw8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o8uwe"]
 size = Vector2(216, 874.667)
@@ -145,3 +146,15 @@ limit_top = -1750
 limit_right = 2289
 limit_bottom = 815
 limit_smoothed = true
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+light_mask = 2
+visibility_layer = 2
+z_index = -2
+z_as_relative = false
+offset_left = -1776.0
+offset_top = 1776.0
+offset_right = -1245.0
+offset_bottom = 2309.0
+scale = Vector2(8.4754, -8.29851)
+texture = ExtResource("3_1qiw8")
