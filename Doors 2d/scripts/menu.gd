@@ -21,7 +21,7 @@ func _on_texture_button_pressed():
 
 
 func _on_options_pressed():
-		get_tree().change_scene_to_file("res://rooms/room1.tscn")
+		get_tree().change_scene_to_file("res://scenes/controls.tscn")
 
 
 func _on_quit_pressed():

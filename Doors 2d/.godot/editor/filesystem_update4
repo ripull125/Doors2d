@@ -1,12 +1,6 @@
 res://default_env.tres
-res://scenes/drawer.tscn
-res://scenes/Slot.gd
-res://scripts/drawer.gd
-res://scripts/player.gd
-res://scenes/player.tscn
-res://rooms/room1.tscn
+res://scenes/controls.tscn
+res://scenes/Item.gd
+res://scenes/controls.gd
 res://scenes/menu.tscn
-res://scenes/closet.tscn
-res://rooms/REALroom_2.tscn
-res://rooms/room_2.tscn
-res://scripts/closet.gd
+res://scripts/menu.gd

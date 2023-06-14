@@ -1,3 +1,6 @@
+TextureButton
+VBoxContainer
+TextEdit
 TextureRect
 CollisionShape2D
 StaticBody2D
@@ -9,7 +12,6 @@ GridContainer
 Label
 TileMap
 HSlider
-VBoxContainer
 HBoxContainer
 Control
 CheckBox
@@ -18,5 +20,4 @@ Node
 Camera2D
 AnimationPlayer
 CharacterBody2D
-TextureButton
 Marker2D
