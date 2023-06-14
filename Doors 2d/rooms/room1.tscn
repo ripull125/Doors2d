@@ -108,9 +108,6 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_tbn1w")
 script = ExtResource("6_1ryj3")
 
 [node name="closet" parent="." instance=ExtResource("6_51yv7")]
-interact_label = null
-interact_type = null
-interact_value = null
 
 [node name="door" type="Area2D" parent="."]
 position = Vector2(359, -388)
