@@ -142,7 +142,6 @@ shape = SubResource("RectangleShape2D_lwsun")
 
 [node name="player" parent="." instance=ExtResource("2_oa2yq")]
 position = Vector2(577, 486)
-canHide = null
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 limit_left = -1125

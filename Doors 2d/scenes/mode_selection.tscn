@@ -1,0 +1,50 @@
+[gd_scene load_steps=4 format=3 uid="uid://cdjfm4ctc62rg"]
+
+[ext_resource type="Script" path="res://scripts/easy.gd" id="1_rooqb"]
+[ext_resource type="Script" path="res://scripts/hard.gd" id="2_uhhfi"]
+[ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="3_dlirr"]
+
+[node name="modeSelection" type="Node2D"]
+
+[node name="Button" type="Button" parent="."]
+offset_right = 1176.0
+offset_bottom = 652.0
+
+[node name="Label" type="Label" parent="."]
+offset_left = 442.0
+offset_top = 37.0
+offset_right = 740.0
+offset_bottom = 95.0
+theme_override_font_sizes/font_size = 40
+text = "Select Difficulty"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 506.0
+offset_top = 195.0
+offset_right = 656.0
+offset_bottom = 426.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="easy" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Easy"
+script = ExtResource("1_rooqb")
+
+[node name="hard" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Hard"
+script = ExtResource("2_uhhfi")
+
+[node name="player" parent="." instance=ExtResource("3_dlirr")]
+position = Vector2(-150, -246)
+
+[connection signal="pressed" from="VBoxContainer/easy" to="VBoxContainer/easy" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/hard" to="VBoxContainer/hard" method="_on_pressed"]

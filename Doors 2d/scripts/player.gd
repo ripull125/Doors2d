@@ -77,6 +77,7 @@ func _physics_process(_delta):
 func check_dead():
 	if(health == 0):
 		print("dead")
+		get_tree().change_scene_to_file("res://youDied.tscn")
 
 # Interaction methods
 
@@ -109,5 +110,5 @@ func update_interactions():
 
 
 func _on_rush_area_entered(area):
-	if(not hidden):
+	if(hidden):
 		health = 0
