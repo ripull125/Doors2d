@@ -78,7 +78,7 @@ func check_dead():
 	if(health == 0):
 		print("dead")
 		
-		get_tree().change_scene_to_file("res://youDied.tscn")
+		get_tree().change_scene_to_file("res://scenes/youDied.tscn")
 
 # Interaction methods
 

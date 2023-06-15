@@ -16,3 +16,4 @@ res://scripts/default_env.tres
 res://scenes/mode_selection.tscn
 res://rooms/chase.tscn
 res://scenes/rush.gd
+res://rooms/flicker.gd
