@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://blvitvrmuak60"]
 
-[ext_resource type="Texture2D" path="res://sprites/New Piskel (9).png" id="1_r4qbw"]
+[ext_resource type="Texture2D" uid="uid://c7mfr4hp8gdxp" path="res://sprites/New Piskel (9).png" id="1_r4qbw"]
 [ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="2_dhyry"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mlu3g"]
@@ -378,6 +378,362 @@ shape = SubResource("CircleShape2D_mlu3g")
 
 [node name="CollisionShape2D25" type="CollisionShape2D" parent="TextureRect/StaticBody2D3"]
 position = Vector2(623, 2561)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="TextureRect"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/StaticBody2D4"]
+position = Vector2(3784, 418)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="TextureRect/StaticBody2D4"]
+position = Vector2(3677, 561)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="TextureRect/StaticBody2D4"]
+position = Vector2(3613, 717)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="TextureRect/StaticBody2D4"]
+position = Vector2(3556, 874)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="TextureRect/StaticBody2D4"]
+position = Vector2(3470, 995)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="TextureRect/StaticBody2D4"]
+position = Vector2(3420, 1152)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="TextureRect/StaticBody2D4"]
+position = Vector2(3328, 1280)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="TextureRect/StaticBody2D4"]
+position = Vector2(3235, 1366)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="TextureRect/StaticBody2D4"]
+position = Vector2(3192, 1501)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="TextureRect/StaticBody2D4"]
+position = Vector2(3185, 1665)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="TextureRect/StaticBody2D4"]
+position = Vector2(3128, 1808)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="TextureRect/StaticBody2D4"]
+position = Vector2(3114, 1950)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="TextureRect/StaticBody2D4"]
+position = Vector2(3093, 2050)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="TextureRect/StaticBody2D4"]
+position = Vector2(3093, 2171)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="TextureRect/StaticBody2D4"]
+position = Vector2(3107, 2300)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="TextureRect/StaticBody2D4"]
+position = Vector2(3805, 1330)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="TextureRect/StaticBody2D4"]
+position = Vector2(3720, 1458)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D18" type="CollisionShape2D" parent="TextureRect/StaticBody2D4"]
+position = Vector2(3677, 1594)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D19" type="CollisionShape2D" parent="TextureRect/StaticBody2D4"]
+position = Vector2(3649, 1729)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D20" type="CollisionShape2D" parent="TextureRect/StaticBody2D4"]
+position = Vector2(3613, 1879)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="TextureRect"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/StaticBody2D5"]
+position = Vector2(1560, 1466)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="TextureRect/StaticBody2D5"]
+position = Vector2(1589, 1295)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="TextureRect/StaticBody2D5"]
+position = Vector2(1610, 1173)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="TextureRect/StaticBody2D5"]
+position = Vector2(1681, 1024)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="TextureRect/StaticBody2D5"]
+position = Vector2(1824, 945)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="TextureRect/StaticBody2D5"]
+position = Vector2(1967, 881)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="TextureRect/StaticBody2D5"]
+position = Vector2(2116, 853)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="TextureRect/StaticBody2D5"]
+position = Vector2(2252, 831)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="TextureRect/StaticBody2D5"]
+position = Vector2(2380, 867)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="TextureRect/StaticBody2D5"]
+position = Vector2(2494, 938)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="TextureRect/StaticBody2D5"]
+position = Vector2(2587, 1059)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="TextureRect/StaticBody2D5"]
+position = Vector2(2658, 1188)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="TextureRect/StaticBody2D5"]
+position = Vector2(2722, 1295)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="TextureRect/StaticBody2D5"]
+position = Vector2(2772, 1430)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="TextureRect/StaticBody2D5"]
+position = Vector2(2836, 1508)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="TextureRect/StaticBody2D5"]
+position = Vector2(2872, 1665)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="TextureRect/StaticBody2D5"]
+position = Vector2(2929, 1801)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D18" type="CollisionShape2D" parent="TextureRect/StaticBody2D5"]
+position = Vector2(2964, 1929)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D19" type="CollisionShape2D" parent="TextureRect/StaticBody2D5"]
+position = Vector2(3000, 2043)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D20" type="CollisionShape2D" parent="TextureRect/StaticBody2D5"]
+position = Vector2(3036, 2143)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="TextureRect"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/StaticBody2D6"]
+position = Vector2(1019, 176)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="TextureRect/StaticBody2D6"]
+position = Vector2(1104, 247)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="TextureRect/StaticBody2D6"]
+position = Vector2(1033, 382)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="TextureRect/StaticBody2D6"]
+position = Vector2(1004, 496)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="TextureRect/StaticBody2D6"]
+position = Vector2(962, 625)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="TextureRect/StaticBody2D6"]
+position = Vector2(940, 767)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="TextureRect/StaticBody2D6"]
+position = Vector2(919, 917)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="TextureRect/StaticBody2D6"]
+position = Vector2(940, 1074)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="TextureRect/StaticBody2D6"]
+position = Vector2(919, 1231)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="TextureRect/StaticBody2D6"]
+position = Vector2(969, 1380)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="TextureRect/StaticBody2D6"]
+position = Vector2(976, 1551)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="TextureRect/StaticBody2D6"]
+position = Vector2(990, 1715)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="TextureRect/StaticBody2D6"]
+position = Vector2(1061, 1858)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="TextureRect/StaticBody2D6"]
+position = Vector2(1118, 2043)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="TextureRect/StaticBody2D6"]
+position = Vector2(1204, 2178)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="TextureRect/StaticBody2D6"]
+position = Vector2(1339, 2178)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="TextureRect/StaticBody2D6"]
+position = Vector2(1432, 2079)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D18" type="CollisionShape2D" parent="TextureRect/StaticBody2D6"]
+position = Vector2(1453, 1915)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D19" type="CollisionShape2D" parent="TextureRect/StaticBody2D6"]
+position = Vector2(1489, 1758)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D20" type="CollisionShape2D" parent="TextureRect/StaticBody2D6"]
+position = Vector2(1532, 1594)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="TextureRect"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/StaticBody2D7"]
+position = Vector2(4269, 845)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="TextureRect/StaticBody2D7"]
+position = Vector2(4425, 803)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="TextureRect/StaticBody2D7"]
+position = Vector2(4589, 732)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="TextureRect/StaticBody2D7"]
+position = Vector2(4746, 682)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="TextureRect/StaticBody2D7"]
+position = Vector2(4882, 667)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="TextureRect/StaticBody2D7"]
+position = Vector2(4946, 518)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="TextureRect/StaticBody2D7"]
+position = Vector2(4924, 389)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="TextureRect/StaticBody2D7"]
+position = Vector2(4903, 268)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="TextureRect/StaticBody2D7"]
+position = Vector2(4874, 161)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="TextureRect/StaticBody2D7"]
+position = Vector2(4753, 55)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="TextureRect/StaticBody2D7"]
+position = Vector2(4661, 12)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="TextureRect/StaticBody2D7"]
+position = Vector2(4539, 55)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="TextureRect/StaticBody2D7"]
+position = Vector2(4425, 119)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="TextureRect/StaticBody2D7"]
+position = Vector2(4318, 169)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="TextureRect/StaticBody2D7"]
+position = Vector2(4183, 226)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="TextureRect/StaticBody2D7"]
+position = Vector2(4041, 297)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="TextureRect/StaticBody2D7"]
+position = Vector2(3919, 368)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D18" type="CollisionShape2D" parent="TextureRect/StaticBody2D7"]
+position = Vector2(320, 382)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D19" type="CollisionShape2D" parent="TextureRect/StaticBody2D7"]
+position = Vector2(399, 261)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D20" type="CollisionShape2D" parent="TextureRect/StaticBody2D7"]
+position = Vector2(470, 97)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D21" type="CollisionShape2D" parent="TextureRect/StaticBody2D7"]
+position = Vector2(584, 47)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D22" type="CollisionShape2D" parent="TextureRect/StaticBody2D7"]
+position = Vector2(741, 69)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D23" type="CollisionShape2D" parent="TextureRect/StaticBody2D7"]
+position = Vector2(883, 112)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D24" type="CollisionShape2D" parent="TextureRect/StaticBody2D7"]
+position = Vector2(3869, 1252)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D25" type="CollisionShape2D" parent="TextureRect/StaticBody2D7"]
+position = Vector2(3926, 1124)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D26" type="CollisionShape2D" parent="TextureRect/StaticBody2D7"]
+position = Vector2(4026, 1031)
+shape = SubResource("CircleShape2D_mlu3g")
+
+[node name="CollisionShape2D27" type="CollisionShape2D" parent="TextureRect/StaticBody2D7"]
+position = Vector2(4148, 924)
 shape = SubResource("CircleShape2D_mlu3g")
 
 [node name="player" parent="." instance=ExtResource("2_dhyry")]

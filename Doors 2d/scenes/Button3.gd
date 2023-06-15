@@ -12,4 +12,4 @@ func _process(delta):
 
 
 func _on_pressed():
-	get_tree().get_current_scene()
+		get_tree().quit()
