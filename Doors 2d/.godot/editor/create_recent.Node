@@ -1,6 +1,6 @@
-CollisionPolygon2D
 StaticBody2D
 CollisionShape2D
+CollisionPolygon2D
 TextureRect
 Label
 Button
