@@ -143,6 +143,7 @@ size = Vector2(86, 86)
 script = ExtResource("1_38ddx")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = 2
 sprite_frames = SubResource("SpriteFrames_wvell")
 animation = &"side"
 

@@ -7,3 +7,8 @@ res://scenes/menu.tscn
 res://mode_selection.tscn
 res://youDied.tscn
 res://scripts/default_env.tres
+res://rooms/REALroom_2.tscn
+res://scenes/mode_selection.tscn
+res://scenes/youDied.tscn
+res://rooms/chase.tscn
+res://rooms/Area2D.gd

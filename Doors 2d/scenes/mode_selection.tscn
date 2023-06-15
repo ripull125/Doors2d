@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://cdjfm4ctc62rg"]
 
-[ext_resource type="Script" path="res://scripts/easy.gd" id="1_rooqb"]
-[ext_resource type="Script" path="res://scripts/hard.gd" id="2_uhhfi"]
-[ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="3_dlirr"]
+[ext_resource type="Script" path="res://scripts/easy.gd" id="1_chpqq"]
+[ext_resource type="Script" path="res://scripts/hard.gd" id="2_idb1j"]
+[ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="3_eorr0"]
 
 [node name="modeSelection" type="Node2D"]
 
@@ -35,15 +35,15 @@ grow_vertical = 2
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "Easy"
-script = ExtResource("1_rooqb")
+script = ExtResource("1_chpqq")
 
 [node name="hard" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "Hard"
-script = ExtResource("2_uhhfi")
+script = ExtResource("2_idb1j")
 
-[node name="player" parent="." instance=ExtResource("3_dlirr")]
+[node name="player" parent="." instance=ExtResource("3_eorr0")]
 position = Vector2(-150, -246)
 
 [connection signal="pressed" from="VBoxContainer/easy" to="VBoxContainer/easy" method="_on_pressed"]

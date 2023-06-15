@@ -128,6 +128,7 @@ script = ExtResource("6_1ryj3")
 [node name="closet" parent="." instance=ExtResource("6_51yv7")]
 
 [node name="door" type="Area2D" parent="."]
+z_index = -1
 position = Vector2(359, -388)
 monitorable = false
 script = ExtResource("8_ccljl")
@@ -139,7 +140,7 @@ shape = SubResource("RectangleShape2D_d5jf6")
 [node name="Sprite2D" type="Sprite2D" parent="door"]
 light_mask = 4
 visibility_layer = 4
-z_index = 2
+z_index = 1
 position = Vector2(535, -280)
 texture = ExtResource("9_m3efj")
 
