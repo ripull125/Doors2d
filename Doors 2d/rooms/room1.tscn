@@ -1,7 +1,7 @@
-[gd_scene load_steps=23 format=3 uid="uid://ch71jg4rqvxrv"]
+[gd_scene load_steps=25 format=3 uid="uid://ch71jg4rqvxrv"]
 
 [ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="1_snowr"]
-[ext_resource type="Texture2D" uid="uid://62rbc58ebp56" path="res://sprites/New Piskel (6).png" id="1_tl2db"]
+[ext_resource type="Texture2D" path="res://sprites/New Piskel (6).png" id="1_tl2db"]
 [ext_resource type="Texture2D" uid="uid://va30hj8eqhpf" path="res://sprites/basic_room_1.png" id="2_6w85w"]
 [ext_resource type="Script" path="res://scripts/Inventory.gd" id="3_msdcg"]
 [ext_resource type="Texture2D" uid="uid://cef4cc7pf3irf" path="res://sprites/inventory_background.png" id="4_d2t8v"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://d4jghv2fhbucf" path="res://sprites/door.png" id="9_m3efj"]
 [ext_resource type="PackedScene" uid="uid://d15b0hg5y0ipx" path="res://scenes/drawer.tscn" id="10_lk7ep"]
 [ext_resource type="PackedScene" uid="uid://dt5f4slux37iw" path="res://scenes/rush.tscn" id="12_j87hh"]
+[ext_resource type="Script" path="res://scenes/rush.gd" id="13_oipm3"]
 
 [sub_resource type="TileSet" id="TileSet_svga3"]
 
@@ -38,9 +39,37 @@ size = Vector2(316, 302)
 
 [sub_resource type="Animation" id="Animation_i66jg"]
 resource_name = "kill"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(642, 2040), Vector2(594, -2001)]
+}
+
+[sub_resource type="Animation" id="Animation_tt77l"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(642, 2040)]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_2woe0"]
 _data = {
+"RESET": SubResource("Animation_tt77l"),
 "kill": SubResource("Animation_i66jg")
 }
 
@@ -150,6 +179,7 @@ rotation = 3.13605
 
 [node name="rush" parent="." instance=ExtResource("12_j87hh")]
 position = Vector2(642, 2040)
+script = ExtResource("13_oipm3")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="rush"]
 libraries = {

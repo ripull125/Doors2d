@@ -1,10 +1,7 @@
-[gd_scene load_steps=24 format=3 uid="uid://b5hay3acvqwbc"]
+[gd_scene load_steps=20 format=3 uid="uid://cfqhoyluai3gs"]
 
-[ext_resource type="Texture2D" uid="uid://bkaqshqrsxrin" path="res://sprites/room2.png" id="1_h60b1"]
-[ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="2_oa2yq"]
-[ext_resource type="Texture2D" uid="uid://d4jghv2fhbucf" path="res://sprites/door.png" id="4_ogj7s"]
-[ext_resource type="Script" path="res://rooms/Area2D.gd" id="4_tvwvy"]
-[ext_resource type="Texture2D" path="res://sprites/New Piskel (6).png" id="5_0dsup"]
+[ext_resource type="Texture2D" uid="uid://bkaqshqrsxrin" path="res://sprites/room2.png" id="1_7l4ga"]
+[ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="2_nbd2b"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o8uwe"]
 size = Vector2(220.666, 874.667)
@@ -57,9 +54,6 @@ size = Vector2(232.333, 171.667)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lwsun"]
 size = Vector2(237.667, 262.5)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_yolip"]
-size = Vector2(316, 302)
-
 [node name="room2" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -68,7 +62,7 @@ offset_top = -3204.0
 offset_right = -338.813
 offset_bottom = -1412.0
 scale = Vector2(3, 3)
-texture = ExtResource("1_h60b1")
+texture = ExtResource("1_7l4ga")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TextureRect"]
 
@@ -141,8 +135,7 @@ shape = SubResource("RectangleShape2D_vfmfj")
 position = Vector2(702.833, 1250.58)
 shape = SubResource("RectangleShape2D_lwsun")
 
-[node name="player" parent="." instance=ExtResource("2_oa2yq")]
-z_index = 2
+[node name="player" parent="." instance=ExtResource("2_nbd2b")]
 position = Vector2(577, 486)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
@@ -151,33 +144,3 @@ limit_top = -1750
 limit_right = 2289
 limit_bottom = 815
 limit_smoothed = true
-
-[node name="TextureRect2" type="TextureRect" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="NewPiskel(5)" type="Sprite2D" parent="TextureRect2"]
-light_mask = 4
-visibility_layer = 4
-z_index = -2
-position = Vector2(447, -194)
-scale = Vector2(8.94531, 8.4043)
-texture = ExtResource("5_0dsup")
-
-[node name="door" type="Area2D" parent="."]
-position = Vector2(359, -388)
-monitorable = false
-script = ExtResource("4_tvwvy")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="door"]
-position = Vector2(205, -1181)
-shape = SubResource("RectangleShape2D_yolip")
-
-[node name="Sprite2D" type="Sprite2D" parent="door"]
-light_mask = 4
-visibility_layer = 4
-position = Vector2(197, -1227)
-texture = ExtResource("4_ogj7s")
-
-[connection signal="body_entered" from="door" to="door" method="_on_body_entered"]
-[connection signal="body_exited" from="door" to="door" method="_on_body_exited"]

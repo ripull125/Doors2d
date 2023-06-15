@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://buyy150arehpc" path="res://sprites/rush_background.png" id="2_u40xa"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_31404"]
-size = Vector2(25.3539, 26.991)
+size = Vector2(25.3539, 7.56913)
 
 [node name="rush" type="Area2D"]
 
@@ -15,11 +15,11 @@ texture = ExtResource("1_clwhe")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 z_index = 9
-position = Vector2(249, 4672)
-scale = Vector2(203.637, 782.459)
+position = Vector2(-17, 1352)
+scale = Vector2(217.438, 215.447)
 texture = ExtResource("2_u40xa")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(26.4999, 4874.5)
+position = Vector2(26.4999, 1372)
 scale = Vector2(534.396, 360.676)
 shape = SubResource("RectangleShape2D_31404")
