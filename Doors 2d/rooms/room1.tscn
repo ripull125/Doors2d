@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://ch71jg4rqvxrv"]
+[gd_scene load_steps=25 format=3 uid="uid://ch71jg4rqvxrv"]
 
 [ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="1_snowr"]
 [ext_resource type="Texture2D" path="res://sprites/New Piskel (6).png" id="1_tl2db"]
@@ -13,7 +13,6 @@
 [ext_resource type="PackedScene" uid="uid://d15b0hg5y0ipx" path="res://scenes/drawer.tscn" id="10_lk7ep"]
 [ext_resource type="PackedScene" uid="uid://dt5f4slux37iw" path="res://scenes/rush.tscn" id="12_j87hh"]
 [ext_resource type="Script" path="res://scenes/rush.gd" id="13_oipm3"]
-[ext_resource type="Texture2D" uid="uid://buyy150arehpc" path="res://sprites/rush_background.png" id="14_mo7nd"]
 
 [sub_resource type="TileSet" id="TileSet_svga3"]
 
@@ -50,7 +49,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(642, 2040), Vector2(501, -9305)]
+"values": [Vector2(642, 2040), Vector2(603, -5791)]
 }
 
 [sub_resource type="Animation" id="Animation_i66jg"]
@@ -179,19 +178,13 @@ position = Vector2(1029, -127)
 rotation = 3.13605
 
 [node name="rush" parent="." instance=ExtResource("12_j87hh")]
-position = Vector2(642, 2040)
+position = Vector2(603, -5791)
 script = ExtResource("13_oipm3")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="rush"]
 libraries = {
 "": SubResource("AnimationLibrary_2woe0")
 }
-
-[node name="flicker" type="Sprite2D" parent="rush"]
-z_index = 13
-position = Vector2(-3069, 5171)
-scale = Vector2(128.84, -439.595)
-texture = ExtResource("14_mo7nd")
 
 [connection signal="body_entered" from="door" to="door" method="_on_body_entered"]
 [connection signal="body_exited" from="door" to="door" method="_on_body_exited"]
