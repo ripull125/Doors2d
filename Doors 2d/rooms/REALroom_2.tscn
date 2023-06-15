@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="2_oa2yq"]
 [ext_resource type="Texture2D" uid="uid://d4jghv2fhbucf" path="res://sprites/door.png" id="4_ogj7s"]
 [ext_resource type="Script" path="res://rooms/Area2D.gd" id="4_tvwvy"]
-[ext_resource type="Texture2D" path="res://sprites/New Piskel (6).png" id="5_0dsup"]
+[ext_resource type="Texture2D" uid="uid://62rbc58ebp56" path="res://sprites/New Piskel (6).png" id="5_0dsup"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o8uwe"]
 size = Vector2(220.666, 874.667)

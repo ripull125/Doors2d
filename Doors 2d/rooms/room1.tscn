@@ -1,7 +1,7 @@
 [gd_scene load_steps=25 format=3 uid="uid://ch71jg4rqvxrv"]
 
 [ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="1_snowr"]
-[ext_resource type="Texture2D" path="res://sprites/New Piskel (6).png" id="1_tl2db"]
+[ext_resource type="Texture2D" uid="uid://62rbc58ebp56" path="res://sprites/New Piskel (6).png" id="1_tl2db"]
 [ext_resource type="Texture2D" uid="uid://va30hj8eqhpf" path="res://sprites/basic_room_1.png" id="2_6w85w"]
 [ext_resource type="Script" path="res://scripts/Inventory.gd" id="3_msdcg"]
 [ext_resource type="Texture2D" uid="uid://cef4cc7pf3irf" path="res://sprites/inventory_background.png" id="4_d2t8v"]
@@ -178,7 +178,7 @@ position = Vector2(1029, -127)
 rotation = 3.13605
 
 [node name="rush" parent="." instance=ExtResource("12_j87hh")]
-position = Vector2(603, -5791)
+position = Vector2(642, 2040)
 script = ExtResource("13_oipm3")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="rush"]
