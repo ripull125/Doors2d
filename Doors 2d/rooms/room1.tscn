@@ -1,7 +1,7 @@
 [gd_scene load_steps=23 format=3 uid="uid://ch71jg4rqvxrv"]
 
-[ext_resource type="Texture2D" path="res://New Piskel (6).png" id="1_37thx"]
 [ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="1_snowr"]
+[ext_resource type="Texture2D" uid="uid://62rbc58ebp56" path="res://sprites/New Piskel (6).png" id="1_tl2db"]
 [ext_resource type="Texture2D" uid="uid://va30hj8eqhpf" path="res://sprites/basic_room_1.png" id="2_6w85w"]
 [ext_resource type="Script" path="res://scripts/Inventory.gd" id="3_msdcg"]
 [ext_resource type="Texture2D" uid="uid://cef4cc7pf3irf" path="res://sprites/inventory_background.png" id="4_d2t8v"]
@@ -52,7 +52,7 @@ visibility_layer = 4
 z_index = -2
 position = Vector2(618, 228)
 scale = Vector2(8.94531, 8.4043)
-texture = ExtResource("1_37thx")
+texture = ExtResource("1_tl2db")
 
 [node name="player" parent="." instance=ExtResource("1_snowr")]
 position = Vector2(562, 382)
@@ -128,6 +128,7 @@ script = ExtResource("6_1ryj3")
 [node name="closet" parent="." instance=ExtResource("6_51yv7")]
 
 [node name="door" type="Area2D" parent="."]
+z_index = -1
 position = Vector2(359, -388)
 monitorable = false
 script = ExtResource("8_ccljl")
@@ -139,7 +140,7 @@ shape = SubResource("RectangleShape2D_d5jf6")
 [node name="Sprite2D" type="Sprite2D" parent="door"]
 light_mask = 4
 visibility_layer = 4
-z_index = 2
+z_index = 1
 position = Vector2(535, -280)
 texture = ExtResource("9_m3efj")
 
