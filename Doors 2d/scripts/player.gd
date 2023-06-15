@@ -109,5 +109,5 @@ func update_interactions():
 
 
 func _on_rush_area_entered(area):
-	if(not hidden):
+	if(!inCloset):
 		health = 0

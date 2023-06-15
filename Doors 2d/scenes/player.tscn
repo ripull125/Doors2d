@@ -141,7 +141,6 @@ size = Vector2(86, 86)
 
 [node name="player" type="CharacterBody2D"]
 script = ExtResource("1_38ddx")
-canHide = null
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_wvell")

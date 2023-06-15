@@ -56,7 +56,6 @@ texture = ExtResource("1_37thx")
 
 [node name="player" parent="." instance=ExtResource("1_snowr")]
 position = Vector2(562, 382)
-canHide = null
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 limit_left = -170
