@@ -15,7 +15,7 @@ func _process(_delta):
 	if(my_random_number >0 and my_random_number < 100000 and can_kill):
 		can_kill = false
 		$flicker.visible = true
-		await get_tree().create_timer(0.5).timeout
+		await get_tree().create_timer(2.5).timeout
 		$flicker.visible = false
 		await get_tree().create_timer(5.0).timeout
 		kill = true
