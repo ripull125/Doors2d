@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvoj2dtm67toj"
-path="res://.godot/imported/New Piskel-1.png.png-669689c59be7316bbdddc31b858acb6c.ctex"
+path="res://.godot/imported/Screech.png-456a6c60e4896f581d54a79fbb585920.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/New Piskel-1.png.png"
-dest_files=["res://.godot/imported/New Piskel-1.png.png-669689c59be7316bbdddc31b858acb6c.ctex"]
+source_file="res://sprites/Screech.png"
+dest_files=["res://.godot/imported/Screech.png-456a6c60e4896f581d54a79fbb585920.ctex"]
 
 [params]
 

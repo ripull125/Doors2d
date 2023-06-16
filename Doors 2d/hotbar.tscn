@@ -1,0 +1,58 @@
+[gd_scene load_steps=4 format=3 uid="uid://bvo65o7gai67h"]
+
+[ext_resource type="Script" path="res://hotbar.gd" id="1_cpyot"]
+[ext_resource type="Texture2D" uid="uid://bnu4avefgpmgl" path="res://sprites/hotbar_background.png" id="1_xcpen"]
+[ext_resource type="Script" path="res://scripts/Slot1.gd" id="3_tn6s1"]
+
+[node name="Hotbar" type="Node2D"]
+script = ExtResource("1_cpyot")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 423.0
+offset_top = 568.0
+offset_right = 740.0
+offset_bottom = 618.0
+texture = ExtResource("1_xcpen")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+offset_left = 430.0
+offset_top = 577.0
+offset_right = 724.0
+offset_bottom = 608.0
+theme_override_constants/h_separation = 14
+columns = 7
+
+[node name="HotbarSlot1" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+script = ExtResource("3_tn6s1")
+
+[node name="HotbarSlot2" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+script = ExtResource("3_tn6s1")
+
+[node name="HotbarSlot3" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+script = ExtResource("3_tn6s1")
+
+[node name="HotbarSlot4" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+script = ExtResource("3_tn6s1")
+
+[node name="HotbarSlot5" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+script = ExtResource("3_tn6s1")
+
+[node name="HotbarSlot6" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+script = ExtResource("3_tn6s1")
+
+[node name="HotbarSlot7" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+script = ExtResource("3_tn6s1")
