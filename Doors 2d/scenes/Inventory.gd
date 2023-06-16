@@ -7,10 +7,10 @@ var holding_item = null
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	for inv_slot in inventory_slots.get_children():
-		inv_slot.connect(self, "gui_input", "slot_gui_input", [inv_slot])
+		inv_slot.connect("gui_input", self, "slot_gui_input", [inv_slot])
 
 
-func slot_gut_input(event: InputEvent, slot: SlotClass):
+func slot_gui_input(event: InputEvent, slot: SlotClass):
 	if event is InputEvenMouseButton:
 		if event.button_index == BUTTON_LEFT && event.pressed:
 			if holding_item != null:
