@@ -6,6 +6,7 @@
 [node name="room3" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
 offset_left = -623.0
 offset_top = -1488.0
 offset_right = 4377.16
@@ -22,3 +23,6 @@ limit_top = -1366
 limit_right = 2090
 limit_bottom = 645
 limit_smoothed = true
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0.247059, 0.247059, 0.247059, 1)

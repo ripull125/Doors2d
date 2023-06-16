@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://di1463flyaf58"]
+[gd_scene load_steps=26 format=3 uid="uid://di1463flyaf58"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_38ddx"]
 [ext_resource type="Texture2D" uid="uid://dd8xdq466hvm3" path="res://sprites/New Piskel (3).png" id="2_gk77s"]
@@ -139,10 +139,20 @@ size = Vector2(86, 86)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_feow3"]
 
+[sub_resource type="Gradient" id="Gradient_17idp"]
+offsets = PackedFloat32Array(0, 0.73955)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_sbm7w"]
+gradient = SubResource("Gradient_17idp")
+fill = 1
+fill_from = Vector2(0.5, 0.495726)
+
 [node name="player" type="CharacterBody2D"]
 script = ExtResource("1_38ddx")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = 2
 sprite_frames = SubResource("SpriteFrames_wvell")
 animation = &"side"
 
@@ -183,6 +193,11 @@ offset_right = 4.0
 offset_bottom = -36.0
 scale = Vector2(3.63465, 4.29468)
 value = 50.0
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(-2, 17)
+scale = Vector2(5.17188, 5.40625)
+texture = SubResource("GradientTexture2D_sbm7w")
 
 [connection signal="area_entered" from="Interaction_Components/Interaction_Area" to="." method="_on_interaction_area_area_entered"]
 [connection signal="area_exited" from="Interaction_Components/Interaction_Area" to="." method="_on_interaction_area_area_exited"]

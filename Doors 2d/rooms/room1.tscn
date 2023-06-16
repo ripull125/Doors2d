@@ -84,6 +84,7 @@ scale = Vector2(8.94531, 8.4043)
 texture = ExtResource("1_tl2db")
 
 [node name="player" parent="." instance=ExtResource("1_snowr")]
+z_index = 2
 position = Vector2(562, 382)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
@@ -185,6 +186,9 @@ script = ExtResource("13_oipm3")
 libraries = {
 "": SubResource("AnimationLibrary_2woe0")
 }
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0.247059, 0.247059, 0.247059, 1)
 
 [connection signal="body_entered" from="door" to="door" method="_on_body_entered"]
 [connection signal="body_exited" from="door" to="door" method="_on_body_exited"]
