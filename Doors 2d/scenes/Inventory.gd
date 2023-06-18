@@ -6,17 +6,6 @@ const SlotClass = preload("res://scenes/Slot.gd")
 
 func _ready():
 	var slots = inventory_slots.get_children()
-	for i in range(slots.size()):
-		slots[i].connect("gui_input", self, "slot_gui_input", [slots[i]])
-		slots[i].slot_index = i
-		slots[i].slotType = SlotClass.SlotType.INVENTORY
-		
-	for i in range(equip_slots.size()):
-		equip_slots[i].connect("gui_input", self, "slot_gui_input", [equip_slots[i]])
-		equip_slots[i].slot_index = i
-	equip_slots[0].slotType = SlotClass.SlotType.SHIRT
-	equip_slots[1].slotType = SlotClass.SlotType.PANTS
-	equip_slots[2].slotType = SlotClass.SlotType.SHOES
 	
 	initialize_inventory()
 	initialize_equips()
@@ -34,7 +23,7 @@ func initialize_equips():
 
 func slot_gui_input(event: InputEvent, slot: SlotClass):
 	if event is InputEventMouseButton:
-		if event.button_index == BUTTON_LEFT && event.pressed:
+		if event.button_index == MOUSE_BUTTON_LEFT && event.pressed:
 			if find_parent("UserInterface").holding_item != null:
 				if !slot.item:
 					left_click_empty_slot(slot)
@@ -55,15 +44,6 @@ func able_to_put_into_slot(slot: SlotClass):
 	var holding_item = find_parent("UserInterface").holding_item
 	if holding_item == null:
 		return true
-	var holding_item_category = JsonData.item_data[holding_item.item_name]["ItemCategory"]
-	
-	if slot.slotType == SlotClass.SlotType.SHIRT:
-		return holding_item_category == "Shirt"
-	elif slot.slotType == SlotClass.SlotType.PANTS:
-		return holding_item_category == "Pants"
-	elif slot.slotType == SlotClass.SlotType.SHOES:
-		return holding_item_category == "Shoes"
-	return true
 		
 func left_click_empty_slot(slot: SlotClass):
 	if able_to_put_into_slot(slot):

@@ -14,10 +14,6 @@ var hotbar = {
 }
 
 # TODO: First try to add to hotbar
-func add_item(item_name):
-	for item in inventory:
-		if inventory[item][0] == item_name:
-				inventory[item][1]
 
 # TODO: Make compatible with hotbar as well
 func update_slot_visual(slot_index, item_name, new_quantity):
@@ -31,28 +27,11 @@ func remove_item(slot: SlotClass):
 	match slot.SlotType:
 		SlotClass.SlotType.HOTBAR:
 			hotbar.erase(slot.slot_index)
-		SlotClass.SlotType.INVENTORY:
-			inventory.erase(slot.slot_index)
-		_:
-			equips.erase(slot.slot_index)
 
 func add_item_to_empty_slot(item: ItemClass, slot: SlotClass):
 	match slot.SlotType:
 		SlotClass.SlotType.HOTBAR:
 			hotbar[slot.slot_index] = [item.item_name, item.item_quantity]
-		SlotClass.SlotType.INVENTORY:
-			inventory[slot.slot_index] = [item.item_name, item.item_quantity]
-		_:
-			equips[slot.slot_index] = [item.item_name, item.item_quantity]
-
-func add_item_quantity(slot: SlotClass, quantity_to_add: int):
-	match slot.SlotType:
-		SlotClass.SlotType.HOTBAR:
-			hotbar[slot.slot_index][1] += quantity_to_add
-		SlotClass.SlotType.INVENTORY:
-			inventory[slot.slot_index][1] += quantity_to_add
-		_:
-			equips[slot.slot_index][1] += quantity_to_add
 
 ###
 ### Hotbar Related Functions

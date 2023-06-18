@@ -1,6 +1,7 @@
 res://scripts/default_env.tres
-res://scenes/Item.gd
 res://scenes/menu.tscn
+res://scenes/Item.gd
+res://scenes/Inventory.gd
 res://rooms/room1.tscn
 res://rooms/REALroom_2.tscn
 res://scenes/Inventory.tscn
@@ -9,8 +10,8 @@ res://room_3.tscn
 res://room2.tscn
 res://REALroom_2.tscn
 res://rooms/hotbar_test.tscn
-res://hotbar.tscn
 res://rooms/room_2.tscn
-res://hotbar.gd
+res://rooms/Item.tscn
+res://hotbar.tscn
+res://rooms/Inventory.tscn
 res://scripts/PlayerInventory.gd
-res://scripts/Slot1.gd
