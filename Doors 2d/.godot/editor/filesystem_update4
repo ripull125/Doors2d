@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 res://default_env.tres
 res://scenes/drawer.tscn
 res://scenes/Slot.gd
@@ -23,8 +24,21 @@ res://rooms/room_2.tscn
 res://scripts/closet.gd
 res://health.gd
 res://scenes/rush.tscn
+=======
+>>>>>>> parent of d64625b (repush)
 res://scripts/default_env.tres
-res://scenes/mode_selection.tscn
-res://rooms/chase.tscn
-res://scenes/rush.gd
-res://rooms/flicker.gd
+res://scenes/Item.gd
+res://scenes/menu.tscn
+res://rooms/room1.tscn
+res://rooms/REALroom_2.tscn
+res://scenes/Inventory.tscn
+res://scenes/Item.tscn
+res://room_3.tscn
+res://room2.tscn
+res://REALroom_2.tscn
+res://rooms/hotbar_test.tscn
+res://hotbar.tscn
+res://rooms/room_2.tscn
+res://hotbar.gd
+res://scripts/PlayerInventory.gd
+res://scripts/Slot1.gd
