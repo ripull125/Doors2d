@@ -12,7 +12,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	var my_random_number = rng.randf_range(-20000000.0, 20000000.0)
-	if(my_random_number >0 and my_random_number < 100000 and can_kill):
+	if(my_random_number >0 and my_random_number < 10000 and can_kill):
 		can_kill = false
 		await get_tree().create_timer(5.0).timeout
 		kill = true
