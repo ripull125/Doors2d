@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://ch71jg4rqvxrv"]
+[gd_scene load_steps=27 format=3 uid="uid://ch71jg4rqvxrv"]
 
 [ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="1_snowr"]
 [ext_resource type="Texture2D" uid="uid://62rbc58ebp56" path="res://sprites/New Piskel (6).png" id="1_tl2db"]
@@ -9,10 +9,12 @@
 [ext_resource type="Script" path="res://rooms/Slot1.gd" id="6_1ryj3"]
 [ext_resource type="PackedScene" uid="uid://cin0jtwuxkv7t" path="res://scenes/closet.tscn" id="6_51yv7"]
 [ext_resource type="Script" path="res://rooms/Area2D.gd" id="8_ccljl"]
-[ext_resource type="Texture2D" uid="uid://d4jghv2fhbucf" path="res://sprites/door.png" id="9_m3efj"]
+[ext_resource type="Texture2D" uid="uid://curmbeqmw4oo8" path="res://sprites/New Piskel (13).png" id="10_k7f7v"]
 [ext_resource type="PackedScene" uid="uid://d15b0hg5y0ipx" path="res://scenes/drawer.tscn" id="10_lk7ep"]
 [ext_resource type="PackedScene" uid="uid://dt5f4slux37iw" path="res://scenes/rush.tscn" id="12_j87hh"]
 [ext_resource type="Script" path="res://scenes/rush.gd" id="13_oipm3"]
+[ext_resource type="PackedScene" uid="uid://c2pdf8ho8sstd" path="res://table.tscn" id="14_j1ifq"]
+[ext_resource type="PackedScene" uid="uid://d2yvfbqthys6m" path="res://table_2.tscn" id="15_fukwk"]
 
 [sub_resource type="TileSet" id="TileSet_svga3"]
 
@@ -156,6 +158,7 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_tbn1w")
 script = ExtResource("6_1ryj3")
 
 [node name="closet" parent="." instance=ExtResource("6_51yv7")]
+position = Vector2(4, 80)
 
 [node name="door" type="Area2D" parent="."]
 z_index = -1
@@ -171,11 +174,12 @@ shape = SubResource("RectangleShape2D_d5jf6")
 light_mask = 4
 visibility_layer = 4
 z_index = 1
-position = Vector2(535, -280)
-texture = ExtResource("9_m3efj")
+position = Vector2(632, -156)
+scale = Vector2(0.40625, 0.4625)
+texture = ExtResource("10_k7f7v")
 
 [node name="drawer" parent="." instance=ExtResource("10_lk7ep")]
-position = Vector2(1029, -127)
+position = Vector2(1111, -227)
 rotation = 3.13605
 
 [node name="rush" parent="." instance=ExtResource("12_j87hh")]
@@ -189,6 +193,44 @@ libraries = {
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 color = Color(0.247059, 0.247059, 0.247059, 1)
+
+[node name="closet2" parent="." instance=ExtResource("6_51yv7")]
+position = Vector2(1140, 242)
+rotation = -3.2306
+
+[node name="closet3" parent="." instance=ExtResource("6_51yv7")]
+position = Vector2(72, -622)
+rotation = 0.837758
+
+[node name="table" parent="." instance=ExtResource("14_j1ifq")]
+position = Vector2(22, -54)
+
+[node name="table3" parent="." instance=ExtResource("15_fukwk")]
+position = Vector2(418, 600)
+rotation = -1.5708
+
+[node name="table4" parent="." instance=ExtResource("15_fukwk")]
+position = Vector2(874, -1028)
+rotation = 3.14159
+
+[node name="table5" parent="." instance=ExtResource("15_fukwk")]
+position = Vector2(1234, -112)
+rotation = -2.40855
+
+[node name="drawer2" parent="." instance=ExtResource("10_lk7ep")]
+position = Vector2(679, -289)
+rotation = 0.144862
+
+[node name="drawer3" parent="." instance=ExtResource("10_lk7ep")]
+position = Vector2(915, 465)
+rotation = -1.5708
+
+[node name="drawer4" parent="." instance=ExtResource("10_lk7ep")]
+position = Vector2(41, -217)
+
+[node name="drawer5" parent="." instance=ExtResource("10_lk7ep")]
+position = Vector2(193, 455)
+rotation = -1.65108
 
 [connection signal="body_entered" from="door" to="door" method="_on_body_entered"]
 [connection signal="body_exited" from="door" to="door" method="_on_body_exited"]
