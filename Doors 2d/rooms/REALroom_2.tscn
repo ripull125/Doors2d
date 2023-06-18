@@ -1,10 +1,12 @@
-[gd_scene load_steps=24 format=3 uid="uid://b5hay3acvqwbc"]
+[gd_scene load_steps=26 format=3 uid="uid://b5hay3acvqwbc"]
 
 [ext_resource type="Texture2D" uid="uid://bkaqshqrsxrin" path="res://sprites/room2.png" id="1_h60b1"]
 [ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="2_oa2yq"]
-[ext_resource type="Texture2D" uid="uid://d4jghv2fhbucf" path="res://sprites/door.png" id="4_ogj7s"]
 [ext_resource type="Script" path="res://rooms/Area2D.gd" id="4_tvwvy"]
 [ext_resource type="Texture2D" uid="uid://62rbc58ebp56" path="res://sprites/New Piskel (6).png" id="5_0dsup"]
+[ext_resource type="Texture2D" uid="uid://curmbeqmw4oo8" path="res://sprites/New Piskel (13).png" id="5_hopfh"]
+[ext_resource type="PackedScene" uid="uid://d2yvfbqthys6m" path="res://table_2.tscn" id="7_bh3eu"]
+[ext_resource type="PackedScene" uid="uid://d15b0hg5y0ipx" path="res://scenes/drawer.tscn" id="8_8jgwd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o8uwe"]
 size = Vector2(220.666, 874.667)
@@ -160,7 +162,7 @@ offset_bottom = 40.0
 light_mask = 4
 visibility_layer = 4
 z_index = -2
-position = Vector2(447, -194)
+position = Vector2(455, -238)
 scale = Vector2(8.94531, 8.4043)
 texture = ExtResource("5_0dsup")
 
@@ -170,17 +172,53 @@ monitorable = false
 script = ExtResource("4_tvwvy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="door"]
-position = Vector2(205, -1181)
+position = Vector2(207, -1114)
 shape = SubResource("RectangleShape2D_yolip")
 
 [node name="Sprite2D" type="Sprite2D" parent="door"]
 light_mask = 4
 visibility_layer = 4
-position = Vector2(197, -1227)
-texture = ExtResource("4_ogj7s")
+position = Vector2(208, -1101)
+scale = Vector2(0.68875, 0.68875)
+texture = ExtResource("5_hopfh")
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 color = Color(0.247059, 0.247059, 0.247059, 1)
+
+[node name="table3" parent="." instance=ExtResource("7_bh3eu")]
+position = Vector2(-598, 156)
+rotation = -1.5708
+
+[node name="drawer" parent="." instance=ExtResource("8_8jgwd")]
+position = Vector2(1751, 105)
+rotation = 3.13605
+
+[node name="drawer2" parent="." instance=ExtResource("8_8jgwd")]
+position = Vector2(1933, -790)
+rotation = 1.5708
+scale = Vector2(1, 1)
+
+[node name="drawer3" parent="." instance=ExtResource("8_8jgwd")]
+position = Vector2(-973, -891)
+
+[node name="drawer4" parent="." instance=ExtResource("8_8jgwd")]
+position = Vector2(-965, 393)
+rotation = 0.144862
+
+[node name="drawer5" parent="." instance=ExtResource("8_8jgwd")]
+position = Vector2(-469, -155)
+rotation = 1.5708
+
+[node name="table4" parent="." instance=ExtResource("7_bh3eu")]
+position = Vector2(-788, 836)
+
+[node name="table5" parent="." instance=ExtResource("7_bh3eu")]
+position = Vector2(1764, -918)
+rotation = 1.5708
+
+[node name="table6" parent="." instance=ExtResource("7_bh3eu")]
+position = Vector2(1914, 342)
+rotation = 3.14159
 
 [connection signal="body_entered" from="door" to="door" method="_on_body_entered"]
 [connection signal="body_exited" from="door" to="door" method="_on_body_exited"]
