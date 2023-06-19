@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://ch71jg4rqvxrv"]
+[gd_scene load_steps=30 format=3 uid="uid://ch71jg4rqvxrv"]
 
 [ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="1_snowr"]
 [ext_resource type="Texture2D" uid="uid://62rbc58ebp56" path="res://sprites/New Piskel (6).png" id="1_tl2db"]
@@ -16,6 +16,8 @@
 [ext_resource type="Texture2D" uid="uid://buyy150arehpc" path="res://sprites/rush_background.png" id="14_flo0c"]
 [ext_resource type="PackedScene" uid="uid://c2pdf8ho8sstd" path="res://table.tscn" id="14_j1ifq"]
 [ext_resource type="PackedScene" uid="uid://d2yvfbqthys6m" path="res://table_2.tscn" id="15_fukwk"]
+[ext_resource type="PackedScene" uid="uid://bomdwkmli6ntn" path="res://scenes/eyes.tscn" id="17_p1gsn"]
+[ext_resource type="Script" path="res://scenes/eyes.gd" id="18_nugu0"]
 
 [sub_resource type="TileSet" id="TileSet_svga3"]
 
@@ -239,6 +241,9 @@ position = Vector2(41, -217)
 [node name="drawer5" parent="." instance=ExtResource("10_lk7ep")]
 position = Vector2(193, 455)
 rotation = -1.65108
+
+[node name="eyes" parent="." instance=ExtResource("17_p1gsn")]
+script = ExtResource("18_nugu0")
 
 [connection signal="body_entered" from="door" to="door" method="_on_body_entered"]
 [connection signal="body_exited" from="door" to="door" method="_on_body_exited"]
