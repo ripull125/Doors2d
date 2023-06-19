@@ -90,9 +90,6 @@ func _on_interaction_area_area_entered(area):
 		can_loot = true
 	interact_anim = all_interactions[0].get_node("AnimatedSprite2D")
 	update_interactions()
-	
-	
-		
 
 
 
@@ -116,10 +113,3 @@ func update_interactions():
 func _on_rush_area_entered(area):
 	if(!inCloset):
 		health = 0
-
-
-
-
-
-func _on_eyesMonster_area_entered(area):
-		get_tree().change_scene_to_file("res://scenes/youDied.tscn")

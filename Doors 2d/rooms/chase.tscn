@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://blvitvrmuak60"]
+[gd_scene load_steps=14 format=3 uid="uid://blvitvrmuak60"]
 
 [ext_resource type="Texture2D" uid="uid://c7mfr4hp8gdxp" path="res://sprites/New Piskel (9).png" id="1_r4qbw"]
 [ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="2_dhyry"]
@@ -7,8 +7,6 @@
 [ext_resource type="Texture2D" uid="uid://hrdnj4g2yglf" path="res://chase-1.png_7.png" id="5_dpjpl"]
 [ext_resource type="Texture2D" uid="uid://die2iu1uygvj8" path="res://chase-1.png_3 (2).png" id="6_wybqq"]
 [ext_resource type="PackedScene" uid="uid://c2pdf8ho8sstd" path="res://table.tscn" id="7_5vvlq"]
-[ext_resource type="Texture2D" path="res://sprites/eyes_monester_1.png" id="8_cdha0"]
-[ext_resource type="Script" path="res://rooms/Area2D.gd" id="8_p8ae4"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mlu3g"]
 radius = 77.2787
@@ -30,79 +28,6 @@ colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
 gradient = SubResource("Gradient_17idp")
 fill = 1
 fill_from = Vector2(0.5, 0.495726)
-
-[sub_resource type="Curve2D" id="Curve2D_5ibk5"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 505, 1124, 0, 0, 0, 0, 469, 83, 0, 0, 0, 0, 1259, -1094, 0, 0, 0, 0, 1717, -1659, 0, 0, 0, 0, 1726, -2234, 0, 0, 0, 0, 1735, -2719, 0, 0, 0, 0, 1941, -3096, 0, 0, 0, 0, 2220, -3518, 0, 0, 0, 0, 2660, -3823, 0, 0, 0, 0, 3046, -3940)
-}
-point_count = 10
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_kghpo"]
-atlas = ExtResource("8_cdha0")
-region = Rect2(0, 0, 96, 96)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_jenxx"]
-atlas = ExtResource("8_cdha0")
-region = Rect2(96, 0, 96, 96)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_l5bns"]
-atlas = ExtResource("8_cdha0")
-region = Rect2(192, 0, 96, 96)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_s7b18"]
-atlas = ExtResource("8_cdha0")
-region = Rect2(0, 96, 96, 96)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_g085u"]
-atlas = ExtResource("8_cdha0")
-region = Rect2(96, 96, 96, 96)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_s2de8"]
-atlas = ExtResource("8_cdha0")
-region = Rect2(192, 96, 96, 96)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_2bofg"]
-atlas = ExtResource("8_cdha0")
-region = Rect2(0, 192, 96, 96)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hqtqg"]
-atlas = ExtResource("8_cdha0")
-region = Rect2(96, 192, 96, 96)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_vfby3"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_kghpo")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jenxx")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_l5bns")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_s7b18")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_g085u")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_s2de8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2bofg")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_hqtqg")
-}],
-"loop": true,
-"name": &"default",
-"speed": 8.0
-}]
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_tyo87"]
-radius = 189.003
 
 [node name="chase" type="Node2D"]
 
@@ -845,7 +770,6 @@ limit_bottom = 650
 limit_smoothed = true
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-visible = false
 color = Color(0.247059, 0.247059, 0.247059, 1)
 
 [node name="bridge1" type="StaticBody2D" parent="."]
@@ -910,10 +834,12 @@ scale = Vector2(3.143, 3.29812)
 texture = ExtResource("5_dpjpl")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D"]
+scale = Vector2(1, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D"]
 position = Vector2(-144.226, -0.0382996)
 rotation = -0.47822
+scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_x40rf")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
@@ -923,10 +849,12 @@ scale = Vector2(3.143, 3.29812)
 texture = ExtResource("5_dpjpl")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D2"]
+scale = Vector2(1, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D2/StaticBody2D"]
 position = Vector2(-144.226, -0.0382996)
 rotation = -0.47822
+scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_x40rf")
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
@@ -967,10 +895,12 @@ scale = Vector2(3.143, 3.29812)
 texture = ExtResource("5_dpjpl")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D3"]
+scale = Vector2(1, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D3/StaticBody2D"]
 position = Vector2(-144.226, -0.0382996)
 rotation = -0.47822
+scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_x40rf")
 
 [node name="table" parent="." instance=ExtResource("7_5vvlq")]
@@ -1000,10 +930,12 @@ scale = Vector2(3.143, 3.29812)
 texture = ExtResource("5_dpjpl")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D4"]
+scale = Vector2(1, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D4/StaticBody2D"]
 position = Vector2(-147.253, -5.88693)
 rotation = -0.47822
+scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_x40rf")
 
 [node name="Sprite2D5" type="Sprite2D" parent="."]
@@ -1013,10 +945,12 @@ scale = Vector2(3.143, 3.29812)
 texture = ExtResource("5_dpjpl")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D5"]
+scale = Vector2(1, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D5/StaticBody2D"]
 position = Vector2(-147.253, -5.88693)
 rotation = -0.47822
+scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_x40rf")
 
 [node name="Sprite2D6" type="Sprite2D" parent="."]
@@ -1026,10 +960,12 @@ scale = Vector2(3.143, 3.29812)
 texture = ExtResource("5_dpjpl")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D6"]
+scale = Vector2(1, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D6/StaticBody2D"]
 position = Vector2(-144.226, -0.0382996)
 rotation = -0.47822
+scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_x40rf")
 
 [node name="table6" parent="." instance=ExtResource("7_5vvlq")]
@@ -1131,27 +1067,3 @@ position = Vector2(-775, -2916)
 scale = Vector2(5.17188, 5.40625)
 color = Color(0.494118, 0.0745098, 0.133333, 1)
 texture = SubResource("GradientTexture2D_xfrt7")
-
-[node name="Path2D" type="Path2D" parent="."]
-curve = SubResource("Curve2D_5ibk5")
-
-[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
-position = Vector2(505, 1124)
-rotation = -1.60536
-
-[node name="eyesMonster" type="Area2D" parent="Path2D/PathFollow2D"]
-script = ExtResource("8_p8ae4")
-
-[node name="monster" type="AnimatedSprite2D" parent="Path2D/PathFollow2D/eyesMonster"]
-texture_filter = 1
-position = Vector2(-487.4, 13.1763)
-rotation = -1.5708
-scale = Vector2(6.48958, 5.86459)
-sprite_frames = SubResource("SpriteFrames_vfby3")
-autoplay = "default"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/eyesMonster"]
-position = Vector2(-500.98, 19.6971)
-shape = SubResource("CircleShape2D_tyo87")
-
-[connection signal="area_entered" from="Path2D/PathFollow2D/eyesMonster" to="player" method="_on_area_2d_area_entered"]

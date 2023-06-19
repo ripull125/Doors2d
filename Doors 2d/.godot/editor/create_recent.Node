@@ -1,12 +1,8 @@
-Area2D
-CharacterBody2D
 StaticBody2D
 CollisionShape2D
-PathFollow2D
-Path2D
-AnimationPlayer
-AnimatedSprite2D
 Sprite2D
+AnimatedSprite2D
+Area2D
 Panel
 GridContainer
 TextureRect
@@ -22,6 +18,7 @@ CollisionPolygon2D
 Label
 VBoxContainer
 ParallaxBackground
+AnimationPlayer
 ProgressBar
 Control
 TextureButton
@@ -30,3 +27,6 @@ TileMap
 HSlider
 HBoxContainer
 CheckBox
+Camera2D
+CharacterBody2D
+Marker2D
