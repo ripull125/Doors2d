@@ -4,6 +4,5 @@ res://rooms/room1.tscn
 res://rooms/REALroom_2.tscn
 res://scenes/rush.tscn
 res://scenes/player.tscn
-res://scripts/rush.gd
-res://scripts/Inventory.gd
 res://scenes/eyes.tscn
+res://rooms/chase.tscn

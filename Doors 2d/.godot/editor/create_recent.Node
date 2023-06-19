@@ -1,8 +1,8 @@
-CollisionShape2D
-AnimatedSprite2D
-Sprite2D
-Area2D
 StaticBody2D
+CollisionShape2D
+Sprite2D
+AnimatedSprite2D
+Area2D
 Panel
 GridContainer
 TextureRect
