@@ -6,3 +6,12 @@ res://scenes/rush.tscn
 res://scenes/player.tscn
 res://scenes/eyes.tscn
 res://rooms/chase.tscn
+res://scripts/player.gd
+res://rooms/monster.gd
+res://rooms/Path2D.gd
+res://monster.tscn
+res://rooms/CharacterBody2D.gd
+res://rooms/Area2D.gd
+res://REALroom_2.tscn
+res://scenes/door.tscn
+res://scripts/menu.gd
