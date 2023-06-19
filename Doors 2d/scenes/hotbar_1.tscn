@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://c551q110dsw3t"]
+
+[ext_resource type="Script" path="res://scenes/hotbar_1.gd" id="1_027g8"]
+[ext_resource type="Texture2D" uid="uid://bpj81qo7up4dk" path="res://sprites/key.png" id="1_aci4o"]
+[ext_resource type="Texture2D" uid="uid://dvoj2dtm67toj" path="res://sprites/Screech.png" id="2_dvf0j"]
+
+[node name="Hotbar1" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_027g8")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+custom_minimum_size = Vector2(18, 18)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -238.0
+offset_top = -457.0
+offset_right = 238.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/h_separation = 22
+theme_override_constants/v_separation = 1
+columns = 10
+
+[node name="Button" type="Button" parent="GridContainer"]
+layout_mode = 2
+icon = ExtResource("1_aci4o")
+
+[node name="Button2" type="Button" parent="GridContainer"]
+layout_mode = 2
+icon = ExtResource("2_dvf0j")
