@@ -6,3 +6,4 @@ res://scenes/rush.tscn
 res://scenes/player.tscn
 res://scripts/rush.gd
 res://scripts/Inventory.gd
+res://scenes/eyes.tscn
