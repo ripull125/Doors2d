@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dil0kq6yrhx5y"]
+
+[ext_resource type="Script" path="res://scenes/ItemButton.gd" id="1_cr2l2"]
+[ext_resource type="Texture2D" uid="uid://bpj81qo7up4dk" path="res://sprites/key.png" id="2_pts6q"]
+
+[node name="ItemButton1" type="Button"]
+custom_minimum_size = Vector2(18, 0)
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_cr2l2")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.0962888, 0.0962888)
+texture = ExtResource("2_pts6q")

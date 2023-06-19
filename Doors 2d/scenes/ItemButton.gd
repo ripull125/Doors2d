@@ -2,7 +2,7 @@
 
 extends Button
 
-class_name ItemButton
+class_name ItemButton1
 
 @export var item : Item :
 	set(item_to_slot):
