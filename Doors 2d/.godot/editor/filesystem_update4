@@ -1,7 +1,8 @@
 res://scripts/default_env.tres
 res://scenes/menu.tscn
 res://rooms/room1.tscn
-res://table_2.tscn
-res://table.tscn
-res://rooms/Area2D.gd
 res://rooms/REALroom_2.tscn
+res://scenes/rush.tscn
+res://scenes/player.tscn
+res://scripts/rush.gd
+res://scripts/Inventory.gd
