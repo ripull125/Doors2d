@@ -1,4 +1,4 @@
-extends Area2D
+extends CharacterBody2D
 
 @export var interact_type = "chaseMonster"
 @export var speed = 150
