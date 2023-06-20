@@ -1,6 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://chaoacrh1h7v3"]
-
-[ext_resource type="Texture2D" uid="uid://d4jghv2fhbucf" path="res://sprites/door.png" id="2_5bd02"]
+[gd_scene load_steps=2 format=3 uid="uid://chaoacrh1h7v3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eqt0s"]
 size = Vector2(177, 284)
@@ -16,6 +14,5 @@ shape = SubResource("RectangleShape2D_eqt0s")
 
 [node name="Sprite2D" type="Sprite2D" parent="door"]
 position = Vector2(311, 221)
-texture = ExtResource("2_5bd02")
 
 [connection signal="body_entered" from="door" to="door" method="_on_body_entered"]

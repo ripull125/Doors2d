@@ -1,8 +1,8 @@
 StaticBody2D
 CollisionShape2D
 Sprite2D
-AnimatedSprite2D
 Area2D
+AnimatedSprite2D
 Panel
 GridContainer
 TextureRect
