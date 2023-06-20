@@ -1,8 +1,10 @@
-RichTextLabel
-StaticBody2D
+AnimationPlayer
+Area2D
 CollisionShape2D
 Sprite2D
-Area2D
+CharacterBody2D
+RichTextLabel
+StaticBody2D
 AnimatedSprite2D
 Panel
 GridContainer
@@ -19,7 +21,6 @@ CollisionPolygon2D
 Label
 VBoxContainer
 ParallaxBackground
-AnimationPlayer
 ProgressBar
 Control
 TextureButton
@@ -29,4 +30,3 @@ HSlider
 HBoxContainer
 CheckBox
 Camera2D
-CharacterBody2D

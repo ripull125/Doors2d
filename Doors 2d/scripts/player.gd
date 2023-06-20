@@ -143,3 +143,11 @@ func _on_rush_area_entered(area):
 
 func _on_eyesMonster_area_entered(area):
 		get_tree().change_scene_to_file("res://scenes/youDied.tscn")
+
+
+func _on_monstor_child_entered_tree(node):
+	pass # Replace with function body.
+
+
+func _on_area_2d_area_entered(area):
+	get_tree().change_scene_to_file("res://scenes/youDied.tscn")
