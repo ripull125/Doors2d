@@ -240,5 +240,5 @@ position = Vector2(41, -217)
 position = Vector2(193, 455)
 rotation = -1.65108
 
-[connection signal="body_entered" from="door" to="door" method="_on_body_entered"]
+[connection signal="body_entered" from="door" to="player" method="_on_body_entered"]
 [connection signal="area_entered" from="rush" to="player" method="_on_rush_area_entered"]

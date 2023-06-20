@@ -156,3 +156,7 @@ func _on_eyesMonster_area_entered(area):
 
 func _on_door_body_entered(body):
 	get_tree().change_scene_to_file("res://rooms/chase.tscn")
+
+
+func _on_body_entered(body):
+	get_tree().change_scene_to_file("res://rooms/chase.tscn")
