@@ -55,7 +55,7 @@ size = Vector2(232.333, 171.667)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lwsun"]
 size = Vector2(237.667, 262.5)
 
-[node name="room2" type="Node2D"]
+[node name="room3" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_left = -2136.0
