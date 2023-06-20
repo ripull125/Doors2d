@@ -11,6 +11,7 @@ var cd_over = true
 var can_loot = false
 var interact_anim
 var health = 100
+var can_damage = false
 
 
 @onready var all_interactions = []

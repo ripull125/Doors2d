@@ -1,18 +1,68 @@
-[gd_scene load_steps=5 format=3 uid="uid://bomdwkmli6ntn"]
+[gd_scene load_steps=13 format=3 uid="uid://bomdwkmli6ntn"]
 
-[ext_resource type="Texture2D" uid="uid://dvoj2dtm67toj" path="res://sprites/Screech.png" id="1_devgv"]
+[ext_resource type="Script" path="res://scripts/eyes.gd" id="1_li7dr"]
+[ext_resource type="Texture2D" uid="uid://c2ibj2ehcni18" path="res://sprites/eyes_monester_1.png" id="2_bm3gd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_drpqj"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_6laja"]
-atlas = ExtResource("1_devgv")
-region = Rect2(0, 0, 256, 256)
+[sub_resource type="AtlasTexture" id="AtlasTexture_5h4y8"]
+atlas = ExtResource("2_bm3gd")
+region = Rect2(0, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_52a03"]
+atlas = ExtResource("2_bm3gd")
+region = Rect2(96, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d587i"]
+atlas = ExtResource("2_bm3gd")
+region = Rect2(192, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r250o"]
+atlas = ExtResource("2_bm3gd")
+region = Rect2(192, 96, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5rjjf"]
+atlas = ExtResource("2_bm3gd")
+region = Rect2(96, 96, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ktp1t"]
+atlas = ExtResource("2_bm3gd")
+region = Rect2(0, 96, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aeyfw"]
+atlas = ExtResource("2_bm3gd")
+region = Rect2(0, 192, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0wss5"]
+atlas = ExtResource("2_bm3gd")
+region = Rect2(96, 192, 96, 96)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_5kbnr"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_6laja")
+"texture": SubResource("AtlasTexture_5h4y8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_52a03")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d587i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r250o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5rjjf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ktp1t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aeyfw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0wss5")
 }],
 "loop": true,
 "name": &"default",
@@ -20,6 +70,9 @@ animations = [{
 }]
 
 [node name="eyes" type="Area2D"]
+monitoring = false
+monitorable = false
+script = ExtResource("1_li7dr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2(11.9543, -12.3045)
