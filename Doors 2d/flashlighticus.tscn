@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bx5l4ttavaxhr"]
+
+[ext_resource type="Script" path="res://scenes/Text.gd" id="1_lcxbj"]
+
+[node name="Text" type="RichTextLabel"]
+offset_right = 163.0
+offset_bottom = 31.0
+text = "You got a flashlight!"
+script = ExtResource("1_lcxbj")

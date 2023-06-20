@@ -15,6 +15,7 @@ var can_loot = false
 var interact_anim
 var health = 100
 var drawer_open_count = 0
+var can_leave = false
 
 var my_random_number = rng.randf_range(0, 100)
 
@@ -36,6 +37,7 @@ var paper_text : RichTextLabel
 
 func _ready():
 	update_interactions()
+	_giving_item()
 
 func _physics_process(_delta):
 	check_dead()
@@ -86,7 +88,6 @@ func _physics_process(_delta):
 	if(can_loot and Input.is_action_just_pressed("use")):
 		can_loot = false
 		interact_anim.play("default")
-		_giving_item()
 
 func check_dead():
 	if(health == 0):
@@ -102,8 +103,16 @@ func _on_interaction_area_area_entered(area):
 		canHide = true
 	if(area.interact_type == "drawer"):
 		can_loot = true
+	if(area.interact_type == "door"):
+		can_leave = _check_can_leave()
 	interact_anim = all_interactions[0].get_node("AnimatedSprite2D")
 	update_interactions()
+
+func _check_can_leave():
+	if(key == 1 and papers == 5):
+		return true
+	else:
+		return false
 
 func _on_interaction_area_area_exited(area):
 	all_interactions.erase(area)
@@ -111,6 +120,8 @@ func _on_interaction_area_area_exited(area):
 		canHide = false
 	if(area.interact_type == "drawer"):
 		can_loot = false
+	if(area.interact_type == "door"):
+		can_leave = false
 	update_interactions() 
 	
 func update_interactions():
@@ -122,16 +133,14 @@ func update_interactions():
 # monster stuff
 
 func _giving_item():
-	if(my_random_number<7):
-		flashlight = 1
-		flashlight_text.show()
-	if(my_random_number < 101):
-		papers += 1
-		paper_text.show()
-	drawer_open_count += 1
-	if(drawer_open_count == 5):
-		key += 1
-		key_text.show()
+	if(can_loot):
+		if(my_random_number<7):
+			flashlight = 1
+		if(my_random_number < 101):
+			papers += 1
+		drawer_open_count += 1
+		if(drawer_open_count == 5):
+			key += 1
 
 func _on_rush_area_entered(area):
 	if(!inCloset):
@@ -145,9 +154,5 @@ func _on_eyesMonster_area_entered(area):
 		get_tree().change_scene_to_file("res://scenes/youDied.tscn")
 
 
-func _on_monstor_child_entered_tree(node):
-	pass # Replace with function body.
-
-
-func _on_area_2d_area_entered(area):
-	get_tree().change_scene_to_file("res://scenes/youDied.tscn")
+func _on_door_body_entered(body):
+	get_tree().change_scene_to_file("res://rooms/chase.tscn")
