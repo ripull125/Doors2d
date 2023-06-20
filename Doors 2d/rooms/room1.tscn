@@ -3,8 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="1_snowr"]
 [ext_resource type="Texture2D" uid="uid://62rbc58ebp56" path="res://sprites/New Piskel (6).png" id="1_tl2db"]
 [ext_resource type="Texture2D" uid="uid://va30hj8eqhpf" path="res://sprites/basic_room_1.png" id="2_6w85w"]
-[ext_resource type="Script" path="res://scripts/Inventory.gd" id="3_msdcg"]
 [ext_resource type="Texture2D" uid="uid://cef4cc7pf3irf" path="res://sprites/inventory_background.png" id="4_d2t8v"]
+[ext_resource type="PackedScene" uid="uid://c551q110dsw3t" path="res://scenes/hotbar_1.tscn" id="5_35k0u"]
 [ext_resource type="Texture2D" uid="uid://devh28rg8k24b" path="res://sprites/item_slot_default_background.png" id="5_xyhbv"]
 [ext_resource type="Script" path="res://rooms/Slot1.gd" id="6_1ryj3"]
 [ext_resource type="PackedScene" uid="uid://cin0jtwuxkv7t" path="res://scenes/closet.tscn" id="6_51yv7"]
@@ -17,7 +17,6 @@
 [ext_resource type="PackedScene" uid="uid://c2pdf8ho8sstd" path="res://table.tscn" id="14_j1ifq"]
 [ext_resource type="PackedScene" uid="uid://d2yvfbqthys6m" path="res://table_2.tscn" id="15_fukwk"]
 [ext_resource type="PackedScene" uid="uid://bomdwkmli6ntn" path="res://scenes/eyes.tscn" id="17_p1gsn"]
-[ext_resource type="Script" path="res://scenes/eyes.gd" id="18_nugu0"]
 
 [sub_resource type="TileSet" id="TileSet_svga3"]
 
@@ -77,6 +76,20 @@ _data = {
 "RESET": SubResource("Animation_tt77l"),
 "kill": SubResource("Animation_i66jg")
 }
+
+[sub_resource type="GDScript" id="GDScript_tx3ke"]
+script/source = "extends Area2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
 
 [node name="room1" type="Node2D"]
 
@@ -139,8 +152,7 @@ texture = ExtResource("2_6w85w")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="Inventory" type="Node2D" parent="CanvasLayer"]
-script = ExtResource("3_msdcg")
+[node name="Hotbar1" parent="CanvasLayer" instance=ExtResource("5_35k0u")]
 
 [node name="TextureRect2" type="TextureRect" parent="."]
 offset_left = 350.0
@@ -244,7 +256,9 @@ position = Vector2(193, 455)
 rotation = -1.65108
 
 [node name="eyes" parent="." instance=ExtResource("17_p1gsn")]
-script = ExtResource("18_nugu0")
+script = SubResource("GDScript_tx3ke")
+
+[node name="eyes2" parent="." instance=ExtResource("17_p1gsn")]
 
 [connection signal="body_entered" from="door" to="door" method="_on_body_entered"]
 [connection signal="area_entered" from="rush" to="player" method="_on_rush_area_entered"]

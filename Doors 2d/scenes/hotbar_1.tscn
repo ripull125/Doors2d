@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://c551q110dsw3t"]
+[gd_scene load_steps=6 format=3 uid="uid://c551q110dsw3t"]
 
 [ext_resource type="Script" path="res://scenes/hotbar_1.gd" id="1_027g8"]
 [ext_resource type="PackedScene" uid="uid://dil0kq6yrhx5y" path="res://scenes/item_button_1.tscn" id="2_ohu5w"]
+[ext_resource type="Texture2D" uid="uid://cnvtnv6ed46r0" path="res://sprites/flashlight.png.png" id="3_airx0"]
+[ext_resource type="Texture2D" uid="uid://dsu8devrlsufa" path="res://sprites/key1.png" id="4_kntau"]
+[ext_resource type="Texture2D" uid="uid://bsom5c4xg4qdt" path="res://sprites/paper.png.png" id="5_683rc"]
 
 [node name="Hotbar1" type="Control"]
 layout_mode = 3
@@ -32,10 +35,13 @@ columns = 4
 
 [node name="ItemButton1" parent="GridContainer" instance=ExtResource("2_ohu5w")]
 layout_mode = 2
+icon = ExtResource("3_airx0")
 
 [node name="ItemButton2" parent="GridContainer" instance=ExtResource("2_ohu5w")]
 layout_mode = 2
+icon = ExtResource("4_kntau")
 
 [node name="ItemButton3" parent="GridContainer" instance=ExtResource("2_ohu5w")]
 custom_minimum_size = Vector2(18, 40)
 layout_mode = 2
+icon = ExtResource("5_683rc")
