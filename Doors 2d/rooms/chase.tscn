@@ -7,10 +7,10 @@
 [ext_resource type="Script" path="res://rooms/chase.gd" id="1_1ku2h"]
 [ext_resource type="Texture2D" uid="uid://c7mfr4hp8gdxp" path="res://sprites/New Piskel (9).png" id="1_r4qbw"]
 [ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="2_dhyry"]
-[ext_resource type="Texture2D" uid="uid://j74me2pf5gd1" path="res://chase-1.png_1 (3).png" id="3_krfs5"]
-[ext_resource type="Texture2D" uid="uid://4p4c7ngga365" path="res://chase-1.png_2.png" id="4_xmk5q"]
-[ext_resource type="Texture2D" uid="uid://hrdnj4g2yglf" path="res://chase-1.png_7.png" id="5_dpjpl"]
-[ext_resource type="Texture2D" uid="uid://die2iu1uygvj8" path="res://chase-1.png_3 (2).png" id="6_wybqq"]
+[ext_resource type="Texture2D" path="res://chase-1.png_1 (3).png" id="3_krfs5"]
+[ext_resource type="Texture2D" path="res://chase-1.png_2.png" id="4_xmk5q"]
+[ext_resource type="Texture2D" path="res://chase-1.png_7.png" id="5_dpjpl"]
+[ext_resource type="Texture2D" path="res://chase-1.png_3 (2).png" id="6_wybqq"]
 [ext_resource type="PackedScene" uid="uid://c2pdf8ho8sstd" path="res://table.tscn" id="7_5vvlq"]
 [ext_resource type="Script" path="res://rooms/Area2D.gd" id="8_p8ae4"]
 [ext_resource type="PackedScene" uid="uid://dt5f4slux37iw" path="res://scenes/rush.tscn" id="10_4iwrd"]
@@ -954,7 +954,7 @@ rotation = -0.47822
 shape = SubResource("RectangleShape2D_x40rf")
 
 [node name="table" parent="." instance=ExtResource("7_5vvlq")]
-position = Vector2(293, 573)
+position = Vector2(380, 635)
 scale = Vector2(1.5, 1.5)
 
 [node name="table2" parent="." instance=ExtResource("7_5vvlq")]

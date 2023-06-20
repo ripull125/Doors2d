@@ -1,19 +1,10 @@
-<<<<<<< Updated upstream
+Sprite2D
+AnimationPlayer
 RichTextLabel
 StaticBody2D
-=======
-Timer
-NavigationAgent2D
->>>>>>> Stashed changes
 CollisionShape2D
-AnimatedSprite2D
-Sprite2D
-CharacterBody2D
-PathFollow2D
-Path2D
 Area2D
-AnimationPlayer
-StaticBody2D
+AnimatedSprite2D
 Panel
 GridContainer
 TextureRect
@@ -36,9 +27,6 @@ TextEdit
 TileMap
 HSlider
 HBoxContainer
-<<<<<<< Updated upstream
 CheckBox
 Camera2D
 CharacterBody2D
-=======
->>>>>>> Stashed changes
