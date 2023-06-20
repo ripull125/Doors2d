@@ -1,15 +1,9 @@
 extends Area2D
 
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+@onready var interact_label = $Interaction_Components/Interact_Label
 
 
 func _on_body_entered(body):
+	#if(key == 0 or papers < 5):
+		#interact_label = "Make sure you have a key and five papers!"
 	get_tree().change_scene_to_file("res://rooms/REALroom_2.tscn")
