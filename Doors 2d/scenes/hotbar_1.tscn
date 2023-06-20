@@ -20,18 +20,22 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -238.0
+offset_left = -51.0
 offset_top = -48.0
-offset_right = 238.0
-offset_bottom = 2.0
+offset_right = 62.0
+offset_bottom = -1.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_constants/h_separation = 22
 theme_override_constants/v_separation = 1
-columns = 10
+columns = 4
 
 [node name="ItemButton1" parent="GridContainer" instance=ExtResource("2_ohu5w")]
 layout_mode = 2
 
 [node name="ItemButton2" parent="GridContainer" instance=ExtResource("2_ohu5w")]
+layout_mode = 2
+
+[node name="ItemButton3" parent="GridContainer" instance=ExtResource("2_ohu5w")]
+custom_minimum_size = Vector2(18, 40)
 layout_mode = 2
