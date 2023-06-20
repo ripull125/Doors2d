@@ -1,20 +1,10 @@
 extends Area2D
 
-var entered = false
+@export var interact_type = "chaseMonster"
+@export var speed = 150
 
-func _on_body_entered(body: CharacterBody2D):
-	entered = true
 
-func _on_body_exited(body):
-	entered = false
-	
 func _process(delta):
-	if entered == true:
-		if Input.is_action_just_pressed("use"):
-			get_tree().change_scene_to_file("res://rooms/REALroom_2.tscn")
-
-
-
-
-
-
+	#get_parent().set_progress(get_parent().get_progress() + speed*delta)
+	#if (get_parent().get_progress_ratio() ==1):
+	#	queue_free()

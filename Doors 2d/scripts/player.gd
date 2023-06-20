@@ -1,8 +1,11 @@
 extends CharacterBody2D
 
+class_name Player
+
 var speed = 400  # speed in pixels/sec
 
-var coins = 0
+var rng = RandomNumberGenerator.new()
+var papers = 0
 var key = 0
 var flashlight = 0
 @export var canHide = false
@@ -11,8 +14,13 @@ var cd_over = true
 var can_loot = false
 var interact_anim
 var health = 100
-var can_damage = false
+var drawer_open_count = 0
 
+var my_random_number = rng.randf_range(0, 100)
+
+var flashlight_text : RichTextLabel
+var key_text : RichTextLabel
+var paper_text : RichTextLabel
 
 @onready var all_interactions = []
 @onready var interact_label = $Interaction_Components/Interact_Label
@@ -20,7 +28,11 @@ var can_damage = false
 #func hide_cooldown():
 #	var hide_cd = get_tree().create_timer(1.0)
 #	hide_cd.timeout.connect()
-	
+
+
+
+
+
 
 func _ready():
 	update_interactions()
@@ -74,6 +86,7 @@ func _physics_process(_delta):
 	if(can_loot and Input.is_action_just_pressed("use")):
 		can_loot = false
 		interact_anim.play("default")
+		_giving_item()
 
 func check_dead():
 	if(health == 0):
@@ -92,8 +105,6 @@ func _on_interaction_area_area_entered(area):
 	interact_anim = all_interactions[0].get_node("AnimatedSprite2D")
 	update_interactions()
 
-
-
 func _on_interaction_area_area_exited(area):
 	all_interactions.erase(area)
 	if(area.interact_type == "closet"):
@@ -110,7 +121,25 @@ func update_interactions():
 
 # monster stuff
 
+func _giving_item():
+	if(my_random_number<7):
+		flashlight = 1
+		flashlight_text.show()
+	if(my_random_number < 101):
+		papers += 1
+		paper_text.show()
+	drawer_open_count += 1
+	if(drawer_open_count == 5):
+		key += 1
+		key_text.show()
 
 func _on_rush_area_entered(area):
 	if(!inCloset):
 		health = 0
+
+
+
+
+
+func _on_eyesMonster_area_entered(area):
+		get_tree().change_scene_to_file("res://scenes/youDied.tscn")

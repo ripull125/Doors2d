@@ -2,9 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://bkaqshqrsxrin" path="res://sprites/room2.png" id="1_h60b1"]
 [ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="2_oa2yq"]
-[ext_resource type="Script" path="res://rooms/Area2D.gd" id="4_tvwvy"]
 [ext_resource type="Texture2D" uid="uid://62rbc58ebp56" path="res://sprites/New Piskel (6).png" id="5_0dsup"]
 [ext_resource type="Texture2D" uid="uid://curmbeqmw4oo8" path="res://sprites/New Piskel (13).png" id="5_hopfh"]
+[ext_resource type="Script" path="res://rooms/door2.gd" id="6_cmerh"]
 [ext_resource type="PackedScene" uid="uid://d2yvfbqthys6m" path="res://table_2.tscn" id="7_bh3eu"]
 [ext_resource type="PackedScene" uid="uid://d15b0hg5y0ipx" path="res://scenes/drawer.tscn" id="8_8jgwd"]
 
@@ -59,8 +59,8 @@ size = Vector2(232.333, 171.667)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lwsun"]
 size = Vector2(237.667, 262.5)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_yolip"]
-size = Vector2(316, 302)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t7j1y"]
+size = Vector2(170, 302)
 
 [node name="room2" type="Node2D"]
 
@@ -143,7 +143,7 @@ shape = SubResource("RectangleShape2D_vfmfj")
 position = Vector2(702.833, 1250.58)
 shape = SubResource("RectangleShape2D_lwsun")
 
-[node name="player" parent="." instance=ExtResource("2_oa2yq")]
+[node name="player" parent="." groups=["player"] instance=ExtResource("2_oa2yq")]
 z_index = 2
 position = Vector2(577, 486)
 
@@ -165,22 +165,6 @@ z_index = -2
 position = Vector2(455, -238)
 scale = Vector2(8.94531, 8.4043)
 texture = ExtResource("5_0dsup")
-
-[node name="door" type="Area2D" parent="."]
-position = Vector2(359, -388)
-monitorable = false
-script = ExtResource("4_tvwvy")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="door"]
-position = Vector2(207, -1114)
-shape = SubResource("RectangleShape2D_yolip")
-
-[node name="Sprite2D" type="Sprite2D" parent="door"]
-light_mask = 4
-visibility_layer = 4
-position = Vector2(208, -1101)
-scale = Vector2(0.68875, 0.68875)
-texture = ExtResource("5_hopfh")
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 color = Color(0.247059, 0.247059, 0.247059, 1)
@@ -219,5 +203,23 @@ rotation = 1.5708
 position = Vector2(1914, 342)
 rotation = 3.14159
 
-[connection signal="body_entered" from="door" to="door" method="_on_body_entered"]
-[connection signal="body_exited" from="door" to="door" method="_on_body_exited"]
+[node name="door2" type="Area2D" parent="."]
+z_index = -1
+position = Vector2(359, -388)
+monitorable = false
+script = ExtResource("6_cmerh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="door2"]
+z_index = 2
+position = Vector2(222.5, -1188)
+shape = SubResource("RectangleShape2D_t7j1y")
+
+[node name="Sprite2D" type="Sprite2D" parent="door2"]
+light_mask = 4
+visibility_layer = 4
+z_index = 1
+position = Vector2(221.5, -1159)
+scale = Vector2(0.40625, 0.4625)
+texture = ExtResource("5_hopfh")
+
+[connection signal="body_entered" from="door2" to="door2" method="_on_body_entered"]
