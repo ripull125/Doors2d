@@ -11,4 +11,3 @@ func _on_Text_body_exited(body):
 	if (body is Player):
 		body.inspectable_text = null
 		self.hide()
-

@@ -1,19 +1,13 @@
-[gd_scene load_steps=39 format=3 uid="uid://ch71jg4rqvxrv"]
+[gd_scene load_steps=30 format=3 uid="uid://ch71jg4rqvxrv"]
 
 [ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="1_snowr"]
 [ext_resource type="Texture2D" uid="uid://62rbc58ebp56" path="res://sprites/New Piskel (6).png" id="1_tl2db"]
 [ext_resource type="Texture2D" uid="uid://va30hj8eqhpf" path="res://sprites/basic_room_1.png" id="2_6w85w"]
-[ext_resource type="PackedScene" uid="uid://bitjxav5x0vhg" path="res://scenes/GotFlashlight.tscn" id="3_1mylg"]
-[ext_resource type="PackedScene" uid="uid://b1ed5edcdowop" path="res://flashlighticus.tscn" id="4_bt06c"]
 [ext_resource type="Texture2D" uid="uid://cef4cc7pf3irf" path="res://sprites/inventory_background.png" id="4_d2t8v"]
-[ext_resource type="PackedScene" uid="uid://b2upj6j62xpcf" path="res://scenes/GotKey.tscn" id="4_wnh30"]
-[ext_resource type="PackedScene" uid="uid://i82tkhsrcj4q" path="res://scenes/GotPaper.tscn" id="5_5f1jc"]
 [ext_resource type="PackedScene" uid="uid://c551q110dsw3t" path="res://scenes/hotbar_1.tscn" id="5_35k0u"]
 [ext_resource type="Texture2D" uid="uid://devh28rg8k24b" path="res://sprites/item_slot_default_background.png" id="5_xyhbv"]
 [ext_resource type="Script" path="res://rooms/Slot1.gd" id="6_1ryj3"]
 [ext_resource type="PackedScene" uid="uid://cin0jtwuxkv7t" path="res://scenes/closet.tscn" id="6_51yv7"]
-[ext_resource type="PackedScene" uid="uid://dy3o1rsklvga0" path="res://keytext.tscn" id="6_q7ail"]
-[ext_resource type="PackedScene" uid="uid://c42owrdugrthe" path="res://papertext.tscn" id="8_jshen"]
 [ext_resource type="Script" path="res://rooms/door.gd" id="9_27mmn"]
 [ext_resource type="Texture2D" uid="uid://curmbeqmw4oo8" path="res://sprites/New Piskel (13).png" id="10_k7f7v"]
 [ext_resource type="PackedScene" uid="uid://d15b0hg5y0ipx" path="res://scenes/drawer.tscn" id="10_lk7ep"]
@@ -23,15 +17,6 @@
 [ext_resource type="PackedScene" uid="uid://c2pdf8ho8sstd" path="res://table.tscn" id="14_j1ifq"]
 [ext_resource type="PackedScene" uid="uid://d2yvfbqthys6m" path="res://table_2.tscn" id="15_fukwk"]
 [ext_resource type="PackedScene" uid="uid://bomdwkmli6ntn" path="res://scenes/eyes.tscn" id="17_p1gsn"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4tlrj"]
-size = Vector2(168, 47)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_nth1h"]
-size = Vector2(149, 87)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_r4cjs"]
-size = Vector2(155, 54)
 
 [sub_resource type="TileSet" id="TileSet_svga3"]
 
@@ -126,37 +111,6 @@ limit_top = -801
 limit_right = 1310
 limit_bottom = 670
 limit_smoothed = true
-
-[node name="Text" parent="player" instance=ExtResource("3_1mylg")]
-
-[node name="Text2" parent="player/Text" instance=ExtResource("4_bt06c")]
-metadata/_edit_use_anchors_ = true
-
-[node name="Area1" type="Area2D" parent="player/Text/Text2"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="player/Text/Text2/Area1"]
-position = Vector2(74, 13.5)
-shape = SubResource("RectangleShape2D_4tlrj")
-
-[node name="Text2" parent="player" instance=ExtResource("4_wnh30")]
-
-[node name="Text2" parent="player/Text2" instance=ExtResource("6_q7ail")]
-
-[node name="Area2" type="Area2D" parent="player/Text2/Text2"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="player/Text2/Text2/Area2"]
-position = Vector2(64.5, 33.5)
-shape = SubResource("RectangleShape2D_nth1h")
-
-[node name="Text3" parent="player" instance=ExtResource("5_5f1jc")]
-
-[node name="Text2" parent="player/Text3" instance=ExtResource("8_jshen")]
-
-[node name="Area3" type="Area2D" parent="player/Text3/Text2"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="player/Text3/Text2/Area3"]
-position = Vector2(67.5, 17)
-shape = SubResource("RectangleShape2D_r4cjs")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_svga3")
@@ -306,9 +260,5 @@ script = SubResource("GDScript_tx3ke")
 
 [node name="eyes2" parent="." instance=ExtResource("17_p1gsn")]
 
-[connection signal="input_event" from="player" to="player" method="_on_input_event"]
-[connection signal="area_entered" from="player/Text/Text2/Area1" to="player" method="_on_area_2d_area_entered"]
-[connection signal="area_entered" from="player/Text2/Text2/Area2" to="player" method="_on_area_2d_area_entered"]
-[connection signal="area_entered" from="player/Text3/Text2/Area3" to="player" method="_on_area_3_area_entered"]
 [connection signal="body_entered" from="door" to="door" method="_on_body_entered"]
 [connection signal="area_entered" from="rush" to="player" method="_on_rush_area_entered"]

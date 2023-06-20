@@ -1,3 +1,11 @@
-[gd_scene format=3 uid="uid://i82tkhsrcj4q"]
+[gd_scene load_steps=2 format=3 uid="uid://i82tkhsrcj4q"]
+
+[ext_resource type="Script" path="res://scenes/Text.gd" id="1_oyo3n"]
 
 [node name="Text" type="Node2D"]
+
+[node name="Text" type="RichTextLabel" parent="."]
+offset_right = 139.0
+offset_bottom = 28.0
+text = "You got a paper!"
+script = ExtResource("1_oyo3n")

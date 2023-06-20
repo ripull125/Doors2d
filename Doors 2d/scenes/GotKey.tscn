@@ -1,3 +1,11 @@
-[gd_scene format=3 uid="uid://b2upj6j62xpcf"]
+[gd_scene load_steps=2 format=3 uid="uid://b2upj6j62xpcf"]
+
+[ext_resource type="Script" path="res://scenes/Text.gd" id="1_f7e0p"]
 
 [node name="Text" type="Node2D"]
+
+[node name="Text" type="RichTextLabel" parent="."]
+offset_right = 116.0
+offset_bottom = 28.0
+text = "You got a key!"
+script = ExtResource("1_f7e0p")
