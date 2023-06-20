@@ -1,11 +1,3 @@
-[gd_scene load_steps=2 format=3 uid="uid://bitjxav5x0vhg"]
-
-[ext_resource type="Script" path="res://scenes/Text.gd" id="1_gdjxv"]
+[gd_scene format=3 uid="uid://bitjxav5x0vhg"]
 
 [node name="Text" type="Node2D"]
-
-[node name="Text" type="RichTextLabel" parent="."]
-offset_right = 163.0
-offset_bottom = 31.0
-text = "You got a flashlight!"
-script = ExtResource("1_gdjxv")

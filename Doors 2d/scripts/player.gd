@@ -18,9 +18,9 @@ var drawer_open_count = 0
 
 var my_random_number = rng.randf_range(0, 100)
 
-var flashlight_text : RichTextLabel
-var key_text : RichTextLabel
-var paper_text : RichTextLabel
+@onready var flashlight_text = $RichTextLabel
+@onready var key_text = $RichTextLabel
+@onready var paper_text = $RichTextLabel
 
 @onready var all_interactions = []
 @onready var interact_label = $Interaction_Components/Interact_Label
@@ -124,13 +124,16 @@ func update_interactions():
 func _giving_item():
 	if(my_random_number<7):
 		flashlight = 1
+		flashlight_text.bbcode_text = "You got a flashlight!"
 		flashlight_text.show()
 	if(my_random_number < 101):
 		papers += 1
+		paper_text.bbcode_text = "You got a paper!"
 		paper_text.show()
 	drawer_open_count += 1
 	if(drawer_open_count == 5):
 		key += 1
+		key_text.bbcode_text = "You got a key!"
 		key_text.show()
 
 func _on_rush_area_entered(area):
@@ -143,3 +146,6 @@ func _on_rush_area_entered(area):
 
 func _on_eyesMonster_area_entered(area):
 		get_tree().change_scene_to_file("res://scenes/youDied.tscn")
+
+
+
