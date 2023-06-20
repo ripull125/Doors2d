@@ -1,4 +1,5 @@
 res://scripts/default_env.tres
+<<<<<<< Updated upstream
 res://scenes/menu.tscn
 res://rooms/door.gd
 res://scripts/player.gd
@@ -23,3 +24,9 @@ res://scenes/GotKey.tscn
 res://scenes/GotPaper.tscn
 res://scenes/GotFlashlight.tscn
 res://scenes/youDied.tscn
+=======
+res://rooms/chase.tscn
+res://scenes/player.tscn
+res://character_body_2d.tscn
+res://eyesMOnster.gd
+>>>>>>> Stashed changes

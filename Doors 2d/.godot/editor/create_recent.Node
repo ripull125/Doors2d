@@ -1,9 +1,19 @@
+<<<<<<< Updated upstream
 RichTextLabel
 StaticBody2D
+=======
+Timer
+NavigationAgent2D
+>>>>>>> Stashed changes
 CollisionShape2D
-Sprite2D
-Area2D
 AnimatedSprite2D
+Sprite2D
+CharacterBody2D
+PathFollow2D
+Path2D
+Area2D
+AnimationPlayer
+StaticBody2D
 Panel
 GridContainer
 TextureRect
@@ -19,7 +29,6 @@ CollisionPolygon2D
 Label
 VBoxContainer
 ParallaxBackground
-AnimationPlayer
 ProgressBar
 Control
 TextureButton
@@ -27,6 +36,9 @@ TextEdit
 TileMap
 HSlider
 HBoxContainer
+<<<<<<< Updated upstream
 CheckBox
 Camera2D
 CharacterBody2D
+=======
+>>>>>>> Stashed changes

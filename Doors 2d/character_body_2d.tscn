@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=13 format=3 uid="uid://dexvme3jq6juo"]
+=======
+[gd_scene load_steps=13 format=3 uid="uid://d1fojeiemj4w6"]
+>>>>>>> Stashed changes
 
 [ext_resource type="Texture2D" uid="uid://c2ibj2ehcni18" path="res://sprites/eyes_monester_1.png" id="1_ejqvj"]
 [ext_resource type="Script" path="res://eyesMOnster.gd" id="1_oalr3"]
