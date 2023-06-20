@@ -20,3 +20,7 @@ res://scenes/GotKey.tscn
 res://scenes/GotPaper.tscn
 res://scenes/GotFlashlight.tscn
 res://scenes/youDied.tscn
+res://scenes/eyes.tscn
+res://scripts/rush.gd
+res://scripts/player.gd
+res://scenes/rush.gd
