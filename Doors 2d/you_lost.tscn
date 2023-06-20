@@ -1,0 +1,61 @@
+[gd_scene load_steps=4 format=3 uid="uid://dadau6pe571et"]
+
+[ext_resource type="Script" path="res://scenes/Button.gd" id="1_i4e5i"]
+[ext_resource type="Script" path="res://scripts/Button2.gd" id="2_qg88o"]
+[ext_resource type="Script" path="res://scripts/Button3.gd" id="3_a3d3g"]
+
+[node name="youWon" type="Node2D"]
+
+[node name="Button" type="Button" parent="."]
+offset_right = 1160.0
+offset_bottom = 649.0
+button_mask = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 472.0
+offset_top = 255.0
+offset_right = 685.0
+offset_bottom = 510.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Play Again"
+script = ExtResource("1_i4e5i")
+
+[node name="Button2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Menu"
+script = ExtResource("2_qg88o")
+
+[node name="Button3" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Quit"
+script = ExtResource("3_a3d3g")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = 204.0
+offset_top = 26.0
+offset_right = 965.0
+offset_bottom = 198.0
+grow_horizontal = 0
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 60
+text = "You LOST!
+You chose the wrong door"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="VBoxContainer/Button" to="VBoxContainer/Button" method="_on_pressed" flags=18]
+[connection signal="pressed" from="VBoxContainer/Button2" to="VBoxContainer/Button2" method="_on_pressed" flags=18]
+[connection signal="pressed" from="VBoxContainer/Button3" to="VBoxContainer/Button3" method="_on_pressed" flags=18]
