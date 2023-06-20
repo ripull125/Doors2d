@@ -1,3 +1,4 @@
+AnimationPlayer
 StaticBody2D
 CollisionShape2D
 Sprite2D
@@ -18,7 +19,6 @@ CollisionPolygon2D
 Label
 VBoxContainer
 ParallaxBackground
-AnimationPlayer
 ProgressBar
 Control
 TextureButton
