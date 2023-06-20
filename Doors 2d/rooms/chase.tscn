@@ -1,15 +1,26 @@
-[gd_scene load_steps=29 format=3 uid="uid://blvitvrmuak60"]
+<<<<<<< Updated upstream
+[gd_scene load_steps=24 format=3 uid="uid://blvitvrmuak60"]
+=======
+[gd_scene load_steps=18 format=3 uid="uid://blvitvrmuak60"]
+>>>>>>> Stashed changes
 
+[ext_resource type="Script" path="res://rooms/chase.gd" id="1_1ku2h"]
 [ext_resource type="Texture2D" uid="uid://c7mfr4hp8gdxp" path="res://sprites/New Piskel (9).png" id="1_r4qbw"]
 [ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="2_dhyry"]
-[ext_resource type="Texture2D" uid="uid://j74me2pf5gd1" path="res://chase-1.png_1 (3).png" id="3_krfs5"]
-[ext_resource type="Texture2D" uid="uid://4p4c7ngga365" path="res://chase-1.png_2.png" id="4_xmk5q"]
-[ext_resource type="Texture2D" uid="uid://hrdnj4g2yglf" path="res://chase-1.png_7.png" id="5_dpjpl"]
-[ext_resource type="Texture2D" uid="uid://die2iu1uygvj8" path="res://chase-1.png_3 (2).png" id="6_wybqq"]
+[ext_resource type="Texture2D" path="res://chase-1.png_1 (3).png" id="3_krfs5"]
+[ext_resource type="Texture2D" path="res://chase-1.png_2.png" id="4_xmk5q"]
+[ext_resource type="Texture2D" path="res://chase-1.png_7.png" id="5_dpjpl"]
+[ext_resource type="Texture2D" path="res://chase-1.png_3 (2).png" id="6_wybqq"]
 [ext_resource type="PackedScene" uid="uid://c2pdf8ho8sstd" path="res://table.tscn" id="7_5vvlq"]
-[ext_resource type="Texture2D" uid="uid://c2ibj2ehcni18" path="res://sprites/eyes_monester_1.png" id="8_cdha0"]
 [ext_resource type="Script" path="res://rooms/Area2D.gd" id="8_p8ae4"]
+[ext_resource type="PackedScene" uid="uid://dt5f4slux37iw" path="res://scenes/rush.tscn" id="10_4iwrd"]
 [ext_resource type="Texture2D" uid="uid://curmbeqmw4oo8" path="res://sprites/New Piskel (13).png" id="10_8qpij"]
+<<<<<<< Updated upstream
+[ext_resource type="Script" path="res://scripts/rush.gd" id="12_baoa8"]
+[ext_resource type="Texture2D" uid="uid://buyy150arehpc" path="res://sprites/rush_background.png" id="13_b7rtr"]
+=======
+[ext_resource type="PackedScene" uid="uid://d1fojeiemj4w6" path="res://character_body_2d.tscn" id="10_25u3b"]
+>>>>>>> Stashed changes
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mlu3g"]
 radius = 77.2787
@@ -23,92 +34,56 @@ size = Vector2(347.221, 117.187)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x40rf"]
 size = Vector2(48.9449, 72.662)
 
-[sub_resource type="Gradient" id="Gradient_17idp"]
+[sub_resource type="Gradient" id="Gradient_s42aa"]
 offsets = PackedFloat32Array(0, 0.73955)
 colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_xfrt7"]
-gradient = SubResource("Gradient_17idp")
+gradient = SubResource("Gradient_s42aa")
 fill = 1
 fill_from = Vector2(0.5, 0.495726)
-
-[sub_resource type="Curve2D" id="Curve2D_5ibk5"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 505, 1124, 0, 0, 0, 0, 469, 83, 0, 0, 0, 0, 1259, -1094, 0, 0, 0, 0, 1717, -1659, 0, 0, 0, 0, 1726, -2234, 0, 0, 0, 0, 1735, -2719, 0, 0, 0, 0, 1941, -3096, 0, 0, 0, 0, 2220, -3518, 0, 0, 0, 0, 2660, -3823, 0, 0, 0, 0, 3046, -3940)
-}
-point_count = 10
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_kghpo"]
-atlas = ExtResource("8_cdha0")
-region = Rect2(0, 0, 96, 96)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_jenxx"]
-atlas = ExtResource("8_cdha0")
-region = Rect2(96, 0, 96, 96)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_l5bns"]
-atlas = ExtResource("8_cdha0")
-region = Rect2(192, 0, 96, 96)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_s7b18"]
-atlas = ExtResource("8_cdha0")
-region = Rect2(0, 96, 96, 96)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_g085u"]
-atlas = ExtResource("8_cdha0")
-region = Rect2(96, 96, 96, 96)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_s2de8"]
-atlas = ExtResource("8_cdha0")
-region = Rect2(192, 96, 96, 96)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_2bofg"]
-atlas = ExtResource("8_cdha0")
-region = Rect2(0, 192, 96, 96)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hqtqg"]
-atlas = ExtResource("8_cdha0")
-region = Rect2(96, 192, 96, 96)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_vfby3"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_kghpo")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jenxx")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_l5bns")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_s7b18")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_g085u")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_s2de8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2bofg")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_hqtqg")
-}],
-"loop": true,
-"name": &"default",
-"speed": 8.0
-}]
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_tyo87"]
-radius = 127.883
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lh0g0"]
 size = Vector2(316, 302)
 
+[sub_resource type="Animation" id="Animation_tt77l"]
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(642, 2040), Vector2(32, -37529)]
+}
+
+[sub_resource type="Animation" id="Animation_i66jg"]
+resource_name = "kill"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(642, 2040), Vector2(594, -2001)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2woe0"]
+_data = {
+"RESET": SubResource("Animation_tt77l"),
+"kill": SubResource("Animation_i66jg")
+}
+
 [node name="chase" type="Node2D"]
+script = ExtResource("1_1ku2h")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 anchors_preset = 7
@@ -935,6 +910,7 @@ shape = SubResource("RectangleShape2D_x40rf")
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D2"]
+z_index = 2
 texture_filter = 1
 position = Vector2(1734, -2456)
 scale = Vector2(4.87663, 4.6175)
@@ -947,6 +923,7 @@ position = Vector2(1784, -2352)
 shape = SubResource("RectangleShape2D_vtvhi")
 
 [node name="bridge3" type="StaticBody2D" parent="."]
+z_index = 2
 position = Vector2(-2092, -364)
 rotation = 0.0523599
 
@@ -977,7 +954,7 @@ rotation = -0.47822
 shape = SubResource("RectangleShape2D_x40rf")
 
 [node name="table" parent="." instance=ExtResource("7_5vvlq")]
-position = Vector2(293, 573)
+position = Vector2(380, 635)
 scale = Vector2(1.5, 1.5)
 
 [node name="table2" parent="." instance=ExtResource("7_5vvlq")]
@@ -989,7 +966,7 @@ position = Vector2(2008, -2996)
 scale = Vector2(1.5, 1.5)
 
 [node name="table4" parent="." instance=ExtResource("7_5vvlq")]
-position = Vector2(-317, -1626)
+position = Vector2(-457, -1656)
 scale = Vector2(1.5, 1.5)
 
 [node name="table5" parent="." instance=ExtResource("7_5vvlq")]
@@ -1036,7 +1013,7 @@ rotation = -0.47822
 shape = SubResource("RectangleShape2D_x40rf")
 
 [node name="table6" parent="." instance=ExtResource("7_5vvlq")]
-position = Vector2(-676, -746)
+position = Vector2(-621, -661)
 scale = Vector2(1.5, 1.5)
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
@@ -1064,8 +1041,8 @@ color = Color(0.494118, 0.0745098, 0.133333, 1)
 texture = SubResource("GradientTexture2D_xfrt7")
 
 [node name="PointLight2D5" type="PointLight2D" parent="."]
-position = Vector2(2008, -2416)
-scale = Vector2(5.17188, 5.40625)
+position = Vector2(1964.75, -2426.5)
+scale = Vector2(6.52344, 5.07813)
 color = Color(0.494118, 0.0745098, 0.133333, 1)
 texture = SubResource("GradientTexture2D_xfrt7")
 
@@ -1135,43 +1112,11 @@ scale = Vector2(5.17188, 5.40625)
 color = Color(0.494118, 0.0745098, 0.133333, 1)
 texture = SubResource("GradientTexture2D_xfrt7")
 
-[node name="Path2D" type="Path2D" parent="."]
-curve = SubResource("Curve2D_5ibk5")
-
-[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
-position = Vector2(505, 1124)
-rotation = -1.60536
-
-[node name="eyesMonster" type="Area2D" parent="Path2D/PathFollow2D"]
-script = ExtResource("8_p8ae4")
-interact_type = null
-speed = null
-
-[node name="monster" type="AnimatedSprite2D" parent="Path2D/PathFollow2D/eyesMonster"]
-texture_filter = 1
-position = Vector2(-487.4, 13.1763)
-rotation = -1.5708
-scale = Vector2(6.48958, 5.86459)
-sprite_frames = SubResource("SpriteFrames_vfby3")
-autoplay = "default"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/eyesMonster"]
-position = Vector2(-500.98, 19.6971)
-shape = SubResource("CircleShape2D_tyo87")
-
-[node name="PointLight2D12" type="PointLight2D" parent="Path2D/PathFollow2D/eyesMonster"]
-position = Vector2(-384.311, 48.7918)
-scale = Vector2(11.3394, 11.4042)
-color = Color(0.423529, 0.00392157, 0.490196, 1)
-texture = SubResource("GradientTexture2D_xfrt7")
-
 [node name="door" type="Area2D" parent="."]
 z_index = -1
 position = Vector2(2314, -3785)
 monitorable = false
 script = ExtResource("8_p8ae4")
-interact_type = null
-speed = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="door"]
 position = Vector2(556, -269)
@@ -1185,6 +1130,27 @@ position = Vector2(685.25, -197)
 scale = Vector2(0.539375, 0.565)
 texture = ExtResource("10_8qpij")
 
-[connection signal="area_entered" from="Path2D/PathFollow2D/eyesMonster" to="player" method="_on_area_2d_area_entered"]
+<<<<<<< Updated upstream
+[node name="rush" parent="." instance=ExtResource("10_4iwrd")]
+position = Vector2(32, -37529)
+script = ExtResource("12_baoa8")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="rush"]
+libraries = {
+"": SubResource("AnimationLibrary_2woe0")
+}
+
+[node name="flicker" type="Sprite2D" parent="rush"]
+top_level = true
+position = Vector2(-96, -1569)
+scale = Vector2(160.143, 670.717)
+texture = ExtResource("13_b7rtr")
+=======
+[node name="eyes" parent="." node_paths=PackedStringArray("player") instance=ExtResource("10_25u3b")]
+z_index = 2
+position = Vector2(646, 794)
+player = NodePath("../player")
+>>>>>>> Stashed changes
+
 [connection signal="body_entered" from="door" to="door" method="_on_body_entered"]
 [connection signal="body_exited" from="door" to="door" method="_on_body_exited"]

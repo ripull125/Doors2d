@@ -1,8 +1,9 @@
-CollisionShape2D
-Area2D
+Sprite2D
+AnimationPlayer
 RichTextLabel
 StaticBody2D
-Sprite2D
+CollisionShape2D
+Area2D
 AnimatedSprite2D
 Panel
 GridContainer
@@ -19,7 +20,6 @@ CollisionPolygon2D
 Label
 VBoxContainer
 ParallaxBackground
-AnimationPlayer
 ProgressBar
 Control
 TextureButton

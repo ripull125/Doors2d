@@ -6,9 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bitjxav5x0vhg" path="res://scenes/GotFlashlight.tscn" id="3_1mylg"]
 [ext_resource type="PackedScene" uid="uid://b1ed5edcdowop" path="res://flashlighticus.tscn" id="4_bt06c"]
 [ext_resource type="Texture2D" uid="uid://cef4cc7pf3irf" path="res://sprites/inventory_background.png" id="4_d2t8v"]
-[ext_resource type="PackedScene" uid="uid://b2upj6j62xpcf" path="res://scenes/GotKey.tscn" id="4_wnh30"]
-[ext_resource type="PackedScene" uid="uid://i82tkhsrcj4q" path="res://scenes/GotPaper.tscn" id="5_5f1jc"]
-[ext_resource type="PackedScene" uid="uid://c551q110dsw3t" path="res://scenes/hotbar_1.tscn" id="5_35k0u"]
+[ext_resource type="PackedScene" path="res://scenes/hotbar_1.tscn" id="5_35k0u"]
 [ext_resource type="Texture2D" uid="uid://devh28rg8k24b" path="res://sprites/item_slot_default_background.png" id="5_xyhbv"]
 [ext_resource type="Script" path="res://rooms/Slot1.gd" id="6_1ryj3"]
 [ext_resource type="PackedScene" uid="uid://cin0jtwuxkv7t" path="res://scenes/closet.tscn" id="6_51yv7"]
@@ -94,16 +92,26 @@ _data = {
 
 [sub_resource type="GDScript" id="GDScript_tx3ke"]
 script/source = "extends Area2D
-
+var can_kill = false
+var rng = RandomNumberGenerator.new()
+var animation_over = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	hide()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	var my_random_number = rng.randf_range(-20000000.0, 20000000.0)
+	if(my_random_number >0 and my_random_number < 1000 and !can_kill):
+		show()
+		can_kill = true
+	if(can_kill and animation_over):
+		animation_over = false
+		$AnimatedSprite2D.play(\"default\")
+		await get_tree().create_timer(1.0).timeout
+		animation_over = true
 "
 
 [node name="room1" type="Node2D"]
@@ -302,13 +310,9 @@ position = Vector2(193, 455)
 rotation = -1.65108
 
 [node name="eyes" parent="." instance=ExtResource("17_p1gsn")]
+position = Vector2(596, -83)
+scale = Vector2(1.41725, 1.80942)
 script = SubResource("GDScript_tx3ke")
 
-[node name="eyes2" parent="." instance=ExtResource("17_p1gsn")]
-
-[connection signal="input_event" from="player" to="player" method="_on_input_event"]
-[connection signal="area_entered" from="player/Text/Text2/Area1" to="player" method="_on_area_2d_area_entered"]
-[connection signal="area_entered" from="player/Text2/Text2/Area2" to="player" method="_on_area_2d_area_entered"]
-[connection signal="area_entered" from="player/Text3/Text2/Area3" to="player" method="_on_area_3_area_entered"]
 [connection signal="body_entered" from="door" to="door" method="_on_body_entered"]
 [connection signal="area_entered" from="rush" to="player" method="_on_rush_area_entered"]
