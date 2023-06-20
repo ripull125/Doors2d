@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://blvitvrmuak60"]
+[gd_scene load_steps=29 format=3 uid="uid://blvitvrmuak60"]
 
 [ext_resource type="Texture2D" uid="uid://c7mfr4hp8gdxp" path="res://sprites/New Piskel (9).png" id="1_r4qbw"]
 [ext_resource type="PackedScene" uid="uid://di1463flyaf58" path="res://scenes/player.tscn" id="2_dhyry"]
@@ -7,8 +7,9 @@
 [ext_resource type="Texture2D" uid="uid://hrdnj4g2yglf" path="res://chase-1.png_7.png" id="5_dpjpl"]
 [ext_resource type="Texture2D" uid="uid://die2iu1uygvj8" path="res://chase-1.png_3 (2).png" id="6_wybqq"]
 [ext_resource type="PackedScene" uid="uid://c2pdf8ho8sstd" path="res://table.tscn" id="7_5vvlq"]
-[ext_resource type="Texture2D" path="res://sprites/eyes_monester_1.png" id="8_cdha0"]
+[ext_resource type="Texture2D" uid="uid://c2ibj2ehcni18" path="res://sprites/eyes_monester_1.png" id="8_cdha0"]
 [ext_resource type="Script" path="res://rooms/Area2D.gd" id="8_p8ae4"]
+[ext_resource type="Texture2D" uid="uid://curmbeqmw4oo8" path="res://sprites/New Piskel (13).png" id="10_8qpij"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mlu3g"]
 radius = 77.2787
@@ -103,6 +104,9 @@ animations = [{
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_tyo87"]
 radius = 127.883
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lh0g0"]
+size = Vector2(316, 302)
 
 [node name="chase" type="Node2D"]
 
@@ -1140,6 +1144,8 @@ rotation = -1.60536
 
 [node name="eyesMonster" type="Area2D" parent="Path2D/PathFollow2D"]
 script = ExtResource("8_p8ae4")
+interact_type = null
+speed = null
 
 [node name="monster" type="AnimatedSprite2D" parent="Path2D/PathFollow2D/eyesMonster"]
 texture_filter = 1
@@ -1159,4 +1165,26 @@ scale = Vector2(11.3394, 11.4042)
 color = Color(0.423529, 0.00392157, 0.490196, 1)
 texture = SubResource("GradientTexture2D_xfrt7")
 
+[node name="door" type="Area2D" parent="."]
+z_index = -1
+position = Vector2(2314, -3785)
+monitorable = false
+script = ExtResource("8_p8ae4")
+interact_type = null
+speed = null
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="door"]
+position = Vector2(556, -269)
+shape = SubResource("RectangleShape2D_lh0g0")
+
+[node name="Sprite2D" type="Sprite2D" parent="door"]
+light_mask = 4
+visibility_layer = 4
+z_index = 1
+position = Vector2(685.25, -197)
+scale = Vector2(0.539375, 0.565)
+texture = ExtResource("10_8qpij")
+
 [connection signal="area_entered" from="Path2D/PathFollow2D/eyesMonster" to="player" method="_on_area_2d_area_entered"]
+[connection signal="body_entered" from="door" to="door" method="_on_body_entered"]
+[connection signal="body_exited" from="door" to="door" method="_on_body_exited"]
