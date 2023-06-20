@@ -3,7 +3,7 @@ extends Node
 signal active_item_updated
 
 const SlotClass = preload("res://scripts/Slot1.gd")
-const ItemClass = preload("res://scripts/Item.gd")
+const ItemClass = preload("res://scenes/Item.gd")
 const NUM_HOTBAR_SLOTS = 8
 
 var active_item_slot = 0

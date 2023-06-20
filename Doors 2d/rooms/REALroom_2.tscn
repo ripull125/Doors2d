@@ -143,7 +143,7 @@ shape = SubResource("RectangleShape2D_vfmfj")
 position = Vector2(702.833, 1250.58)
 shape = SubResource("RectangleShape2D_lwsun")
 
-[node name="player" parent="." instance=ExtResource("2_oa2yq")]
+[node name="player" parent="." groups=["player"] instance=ExtResource("2_oa2yq")]
 z_index = 2
 position = Vector2(577, 486)
 

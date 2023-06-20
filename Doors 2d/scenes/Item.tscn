@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cnd68bvuvjq2d"]
 
 [ext_resource type="Script" path="res://scenes/Item.gd" id="1_t7c6n"]
-[ext_resource type="Texture2D" uid="uid://bpj81qo7up4dk" path="res://sprites/Key.png" id="2_3lwjq"]
+[ext_resource type="Texture2D" uid="uid://bpj81qo7up4dk" path="res://sprites/key.png" id="2_3lwjq"]
 
 [node name="Item" type="Node2D"]
 z_index = 1

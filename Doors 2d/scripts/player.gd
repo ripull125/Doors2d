@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+class_name Player
+
 var speed = 400  # speed in pixels/sec
 
 var coins = 0
